@@ -1,0 +1,196 @@
+.tourism-flight-banner-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 13px 2px rgba(0, 0, 0, 0.06);
+
+  * {
+    color: #fff;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 23px 24px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .top-title {
+      position: absolute;
+      top: 0;
+      padding: 25px 25px 24px 23px;
+      font-size: 45px;
+      line-height: 50px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #363b40;
+      font-weight: bold;
+      width: 100%;
+
+      span {
+        display: block;
+        color: #363b40;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: normal;
+      }
+
+      &.left {
+        text-align: left;
+      }
+    }
+
+    .bottom-content {
+      position: absolute;
+      bottom: 25px;
+      left: 0;
+      width: 100%;
+      background: #363b40;
+      display: flex;
+      align-items: center;
+      padding: 9px 18px 10px;
+
+      .left {
+        .price {
+          text-align: right;
+          align-self: flex-start;
+          display: flex;
+          align-items: flex-end;
+
+          div.ant-typography {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0 0 0 10px;
+            line-height: 34px;
+          }
+        }
+      }
+
+      .right {
+        margin-left: auto;
+
+        a {
+          color: #ffc468;
+          font-size: 14px;
+          font-weight: bold;
+
+          .fm-color-yellow {
+            fill: #ffc468;
+            position: relative;
+            top: 2px;
+
+            * {
+              fill: #ffc468;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.flights-recommended-tile {
+  max-width: 1110px;
+  margin-top: 32px !important;
+
+  .rowed {
+    column-width: 27em;
+    -moz-column-width: 27em;
+    -webkit-column-width: 27em;
+    column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+    -webkit-column-gap: 2.5rem;
+
+    .ant-colum {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin: 0rem auto;
+      position: relative;
+      background: transparent;
+      padding: 0px;
+      border: none;
+      // border-radius: 0px;
+      transition: 0.3s ease;
+      font-size: 0;
+      flex: 0 0 inherit !important;
+      // max-width: inherit !important;
+      margin-bottom: 18px;
+      max-width: 542px !important;
+      height: 465px !important;
+      overflow: hidden;
+      border-radius: 24px;
+
+      @media (max-width: 1367px) {
+        height: 366px !important;
+      }
+    }
+  }
+}
+
+/*
+.flights-recommended-tile {
+    column-count: 2;
+    column-gap: .5em;
+    max-width: 680px;
+    margin: auto;
+    width: 100%;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+.flights-recommended-tile {
+    margin-top: 32px !important;
+    display: block;
+
+    .ant-col {
+        float: left;
+        min-height: 356px;
+
+        &:nth-child(1) {
+            order: 2;
+            float: right;
+        }
+
+        &:nth-child(2) {
+            order: 1;
+            clear: left;
+            z-index: 1;
+            position: relative;
+        }
+
+        &:nth-child(3) {
+            order: 3;
+            float: left;
+
+            .top-title {
+                text-align: left;
+                text-transform: uppercase;
+                color: #fff;
+
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+*/

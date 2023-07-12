@@ -1,0 +1,256 @@
+.tourism-detail-card {
+  box-shadow: 0 0 7px 0 rgba(143, 167, 189, 0.2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .ant-card-head {
+    min-height: auto;
+    background: rgba(255, 196, 104, 0.2);
+
+    .ant-card-head-wrapper {
+      min-height: 44px;
+    }
+
+    .ant-card-head-title {
+      // font-size: 18px;
+      // font-weight: bold;
+      color: #363b40;
+      text-align: center;
+      padding: 4px 0 5px 0;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .ant-card-cover {
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0;
+
+    img {
+      max-height: 220px;
+    }
+  }
+
+  .ant-card-body {
+    padding: 11px 15px 15px 15px;
+  }
+
+  &-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .right {
+      display: flex;
+      align-items: center;
+      padding-top: 0px;
+
+      span {
+        color: #90a8be;
+        font-size: 12px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .rate-section {
+    font-size: 10px;
+    color: #90a8be;
+    padding-top: 0px;
+
+    .ant-rate {
+      font-size: 9px;
+      margin-left: 2px;
+
+      .ant-rate-star {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .price-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .price {
+      font-weight: 400;
+      color: #363b40;
+      font-family: Poppins;
+      font-size: 16px;
+
+      .sub-text {
+        color: #363b40;
+        margin: 0 0 0 4px;
+        top: -6px;
+        font-family: Poppins;
+        font-size: 8px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .title {
+    color: #363b40;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+  }
+
+  .category-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none;
+    padding: 12px 0 0 0;
+    cursor: auto;
+
+    .category-name {
+      font-size: 10px;
+      color: #ffc468;
+      text-transform: capitalize;
+    }
+  }
+
+  .ant-card-actions {
+    margin: 0 15px;
+    background: none;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+
+    & > li {
+      margin: 0;
+      padding: 10px 0 9px 0;
+      color: #90a8be;
+      width: auto !important;
+      min-width: 33.33%;
+
+      &:first-child {
+        flex: auto;
+      }
+
+      &:hover {
+        * {
+          fill: #f63730;
+        }
+      }
+
+      .active {
+        fill: #f63730;
+
+        * {
+          fill: #f63730;
+        }
+      }
+
+      span:hover {
+        color: inherit;
+        cursor: auto;
+
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .tag-icon {
+    position: absolute;
+    top: -32px;
+    left: 16px;
+    width: 67px;
+    height: 67px;
+    border-radius: 100px;
+    background-color: #ca71b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    * {
+      fill: #fff;
+    }
+  }
+
+  .tag {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background: #ffc468;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 23px;
+    padding: 4px 15px;
+    border: 0;
+    font-family: Poppins;
+  }
+
+  .tourism-detail-card-top-section {
+    .left {
+      .total-views {
+        font-size: 10px;
+        font-family: Arial;
+        font-weight: 400;
+        display: inline-flex;
+        align-items: center;
+        color: #90a8be;
+      }
+    }
+    .right {
+      span {
+        font-size: 10px;
+        font-family: Arial;
+        font-weight: 400;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      svg {
+        cursor: pointer;
+
+        &:hover {
+          path {
+            fill: #f63730 !important;
+          }
+        }
+
+        &.active {
+          fill: #f63730 !important;
+        }
+      }
+    }
+  }
+
+  &.top-rated-hotel {
+    .ant-card-cover {
+      img {
+        max-height: 125px;
+      }
+    }
+  }
+}
+
+.tourism-detail-card-bottom-section {
+  background: #fff;
+  box-shadow: 0 0 7px 0 rgba(143, 167, 189, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 3px;
+
+  .date-info {
+    color: #90a8be;
+    font-size: 11px;
+    text-align: center;
+    font-family: Poppins;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}

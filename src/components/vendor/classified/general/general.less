@@ -1,0 +1,278 @@
+// Variables
+@orange-color: #EE4928; // sea blue
+@font-size10: 10px;
+@font-size12: 12px;
+@font-size14: 14px;
+@font-size16: 16px;
+@font-size18: 18px;
+@poppinse: "Poppins", sans-serif;
+
+
+.card-header-select.sort-section {
+  position: unset !important;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.price-box {
+  display: flex
+}
+
+.my-job-table,
+.offerdetail-myjob {
+  tr {
+    th {
+      display: table-cell !important;
+      text-align: center;
+    }
+
+    .edit-delete-icons {
+      padding-right: 0 !important;
+      margin-top: 0 !important;
+
+      a {
+        color: #90A8BE;
+        text-decoration: underline;
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  td {
+    text-align: center;
+
+
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.red-text {
+  color: #EE4928 !important;
+}
+
+.btn-active {
+  background-color: #37D380;
+  border-color: #37D380;
+  height: 30px !important;
+}
+
+.new-offer {
+  border: 1px solid #5d3f96;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 15px;
+  color: #5d3f96
+}
+
+.company-name {
+  font-weight: 600;
+}
+
+.color-box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 81px;
+  padding: 15px;
+  border-radius: 6px;
+
+  box-shadow: 0 6px 13px 2px rgba(0, 0, 0, 0.06);
+
+  .ant-typography {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.dark-orange {
+  background-color: #f7685a;
+}
+
+.light-orange {
+  background-color: #fb8f84
+}
+
+.light-yellow {
+  background-color: #ffcb78;
+}
+
+.dark-yellow {
+  background-color: #ffb947;
+}
+
+.my-jobs {
+  text-align: left;
+
+  .price {
+    a {
+      color: #55636D !important;
+    }
+  }
+}
+
+.my-offer-table {
+  table {
+    tr {
+      td {}
+    }
+  }
+}
+
+body .offer-list-v2 {
+  .heading-search-block {
+    margin-bottom: 0;
+  }
+
+  .employee-dashborad-box {
+    .ant-tabs-nav-scroll {
+      height: 40px;
+
+      .ant-tabs-nav {
+        display: none;
+      }
+    }
+
+    .card-header-select {
+      top: 6px;
+      right: 12%;
+      white-space: nowrap;
+
+      .card-header-categories {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+body .view-offer-detail-v2 {
+  .employee-dashborad-box {
+    .ant-table-wrapper {
+      th {
+        display: revert;
+        font-family: @poppinse;
+
+        &:first-child {
+          padding-left: 52px;
+        }
+      }
+
+      td {
+        font-family: @poppinse;
+        border-bottom: rgba(218, 218, 218, 0.6) 1px solid;
+        padding: 18px 20px 18px 20px !important;
+        font-size: 14px;
+        color: #55636D;
+        font-weight: normal;
+        vertical-align: middle;
+        text-align: left;
+
+        &:first-child {
+          padding-left: 52px !important;
+          text-align: left;
+        }
+
+        &:nth-child(2) {
+          font-size: 14px !important;
+          font-weight: normal !important;
+        }
+
+        &:last-child {
+          width: 10%;
+        }
+
+        .action {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+          svg {
+            width: 17px;
+            height: 17px;
+
+            * {
+              fill: #90A8BE;
+            }
+          }
+        }
+
+        .prize-big-text {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          color: #55636D;
+        }
+
+        .btn-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-evenly;
+
+          .ant-btn {
+            min-width: 100px;
+            height: 30px;
+            border-radius: 3px;
+            margin: 0 10px;
+          }
+
+          .decline {
+            background: #FFFFFF;
+            border: 0.71345px solid #C4C4C4;
+            box-sizing: border-box;
+            font-size: 10px;
+            color: #55636D;
+
+            &:hover {
+              background: #FFFFFF;
+              border: 0.71345px solid #C4C4C4;
+            }
+          }
+
+          .accept {
+            background: #EE4928;
+            border: 0.71345px solid#EE4928;
+
+            &:hover {
+              background: #EE4928;
+              border: 0.71345px solid#EE4928;
+            }
+          }
+
+          .offer-accepted,
+          .offer-declined {
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+
+            .view.new-offer {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              min-width: 100px;
+              border: none;
+              border-radius: 0px;
+              text-align: center;
+              padding:0;
+              color: inherit;
+
+              img {
+                margin-bottom: 7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

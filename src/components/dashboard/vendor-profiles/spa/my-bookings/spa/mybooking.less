@@ -1,0 +1,1377 @@
+// Variables
+@orange-color: #ee4928; // sea blue
+@font-size10: 10px;
+@font-size12: 12px;
+@font-size14: 14px;
+@font-size16: 16px;
+@font-size18: 18px;
+
+.ant-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.ant-pagination li a {
+  color: #90a8be !important;
+  display: flex;
+  align-items: center;
+}
+
+.btn-orange {
+  background: #ee4928;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ffffff;
+  min-width: 110px;
+  padding: 4px 15px;
+  display: inline-block;
+  border: #ee4928 1px solid !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: #d23c1e;
+    color: #fff;
+    border: #d23c1e 1px solid;
+  }
+}
+
+.profile-content-shadow-box {
+  border-radius: 4px;
+  box-shadow: 0 6px 13px 2px rgba(0, 0, 0, 0.06);
+}
+
+body .right-calender-view {
+  .date-heading {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ee4928 !important;
+  }
+
+  .ant-picker-calendar {
+    .ant-picker-calendar-header {
+      .ant-picker-calendar-mode-switch {
+        display: none;
+      }
+
+      .ant-select.ant-select-single .ant-select-selector {
+        min-height: 30px;
+      }
+
+      .ant-select-single.ant-select-sm:not(.ant-select-customize-input) {
+        .ant-select-selector {
+          .ant-select-selection-item {
+            line-height: 32px;
+            font-size: 14px;
+            text-align: center;
+            color: #55636d;
+          }
+        }
+      }
+    }
+
+    .ant-picker-panel {
+      .ant-picker-body {
+        padding: 8px 30px;
+        font-size: 14px;
+
+        @media (max-width: 1366px) {
+          padding: 8px 20px !important;
+        }
+      }
+
+      .ant-picker-content {
+        th {
+          padding: 0;
+          line-height: 18px;
+          color: #ee4928;
+          height: 34px;
+          vertical-align: top;
+        }
+
+        .ant-picker-cell {
+          padding: 5px 0;
+          cursor: pointer;
+          font-size: 14px;
+          color: #90a8be;
+
+          .ant-picker-calendar-date-content {
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            .ant-badge-status-dot {
+              position: relative;
+              top: -1px;
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              vertical-align: middle;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .ant-picker-cell-in-view {
+          .ant-picker-cell-today {
+            .ant-picker-cell-inner {
+              &:before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                border: none;
+                border-radius: 2px;
+                content: "";
+              }
+            }
+          }
+        }
+
+        .ant-picker-cell-selected {
+          .ant-picker-cell-inner {
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            background: #ee4928;
+            border: none;
+            border-radius: 100px;
+            line-height: 40px;
+
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card-header-select {
+  position: absolute;
+  top: 18px;
+  right: 13px;
+
+  label {
+    color: #6a707e;
+    font-size: 11px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-select.ant-select-single .ant-select-selector,
+  .ant-select-selector .ant-select-selection-item,
+  .ant-select-selector .ant-select-selection-search-input,
+  .ant-select-selector .ant-select-selection-item {
+    border-radius: 0;
+    border-color: transparent;
+    height: 25px !important;
+    line-height: 24px !important;
+    color: #ee4928 !important;
+    padding: 0 10px 0 1px;
+    box-shadow: none;
+  }
+
+  .ant-select.ant-select-single .ant-select-selector {
+    min-height: auto;
+  }
+
+  .ant-select-arrow {
+    top: 17px;
+    right: 3px;
+    color: #aeaeae;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #aeaeae;
+
+    .anticon {
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+/*Profile-Vendor Restaurant, Profile-Vendor Spa Css*/
+/*My order page and dashboard page view is same*/
+.pf-vend-restau-myodr,
+.pf-vend-spa-booking,
+.pf-vend-fitness-booking {
+  .change-status {
+    display: flex;
+    align-items: center;
+
+    .ant-select {
+      background: #ffffff;
+      border: 2px solid #ffc468;
+      /* Drop Shadow Soft */
+      box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+      border-radius: 3px;
+      margin: 0;
+
+      .ant-select-selector {
+        height: auto !important;
+      }
+
+      .ant-select-selection-item {
+        line-height: 30px !important;
+        font-size: 14px !important;
+        color: #55636d !important;
+      }
+
+      .ant-select-item {
+        font-size: 14px;
+        color: #90a8be !important;
+      }
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #55636d;
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    font-family: "Poppins", sans-serif;
+    margin: 50px 0 20px 0;
+    font-size: 11px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 12px 1px rgba(144, 168, 190, 0.23);
+    /* font-size: 13px; */
+    font-weight: 300;
+    min-width: auto;
+    min-height: 23px;
+    height: 23px;
+    line-height: 15px;
+  }
+
+  // .purple {
+  //   background: #5D3F96;
+
+  //   &:hover {
+  //     background-color: #432b72;
+  //   }
+  // }
+
+  // .lght-orange {
+  //   background: #F7685B;
+
+  //   &:hover {
+  //     background-color: #ca231d;
+  //   }
+  // }
+
+  // .pending-btn {
+  //   background-color: #FFB946;
+  //   margin-bottom: 0;
+
+  //   &:hover {
+  //     background: #f9b956;
+  //   }
+  // }
+
+  // .cancel-btn {
+  //   background-color: #F7685B;
+
+  //   &:hover {
+  //     background-color: #ca231d;
+
+  //   }
+  // }
+
+  // .success-btn {
+  //   background-color: #2ED47A;
+
+  //   &:hover {
+  //     background-color: #1ea75d;
+  //   }
+  // }
+
+  // .blue-btn {
+  //   background-color: #109CF1;
+
+  //   &:hover {
+  //     background-color: #0b75b5;
+  //   }
+  // }
+
+  // .gray-btn {
+  //   background-color: #90A8BE;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: #69859F;
+  //   }
+  // }
+
+  // .purple,
+  // .success-btn,
+  // .pending-btn,
+  // .cancel-btn,
+  // .blue-btn,
+  // .gray-btn {
+
+  //   &:hover,
+  //   &:focus {
+  //     color: #fff;
+  //   }
+  // }
+
+  .profile-content-shadow-box {
+    .ant-tabs-line .ant-tabs-tabpane {
+      padding: 0px 16px 25px 18px;
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active {
+      color: #ee4928 !important;
+      border-bottom: 2px solid #ee4928;
+    }
+
+    .ant-tabs-nav-scroll {
+      padding: 0px 18px;
+    }
+
+    .ant-tabs-bar {
+      .ant-tabs-nav {
+        .ant-tabs-tab {
+          margin: 0;
+          padding: 16px 0px 12px 0px !important;
+          // margin-right: 43px !important;
+        }
+      }
+    }
+
+    .my-new-order-block {
+      background: #ffffff;
+      // border: 1px solid #FFC468;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+      border-radius: 4px;
+      padding: 18px 23px 20px 16px;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      .odr-no {
+        display: flex;
+        align-items: center;
+
+        h4,
+        span.pickup {
+          font-weight: bold;
+          font-size: 18px;
+          color: #323c47;
+          position: relative;
+        }
+
+        span.pickup-ylw {
+          color: #ffc468 !important;
+        }
+
+        h4 {
+          padding-right: 22px;
+          margin-right: 22px;
+          margin-bottom: 0;
+
+          &::after {
+            top: 2px;
+            content: "";
+            background-color: #323c47;
+            height: 15px;
+            right: 0;
+            position: absolute;
+            width: 2px;
+          }
+        }
+
+        span.pickup {
+          color: #7ec5f7;
+        }
+      }
+
+      .order-profile {
+        display: flex;
+        padding: 12px 0 14px 0;
+        align-items: center;
+
+        .profile-pic {
+          width: 24px;
+          height: 24px;
+          border-radius: 50px;
+          overflow: hidden;
+          margin: 0 13px 0 0;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .profile-name {
+          color: #707683;
+        }
+      }
+
+      .order-total {
+        font-weight: bold;
+        font-size: 14px;
+        color: #55636d;
+      }
+
+      .odr-time {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: right;
+        color: #f63730;
+
+        img {
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+      }
+
+      a.blue-link {
+        color: #2f80ed;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .your-order-block {
+    background: #ffffff;
+    border: 1px solid #ffc468;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    padding: 16px 27px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 25px;
+      margin: 0 0 5px 0;
+      padding: 0;
+      color: #55636d;
+    }
+
+    .profile-name-pic-detail {
+      font-size: 14px;
+      color: #90a8be;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+      overflow: hidden;
+      margin: 0 10px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .profile-name {
+      color: #707683;
+    }
+
+    .ant-divider-horizontal {
+      display: block;
+      clear: both;
+      width: 100%;
+      min-width: 100%;
+      height: 1px;
+      margin: 17px 0 20px 0;
+    }
+
+    .order-total,
+    .order-list,
+    .btn-block {
+      display: flex;
+    }
+
+    .order-list {
+      color: #363b40;
+      font-size: 14px;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      align-items: center;
+
+      .order-name {
+        max-width: 130px;
+        width: 100%;
+      }
+    }
+
+    .order-total {
+      font-size: 14px;
+      color: #55636d;
+      padding-bottom: 5px;
+
+      .item,
+      .amount {
+        width: 50%;
+      }
+
+      .amount {
+        text-align: right;
+
+        span {
+          display: block;
+          font-size: 10px;
+        }
+      }
+
+      .total-amount,
+      .total {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+    .btn-block {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.pf-vend-spa-booking {
+  .my-new-order-block {
+    button {
+      margin-top: 0px;
+    }
+
+    .bokng-time-date {
+      font-weight: normal;
+      font-size: 18px;
+      text-align: right;
+      color: #363b40;
+      margin-bottom: 16px;
+
+      span {
+        display: block;
+        margin-bottom: 0px;
+      }
+    }
+
+    .orange-small {
+      font-size: 10px;
+      line-height: 14px;
+      color: #ffc468;
+      position: relative;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 12px;
+        position: relative;
+
+        &:first-child {
+          padding-left: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        &:before {
+          top: 3px;
+          content: "";
+          background-color: #ffc468;
+          height: 8px;
+          left: 6px;
+          position: absolute;
+          width: 1px;
+        }
+      }
+    }
+
+    .bokng-hsty-hour-price {
+      div {
+        margin-bottom: 9px;
+      }
+
+      .hour {
+        font-weight: normal;
+        font-size: 14px;
+        /* table_gray */
+        color: #707683;
+      }
+
+      .price {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+
+        text-align: right;
+
+        color: #363b40;
+      }
+    }
+  }
+
+  .appointments-slot,
+  .fm-tp-appointments {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+
+    .fm-ca-wrap {
+      padding: 20px;
+
+      .pm-am-text,
+      .pm-am-text {
+        font-size: 11px;
+        color: #55636d;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .fm-pm-text {
+        margin-top: 15px;
+      }
+
+      .fmampm-body {
+        display: flex;
+        flex-wrap: wrap;
+
+        .fm-no-slot {
+          font-size: 11px;
+          color: #55636d;
+        }
+
+        button {
+          width: 31%;
+          margin: 0px 0 8px;
+          height: 28px;
+          box-shadow: none;
+          border: 1px solid #e3e9ef !important;
+          border-radius: 0;
+          margin-right: 2.333333%;
+        }
+      }
+    }
+
+    .appointments-heading {
+      display: flex;
+      padding: 15px 23px 15px 21px;
+      border-bottom: 1px solid #e3e9ef;
+      align-items: center;
+
+      .date,
+      .appointments-count {
+        width: 50%;
+      }
+
+      &.fm-available-time {
+        .date {
+          width: 100%;
+          color: #2ed47a;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+
+      .date {
+        font-weight: bold;
+        font-size: 18px;
+        color: #363b40;
+      }
+
+      .appointments-count {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        color: #90a8be;
+      }
+
+      .card-header-select {
+        right: 27px;
+      }
+    }
+
+    .error-box {
+      padding: 20px;
+    }
+
+    .appointments-body {
+      ul {
+        margin: 0;
+        padding: 0 0 45px 0;
+
+        li {
+          padding: 15px 23px 15px 21px;
+          border-bottom: 1px solid #e3e9ef;
+          font-size: 14px;
+          line-height: 16px;
+          color: #55636d;
+
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        li.active {
+          box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+        }
+
+        .appointments-label {
+          width: 60%;
+        }
+
+        .appointments-time {
+          width: 40%;
+          position: relative;
+          padding-left: 15px;
+
+          span {
+            float: right;
+          }
+
+          &::before {
+            top: 50%;
+            content: "";
+            background-color: #e3e9ef;
+            height: 22px;
+            left: 0;
+            position: absolute;
+            width: 1px;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+
+  .pf-rating {
+    color: #90a8be;
+    font-size: 10px;
+    margin-left: 13px;
+
+    .ant-rate {
+      font-size: 13px;
+    }
+
+    .ant-rate-star:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    span.ant-typography {
+      margin-right: 5px;
+    }
+  }
+}
+
+.pf-vend-spa-booking-popup-page {
+  .ant-card-bordered {
+    border: 1px solid #f0f0f0;
+    padding: 30px;
+  }
+
+  .book-now-popup {
+    .fm-user-details.inner-fourth {
+      h4 {
+        margin-bottom: 1px;
+      }
+    }
+
+    .catg,
+    .addr {
+      margin-bottom: 2px;
+    }
+
+    .ant-typography {
+      color: #55636d;
+    }
+  }
+
+  .right-block-detail {
+    .title {
+      font-size: 14px;
+      color: #55636d;
+      margin-bottom: 20px;
+    }
+
+    .ant-card-bordered {
+      border: 1px solid #f0f0f0;
+      padding: 15px;
+      color: #55636d;
+    }
+  }
+}
+
+/*Profile - Vendor Fitness css*/
+.pf-vend-fitness-booking {
+  .heading-right-block-icon {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+
+  .profile-content-shadow-box {
+    .ant-tabs-nav-scroll {
+      padding: 0px 32px !important;
+    }
+
+    .ant-tabs-line .ant-tabs-tabpane {
+      padding: 0px 35px 25px 35px;
+    }
+  }
+
+  /*test*/
+  .schedule-view {
+    .c-dropdown {
+      padding: 0px 15px;
+      height: 42px;
+      justify-content: space-between;
+    }
+
+    .blue-strip {
+      background-color: #eef2f5;
+      padding: 10px 15px;
+    }
+
+    .blue-text {
+      color: #90a8be;
+    }
+
+    .calendra-withicons {
+      .ant-card-body {
+        padding: 15px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      span.ant-typography {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .yellow-theme {
+    .tab-style2 .ant-tabs-card-bar .ant-tabs-tab {
+      background: #ffc468 !important;
+      border-color: #ffc468 !important;
+      font-size: 25px;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+      color: #ffc468 !important;
+      background: #fff !important;
+      border-color: #f0f0f0 !important;
+      border-bottom: 1px solid #fff;
+    }
+
+    .detail-card .category-box .category-name {
+      font-size: 14px;
+      color: #f7d852;
+    }
+
+    .ant-btn-default {
+      border: 2px solid #f4c482;
+
+      &:hover {
+        color: #ffc468;
+      }
+
+      &.active {
+        color: #ffc468;
+      }
+    }
+
+    .job-search-tab.ant-tabs.ant-tabs-card {
+      .ant-tabs-tab-active.ant-tabs-tab {
+        color: #fff !important;
+        background: #363b40 !important;
+        border-color: #363b40 !important;
+      }
+    }
+
+    .location-more-form {
+      width: ~"calc(100% - 150px)";
+      padding: 30px 0px 0 0 !important;
+      margin: 0 !important;
+    }
+
+    .location-search .location-more-option {
+      width: ~"calc(100% - 150px)";
+      padding-right: 0 !important;
+    }
+
+    .detail-card .category-box .category-name {
+      font-size: 14px;
+      color: #f7d852;
+    }
+
+    .location-search .ant-btn.ant-btn-primary.ant-btn-circle {
+      background: #ffc468;
+      border-color: #ffc468;
+
+      &:hover {
+        background-color: #ecb052;
+        border-color: #ffc468;
+      }
+    }
+
+    .inner-page-title span {
+      background: #ffc468;
+    }
+
+    .product-detail-right .ant-btn-ghost {
+      color: #ffc468;
+      border-color: #ffc468;
+    }
+
+    .detail-card .category-box .category-name {
+      font-size: 14px;
+      color: #fec872;
+    }
+
+    .map-product-card .action-link a {
+      color: #ffc468;
+    }
+
+    .blue-link {
+      color: #ffc468;
+    }
+
+    .location-search .location-more-option a {
+      color: #fff;
+    }
+
+    .wellbg {
+      .circle-icon-list {
+        list-style: none;
+        margin: 28px auto 30px auto;
+        padding: 0;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          padding: 10px 0 !important;
+          width: 15%;
+
+          div {
+            align-items: center;
+            margin: 0 auto;
+
+            img {
+              width: 34px;
+            }
+          }
+        }
+      }
+    }
+
+    .fm-circle-wrap.wellbg {
+      width: ~"calc(100% - 150px)";
+    }
+
+    .price-box {
+      span.ant-typography {
+        font-size: 10px;
+        text-align: right;
+        display: block;
+        color: #363b40;
+      }
+    }
+
+    .sub-header-menu {
+      background: #fff0da;
+    }
+  }
+
+  /*test*/
+  .your-order-block {
+    padding: 16px 0;
+
+    h2 {
+      color: #ee4928;
+      font-size: 18px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .class-list,
+    .class-number-count,
+    .class-number-count-list {
+      display: flex;
+    }
+
+    .class-schedutaille-detail,
+    h3,
+    .user-class-detail-count,
+    .class-number-count-list {
+      color: #55636d;
+    }
+
+    .class-schedutaille-detail {
+      padding-left: 24px;
+      padding-right: 24px;
+      font-size: 16px;
+
+      .text-detail {
+        width: 75%;
+
+        h3 {
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+        }
+
+        .user-class-post-detail,
+        .time,
+        h3 {
+          margin-bottom: 12px;
+        }
+
+        .user-class-post-detail {
+          font-size: 14px;
+        }
+
+        .mint,
+        .subtitle {
+          color: #abbdcd;
+        }
+      }
+
+      .user-class-detail-count {
+        width: 25%;
+        text-align: center;
+        font-size: 14px;
+
+        .user-icon {
+          width: 20px;
+          height: 20px;
+          background: #55636d;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 17px;
+          margin: 0 auto;
+        }
+
+        .user-class-count {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .class-number-count-list {
+      padding: 11px 24px;
+      border-top: #ebeff2 1px solid;
+      font-size: 14px;
+      align-items: center;
+
+      .field-name {
+        margin-left: 20px;
+      }
+
+      &:last-child {
+        border-bottom: #ebeff2 1px solid;
+      }
+    }
+  }
+
+  .events {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .events .ant-badge-status {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+
+  .notes-month {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .notes-month section {
+    font-size: 28px;
+  }
+}
+
+/*Profile - User Spa (My booking) -- Purpel theme css Brajesh has crete*/
+body .profile-purple-main-wrap {
+  padding-top: 95px !important;
+
+  .top-head-section {
+    .left {
+      h2 {
+        color: #5d3f96;
+      }
+    }
+  }
+
+  .ant-layout-sider {
+    .logout-link {
+      background-color: #5d3f96;
+      border-color: #5d3f96;
+
+      &:hover {
+        background-color: #4e3087;
+        border-color: #4e3087;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .purpel-selct-list {
+    background: #ffffff;
+    border: 2px solid #5d3f96;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 4px;
+    width: 100%;
+    color: #334d6e;
+    margin-top: 0px;
+    margin-bottom: 21px;
+
+    .ant-select-selection-item {
+      line-height: 36px;
+      color: #334d6e !important;
+      font-size: 15px !important;
+      font-weight: normal;
+      font-family: Poppins;
+      font-weight: 500;
+    }
+  }
+
+  .pf-vend-spa-booking {
+    .profile-content-shadow-box {
+      .ant-tabs-tab.ant-tabs-tab-active {
+        color: #5d3f96 !important;
+        border-bottom: 2px solid #5d3f96;
+      }
+    }
+  }
+
+  .card-header-select {
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+    .ant-select.ant-select-single .ant-select-selector,
+    .ant-select-selector .ant-select-selection-item,
+    .ant-select-selector .ant-select-selection-search-input,
+    .ant-select-selector .ant-select-selection-item {
+      color: #5d3f96 !important;
+    }
+  }
+
+  .right-calender-view {
+    .date-heading {
+      color: #5d3f96 !important;
+    }
+
+    .ant-picker-calendar {
+      .ant-picker-panel {
+        .ant-picker-content {
+          th {
+            padding: 0;
+            line-height: 18px;
+            color: #ee4928;
+            height: 34px;
+            vertical-align: top;
+          }
+
+          .ant-picker-cell-selected {
+            .ant-picker-cell-inner {
+              background: #5d3f96;
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+
+          .ant-picker-cell-in-view.ant-picker-cell-today
+            .ant-picker-cell-inner::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            border: 1px solid #ffc468;
+            border-radius: 2px;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+
+  .change-bkg {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #109cf1;
+  }
+}
+
+body {
+  .fc-v-event {
+    border: 0px;
+    border-left: 3px solid #ffc468;
+    background-color: rgba(255, 196, 104, 0.5);
+    border-radius: 0px;
+    padding-left: 28px;
+
+    .fc-event-title {
+      color: #243d6f;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .fc-event-title-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .fc-theme-standard td,
+  .fc-theme-standard th {
+    border: 1px solid #f3f3f3;
+  }
+}
+
+.fm-calendar-left {
+  .fm-vcalender-wrap {
+    padding: 0 20px 0 38px;
+
+    .fc-scrollgrid {
+      border: 0px;
+    }
+
+    .fm-top-title {
+      h5 {
+        color: #55636d;
+        font-size: 30px;
+        font-weight: 600;
+        padding-top: 16px;
+      }
+
+      h3 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 13px;
+        color: #334d6e;
+        padding: 26px 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.fm-calendar-left {
+  padding-right: 0px !important;
+}
+
+.my-profile-box {
+  .fm-calendar-booking.profile-content-box {
+    .fm-calendar-right {
+      padding-left: 0px !important;
+
+      .ant-card-head {
+        .ant-card-head-title {
+          padding-top: 0px;
+          text-align: right;
+          padding-bottom: 5px;
+        }
+      }
+    }
+
+    .ant-card-head {
+      margin-bottom: 0px;
+      padding-right: 15px;
+    }
+
+    .ant-select {
+      .ant-select-selector {
+        box-shadow: none;
+
+        .ant-select-selection-item {
+          color: #ee4928;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .fm-tp-appointments {
+      box-shadow: none;
+
+      .fm-available-time {
+        border: 0px;
+        border-top: 1px solid #e3e9ef;
+        margin: 15px 20px 0;
+        padding: 18px 0 2px;
+      }
+    }
+
+    .fm-show-my {
+      color: #6a707e;
+      font-size: 14px;
+    }
+
+    .profile-content-left {
+      height: ~"calc(100% - 60px)";
+
+      .ant-card-body {
+        border-right: 1px solid #f0f0f0;
+        height: 100%;
+      }
+    }
+  }
+
+  .fm-tp-calendar {
+    .ant-picker-calendar-header {
+      padding-right: 15px;
+    }
+
+    .ant-picker-calendar {
+      .ant-picker-panel {
+        border: 0;
+
+        .ant-picker-body {
+          padding-top: 0px;
+          padding: 8px 7px;
+        }
+      }
+    }
+  }
+}

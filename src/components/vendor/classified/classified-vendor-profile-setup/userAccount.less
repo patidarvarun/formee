@@ -1,0 +1,116 @@
+// Variables
+@orange-color: #ee4928; // sea blue
+@font-size10: 10px;
+@font-size12: 12px;
+@font-size14: 14px;
+@font-size16: 16px;
+@font-size18: 18px;
+@poppinse: "Poppins", sans-serif;
+@lightgrey-color: #90a8be;
+@darkgrey-color: #363b40;
+@mediumgrey-color: #55636d;
+@mediumpurple-color: #5d3f96;
+@fs-normal: normal;
+@fs-bold: bold;
+@fs-500: 500;
+@fs-600: 600;
+
+.profile-purple-user-accont-v2 {
+  .my-profile-box {
+    .profile-content-box.profile-content-box-v1 {
+      box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06) !important;
+
+      .ant-card-head {
+        border-radius: 4px 4px 0 0;
+        overflow: hidden;
+
+        .ant-card-extra {
+          ul {
+            li.active {
+              background: @mediumpurple-color;
+
+              &::after {
+                background: none;
+              }
+            }
+
+            li.form-1-visited {
+              background: #7c5fb4;
+            }
+          }
+        }
+      }
+
+      .step-with-info-box span,
+      .step-with-info-box h3 {
+        color: @mediumpurple-color;
+        font-family: Poppins;
+      }
+
+      .upload-profile--box-v2 {
+        a {
+          text-decoration: none !important;
+          color: #4a90e2 !important;
+        }
+
+        span.ant-typography {
+          color: #363b40 !important;
+        }
+      }
+
+      .ant-form-item-label {
+        label {
+          font-weight: @fs-500;
+          font-size: @font-size12;
+          color: @lightgrey-color;
+        }
+      }
+
+      .steps-action {
+        .btn-disable {
+          background: #e3e9ef;
+          color: #fff;
+          border-color: #e3e9ef;
+          box-shadow: none;
+          text-shadow: none;
+        }
+      }
+    }
+
+    .submit-step-action.steps-action-to-step2 {
+      padding-top: 0px !important ;
+    }
+  }
+
+  /*Change password css at 21-07-2021 by RY*/
+  .change-pass-box {
+    .top-head-section-v2 {
+      h2 {
+        color: @mediumpurple-color;
+      }
+    }
+
+    .chap-footer-action {
+      .ant-btn-default {
+        border-color: @mediumpurple-color;
+
+        span {
+          color: @mediumpurple-color;
+        }
+      }
+
+      .btn-purple.ant-btn-primary,
+      .btn-purple {
+        background-color: @mediumpurple-color;
+        border: 1px solid @mediumpurple-color !important;
+      }
+    }
+
+    .chapass-success-msg {
+      button {
+        background-color: @mediumpurple-color;
+        border: 1px solid @mediumpurple-color !important;
+      }
+    }
+  }
+}

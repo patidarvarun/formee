@@ -1,0 +1,2216 @@
+@poppinse: "Poppins", sans-serif;
+@lightgrey-color: #90a8be;
+@darkgrey-color: #363b40;
+@fs-normal: normal;
+@fs-bold: bold;
+@fs-500: 500;
+@fs-600: 600;
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+body .employee-dashborad-box {
+  .ant-card {
+    border-radius: 8px;
+    box-shadow: 0 6px 13px 2px rgba(0, 0, 0, 0.06);
+    border: none;
+  }
+
+  .top-head-section {
+    .left {
+      h2 {
+        font-size: 30px;
+        color: #ee4928;
+      }
+    }
+
+    .right-content {
+      padding: 0 17% 0 0;
+
+      .action {
+        .ant-btn-lg {
+          font-weight: 600;
+          font-size: 13px;
+          height: 42px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .employsearch-block {
+    box-shadow: 7px 3px 11px rgba(196, 210, 220, 0.15);
+    height: 44px;
+    margin-bottom: 15px;
+    line-height: 41px;
+
+    .employsearch-right-pad {
+      padding: 0px 12.4% 28px 0px;
+    }
+  }
+
+  .ant-input-affix-wrapper,
+  .ant-input-affix-wrapper > input.ant-input {
+    color: #90a0b7;
+    font-size: 14px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent !important;
+    border-radius: 0px;
+    max-height: 31px;
+  }
+
+  .ant-input-affix-wrapper > input.ant-input {
+    min-height: 27px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Edge */
+    color: #90a0b7;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #90a0b7;
+  }
+
+  ::placeholder {
+    color: #90a0b7;
+  }
+
+  .search-block {
+    width: 50%;
+    margin-left: 9px;
+    margin-top: 0;
+
+    .ant-input-prefix {
+      margin-right: 8px;
+      position: relative;
+      top: 4px;
+    }
+  }
+
+  .right-view-text {
+    padding-top: 0px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #90a8be;
+
+      &.sep {
+        width: 45px;
+        height: 11px;
+        text-align: center;
+        line-height: 11px;
+      }
+    }
+  }
+
+  .card-header-select {
+    label {
+      color: #6a707e;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+    .ant-select.ant-select-single .ant-select-selector,
+    .ant-select-selector .ant-select-selection-item,
+    .ant-select-selector .ant-select-selection-search-input,
+    .ant-select-selector .ant-select-selection-item {
+      border-radius: 0;
+      border-color: transparent;
+      height: 25px !important;
+      line-height: 24px !important;
+      color: #ee4928 !important;
+      padding: 0 10px 0 1px;
+      box-shadow: none;
+    }
+
+    .ant-select.ant-select-single .ant-select-selector {
+      min-height: auto;
+    }
+
+    .ant-select-arrow {
+      top: 17px;
+      right: 0 !important;
+      background: none !important;
+      color: #aeaeae;
+      width: 9px !important;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #aeaeae;
+
+      .anticon {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .profile-content-box {
+    margin: 0px 14% 28px 25px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+
+    .ant-card-extra {
+      padding: 0;
+    }
+
+    .ant-card-body {
+      padding: 0;
+    }
+
+    .ant-card-head {
+      padding: 0 22px !important;
+
+      .ant-card-head-title {
+        color: #ee4928;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .month {
+      padding: 17px 0px 11px 25px;
+
+      ul {
+        li {
+          color: #ee4928;
+          font-size: 18px;
+          letter-spacing: inherit;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .dashboard-left-calnder-block {
+      .ant-picker-calendar {
+        margin: 17px 0px 11px 0px;
+
+        .ant-picker-calendar-header {
+          padding: 12px;
+        }
+
+        .ant-select-selector {
+          height: 34px;
+
+          .ant-select-selection-search-input {
+            height: 34px;
+          }
+
+          .ant-select-selection-item {
+            line-height: 31px;
+          }
+        }
+
+        .ant-radio-button-wrapper {
+          height: 36px;
+          line-height: 35px;
+        }
+
+        .ant-picker-calendar-date-content {
+          position: static;
+          width: auto;
+          height: auto;
+          overflow-y: auto;
+          color: rgba(0, 0, 0, 0.65);
+          line-height: 1.5715;
+          text-align: left;
+        }
+
+        .ant-picker-panel .ant-picker-body th {
+          height: auto;
+          padding: 0 0px 5px 0;
+          line-height: 18px;
+          color: #55636d;
+          font-size: 14px;
+          padding-bottom: 5px;
+          text-align: center;
+          font-weight: 600;
+        }
+
+        .ant-picker-body td {
+          padding: 0;
+          text-align: center;
+          padding: 5px 0;
+        }
+
+        .ant-picker-calendar-date {
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          border-radius: 100px;
+          font-size: 12px;
+          line-height: 14px;
+          vertical-align: middle;
+        }
+
+        .ant-picker-calendar-date-value {
+          line-height: 23px !important;
+        }
+
+        .ant-picker-calendar-date {
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #90a8be;
+          margin: 0 auto;
+        }
+
+        .ant-picker-cell-selected .ant-picker-calendar-date,
+        .ant-picker-cell-selected .ant-picker-calendar-date {
+          border-color: #ff5226;
+          padding: 5px;
+          background: #ff5226;
+
+          .ant-picker-calendar-date-value {
+            color: white !important;
+            line-height: 14px !important;
+          }
+        }
+      }
+
+      .ant-table-wrapper {
+        border-top: #dadada 1px solid;
+        width: 100%;
+        background-color: #fff;
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-top: 12px;
+
+        .ant-table-row {
+          /* box-shadow: 0px -1px 10px 1px rgb(168 168 168 / 15%); */
+          /* border-radius: 5px; */
+          background: #ffffff;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 8%) !important;
+          border-radius: 6px;
+        }
+
+        td {
+          vertical-align: middle;
+          padding: 16px 13px 16px 16px;
+
+          .user-icon {
+            /* font-size: 13px; */
+            /* color: #707683; */
+            /* font-weight: bold; */
+            font-family: @poppinse;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            color: #707683;
+
+            svg {
+              font-size: 20px;
+
+              * {
+                fill: #90a8be !important;
+                color: #90a8be !important;
+              }
+            }
+          }
+
+          .ant-avatar-circle {
+            margin-right: 15px;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            line-height: 25px;
+            display: inline-block !important;
+          }
+
+          &:nth-child(2) {
+            font-family: @poppinse;
+            border-left: #dadada 1px solid;
+          }
+
+          .ant-btn {
+            border-width: 1px;
+            color: #ffffff;
+            border-radius: 4px;
+            min-width: 98px;
+            height: 25px !important;
+            font-size: 11px;
+            text-transform: capitalize;
+            line-height: 16px !important;
+            padding: 4px 5px;
+          }
+        }
+      }
+    }
+
+    /*Latest activity calnder css changes for right section calnder view changes
+
+    .ant-picker-calendar {
+      margin: 17px 0px 11px 0px;
+
+      .ant-picker-calendar-header {
+        padding: 12px;
+      }
+
+      .ant-select-selector {
+        height: 34px;
+
+        .ant-select-selection-search-input {
+          height: 34px;
+        }
+
+        .ant-select-selection-item {
+          line-height: 31px;
+        }
+      }
+
+      .ant-radio-button-wrapper {
+        height: 36px;
+        line-height: 35px;
+      }
+
+      .ant-picker-calendar-date-content {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow-y: auto;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 1.5715;
+        text-align: left;
+      }
+
+      .ant-picker-panel .ant-picker-body th {
+        height: auto;
+        padding: 0 0px 5px 0;
+        line-height: 18px;
+        color: #55636D;
+        font-size: 14px;
+        padding-bottom: 5px;
+        text-align: center;
+      }
+
+      .ant-picker-body td {
+        padding: 0;
+        text-align: center;
+        padding: 5px 0;
+      }
+
+
+      .ant-picker-calendar-date {
+        width: 23px;
+        height: 23px;
+        display: inline-block;
+        border-radius: 100px;
+        font-size: 10px;
+        line-height: 14px;
+        vertical-align: middle;
+      }
+
+      .ant-picker-calendar-date-value {
+        line-height: 23px !important;
+      }
+
+      .ant-picker-calendar-date {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #90A8BE;
+        margin: 0 auto;
+      }
+
+      .ant-picker-cell-selected .ant-picker-calendar-date,
+      .ant-picker-cell-selected .ant-picker-calendar-date {
+
+        border-color: #ff5226;
+        padding: 5px;
+        background: #ff5226;
+
+
+        .ant-picker-calendar-date-value {
+          color: white !important;
+          line-height: 14px !important;
+        }
+      }
+    }
+*/
+    .weekdays {
+      padding: 0;
+      margin: 0;
+
+      li {
+        color: #55636d;
+        font-size: 14px;
+        padding-bottom: 5px;
+
+        span {
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    .days {
+      padding: 0;
+      margin: 0 0 24px 0;
+
+      li {
+        span {
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          border-radius: 100px;
+          font-size: 10px;
+          line-height: 23px;
+          vertical-align: middle;
+          text-align: center;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .dashboard-left-calnder-block {
+    .weekdays {
+      li {
+        font-weight: 600;
+      }
+    }
+
+    .days {
+      padding: 0;
+      margin: 0 0 24px 0;
+
+      li {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .ant-divider {
+      background: #f0f0f0 !important;
+    }
+  }
+
+  .ant-table-wrapper {
+    border-top: #ebeff2 1px solid;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 8px;
+
+    .ant-table table {
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+
+    .ant-table-row {
+      -webkit-box-shadow: 0px -1px 10px 1px rgba(168, 168, 168, 0.15);
+      -moz-box-shadow: 0px -1px 10px 1px rgba(168, 168, 168, 0.15);
+      box-shadow: 0px -1px 10px 1px rgba(168, 168, 168, 0.15);
+      border-radius: 5px;
+    }
+
+    th {
+      display: none;
+    }
+
+    td {
+      padding: 18px 16px 18px 16px;
+
+      .user-icon {
+        font-size: 13px;
+        color: #707683;
+        font-weight: bold;
+
+        .ant-avatar-circle {
+          margin-right: 10px;
+        }
+      }
+
+      &:nth-child(2) {
+        font-weight: bold;
+        font-size: 17px;
+        color: #90a8be;
+        border-left: #e3e9ef 1px solid;
+      }
+
+      .ant-typography {
+        color: #90a0b7;
+        font-size: 10px;
+        font-family: @poppinse;
+        position: relative;
+        top: -2px;
+      }
+
+      .ant-btn.ant-btn-primary {
+        color: #fff;
+        border-width: 2px;
+        background-color: #37d380;
+        border-color: #37d380;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ant-btn {
+        border-color: #37d380;
+        border-width: 2px;
+        color: #ffffff;
+        border-radius: 4px;
+        min-width: 101px;
+        height: 22px;
+        font-size: 11px;
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+          background-color: #2db96f;
+          border-color: #2db96f;
+        }
+      }
+
+      &:last-child {
+        text-align: right;
+
+        div {
+          float: right;
+        }
+
+        div.ant-empty.ant-empty-normal,
+        div.ant-empty-image {
+          float: none;
+        }
+      }
+
+      .new-user {
+        font-size: 14px;
+        color: #5d3f96;
+        margin-left: 9px;
+      }
+    }
+
+    .ant-pagination {
+      padding: 0;
+      width: auto;
+
+      li {
+        a {
+          font-family: @poppinse;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #9fa2b4 !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      li.ant-pagination-prev {
+        min-width: 10px;
+        margin-right: 15px;
+
+        a {
+          svg {
+            margin-right: 0;
+          }
+        }
+
+        .ant-pagination-item-link {
+          border: none;
+        }
+      }
+
+      li.ant-pagination-next {
+        min-width: 10px;
+        margin-left: 15px;
+
+        a {
+          svg {
+            margin-left: 0;
+          }
+        }
+
+        .ant-pagination-item-link {
+          border: none;
+        }
+      }
+
+      li.ant-pagination-item-active {
+        a {
+          font-size: 15px;
+          text-align: center;
+          color: #4b506d !important;
+        }
+      }
+    }
+  }
+
+  .employer-right-block {
+    padding: 0 14.4% 0 0;
+
+    .add-figure {
+      display: flex;
+      margin-bottom: 19px;
+
+      .company-name {
+        padding: 5px 0 9px 0;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        width: 80px;
+        margin-bottom: 0px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+        transition: all 0.4s;
+        margin-right: 10px;
+        text-align: center;
+        align-items: center;
+        margin-top: 0px;
+        min-height: 78px;
+
+        span {
+          display: block;
+          width: 100%;
+        }
+
+        div.text {
+          line-height: 16px;
+          margin-top: -3px;
+        }
+
+        div.text,
+        div.value {
+          font-size: 12px;
+          color: #90a8be;
+        }
+
+        div.value {
+          font-size: 24px;
+        }
+      }
+
+      .active {
+        div.text,
+        div.value {
+          color: #55636d;
+        }
+      }
+    }
+
+    .pie-chart {
+      .ant-card-body {
+        padding: 25px 20px;
+      }
+
+      ul.pie-right-content {
+        margin: 0;
+        padding: 0;
+
+        li {
+          position: relative;
+          font-size: 11px;
+          color: #192a3e;
+          margin-bottom: 6px;
+          padding-left: 16px;
+
+          &:before {
+            width: 9px;
+            height: 9px;
+            content: "";
+            border-radius: 100px;
+            box-shadow: none;
+            position: absolute;
+            left: 0;
+            top: 3px;
+          }
+        }
+
+        .yellow {
+          &:before {
+            border: #feb753 1px solid;
+          }
+        }
+
+        .violate {
+          &:before {
+            border: #5c4293 1px solid;
+          }
+        }
+
+        .green {
+          &:before {
+            border: #37d380 1px solid;
+          }
+        }
+
+        .red {
+          &:before {
+            border: #ee4928 1px solid;
+          }
+        }
+      }
+
+      .antd-pro-charts-pie-total {
+        font-family: @poppinse;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 160%;
+        text-align: center;
+        color: #2ed47a;
+        max-height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-height: 62px;
+        text-align: center;
+        transform: translate(-50%, -60%);
+      }
+
+      .antd-pro-charts-pie-chart {
+        display: flex;
+        justify-content: center;
+
+        canvas {
+          height: auto !important;
+          max-width: 500px;
+        }
+      }
+
+      .ant-col {
+        align-self: center;
+      }
+    }
+  }
+}
+
+/*
+Comment by RY at 30-07-2021
+body .employee-dashborad-box-v2m,
+body .booking-beauty-employee-dashborad-box-v2,
+body .booking-handymen-employee-dashborad-box-v2 {
+
+  .profile-content-box {
+    margin: 38px 8rem 28px 65px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+
+
+
+    .ant-card {
+      //box-shadow: 0 6px 13px 2px rgb(0 0 0 / 6%);
+      border: none;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 11px #c4d2dc !important;
+      border-radius: 4px;
+      font-family: @poppinse;
+
+      .ant-card-head {
+        padding: 0 22px 0 29px !important;
+        border-bottom: 1px solid #E3E9EF;
+
+        .ant-card-head-title {
+          color: #EE4928;
+          font-size: 15px;
+          font-weight: 600;
+          padding: 13px 0;
+
+        }
+
+      }
+
+      .card-header-select {
+        top: 13px;
+
+        label {
+          color: #6A707E;
+          font-size: 12px;
+          margin-bottom: 0;
+        }
+
+        .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+        .ant-select.ant-select-single .ant-select-selector,
+        .ant-select-selector .ant-select-selection-item,
+        .ant-select-selector .ant-select-selection-search-input,
+        .ant-select-selector .ant-select-selection-item {
+          font-size: 12px !important;
+        }
+
+      }
+    }
+
+    .dashboard-left-calnder-block {
+      .ant-card-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 18px !important;
+      }
+
+      .common-year-calendar {
+        padding: 0 50px;
+
+        .ant-picker-calendar {
+          margin: 11px 0px 11px 0px;
+
+          .heading-block {
+            width: 35%;
+            margin: 0 auto;
+
+            h2 {
+              font-family: @poppinse;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 17px;
+              letter-spacing: -0.109301px;
+              color: #363B40;
+              text-align: center;
+            }
+
+            svg {
+              cursor: pointer;
+
+              * {
+                fill: #CFD5DA;
+              }
+            }
+          }
+
+          .ant-picker-panel {
+            border-top: none;
+            padding-top: 21px;
+
+            .ant-picker-body {
+              td.ant-picker-cell {
+                padding: 10px 0;
+
+                .ant-picker-calendar-date {
+                  color: rgba(144, 168, 190, 0.3);
+                }
+              }
+
+              th {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                text-align: center;
+                color: #55636D;
+
+              }
+
+              .ant-picker-calendar-date {
+                font-family: Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                text-align: center;
+                width: 25px;
+                height: 25px;
+              }
+
+              .ant-picker-cell-in-view {
+                .ant-picker-calendar-date {
+                  color: #90A8BE !important;
+                }
+
+                .events {
+                  text-align: center;
+
+                  .ant-badge-status-warning {
+                    background-color: #ff5226;
+                  }
+
+                  .ant-badge-status-text {
+                    display: none;
+                  }
+                }
+              }
+
+              .ant-picker-cell-selected {
+                .ant-picker-calendar-date {
+                  .ant-picker-calendar-date-value {
+                    color: white !important;
+                    line-height: 15px !important;
+                    font-size: 13px;
+                  }
+                }
+
+
+              }
+
+              .ant-picker-cell-in-view.ant-picker-cell-today {
+                .ant-picker-cell-inner {
+                  &:before {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .month {
+      padding: 0 0px 11px 29px;
+
+      ul {
+        li {
+          color: #EE4928;
+          font-size: 17px;
+          letter-spacing: inherit;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .weekdays {
+      li {
+        color: #55636D;
+        font-size: 13px;
+        padding-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+
+    .days {
+      margin: 0 0 40px 0;
+
+      li {
+        span {
+          font-family: Arial;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          color: #90A8BE;
+        }
+      }
+    }
+
+    .employer-performance-right-block {
+      .pie-chart {
+        .ant-card-head {
+          padding: 0 22px 0 39px !important;
+          //border-bottom: 1px solid #dadada;
+          border-bottom: 1px solid #E3E9EF;
+        }
+
+        .ant-card-cover {
+          position: absolute;
+          top: 12px;
+          left: 18px;
+        }
+
+        .ant-card-body {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      .color-box {
+        box-shadow: 0px 2px 11px #C4D2DC;
+        border-radius: 4px;
+        min-height: 65px;
+        padding: 15px 16px;
+
+        h1.ant-typography {
+          font-size: 25px;
+        }
+
+        span.ant-typography,
+        small {
+          font-family: @poppinse;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          color: #FFFFFF;
+          margin-right: 2px;
+        }
+      }
+
+      .color-box-gray {
+        background-color: #fff !important;
+
+        span.ant-typography,
+        small,
+        h1.ant-typography {
+          color: rgba(54, 59, 64, 0.3);
+        }
+      }
+    }
+  }
+}
+Comment by RY at 30-07-2021
+*/
+/*Add new css for booking vendor dashboard at 30-07-2021*/
+body .employee-dashborad-box-v2,
+body .booking-beauty-employee-dashborad-box-v2,
+body .booking-handymen-employee-dashborad-box-v2,
+body .booking-common-employee-dashborad-box-v2 {
+  .profile-content-box {
+    margin: 38px 8rem 28px 65px;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+
+    .header-serch-tab-block {
+      display: flex;
+      margin-bottom: 0;
+      border-bottom: 1px solid #e3e9ef;
+      padding-bottom: 11px;
+      line-height: 10px;
+      align-items: center;
+
+      .heading-text,
+      .btn-right-block,
+      .ant-btn.orange-btn {
+        display: block;
+        font-family: @poppinse;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: rgba(189, 189, 189, 0.6);
+        padding: 0;
+        margin: 0;
+        border: none;
+        line-height: inherit;
+        align-items: center;
+        box-shadow: none;
+        cursor: pointer;
+        background: transparent;
+      }
+
+      .heading-text,
+      .btn-right-block {
+        margin-right: 50px;
+      }
+
+      .active-tab {
+        color: #ee4928;
+        font-size: 24px;
+
+        .ant-btn.orange-btn {
+          color: #ee4928;
+          font-size: 24px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            border-bottom: 4px solid #ee4928;
+            height: 4px;
+            width: 100%;
+            top: inherit;
+            border-radius: 100px;
+            bottom: -13px;
+            display: block;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .ant-card {
+      //box-shadow: 0 6px 13px 2px rgb(0 0 0 / 6%);
+      border: none;
+      background: #ffffff;
+      box-shadow: 2px 2px 11px #c4d2dc !important;
+      border-radius: 4px;
+      font-family: @poppinse;
+
+      .ant-card-head {
+        padding: 0 22px 0 29px !important;
+        border-bottom: 1px solid #e3e9ef;
+
+        .ant-card-head-title {
+          color: #ee4928;
+          font-size: 15px;
+          font-weight: 600;
+          padding: 13px 0;
+        }
+      }
+
+      .card-header-select {
+        top: 13px;
+
+        label {
+          color: #6a707e;
+          font-size: 11px;
+          margin-bottom: 0;
+        }
+
+        .ant-select-single:not(.ant-select-customize-input)
+          .ant-select-selector,
+        .ant-select.ant-select-single .ant-select-selector,
+        .ant-select-selector .ant-select-selection-item,
+        .ant-select-selector .ant-select-selection-search-input,
+        .ant-select-selector .ant-select-selection-item {
+          font-size: 12px !important;
+        }
+      }
+    }
+
+    .dashboard-left-calnder-block {
+      .ant-card-body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 18px !important;
+      }
+
+      .common-year-calendar {
+        padding: 0 50px;
+
+        .ant-picker-calendar {
+          margin: 11px 0px 11px 0px;
+
+          .heading-block {
+            width: 35%;
+            margin: 0 auto;
+
+            h2 {
+              font-family: @poppinse;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 17px;
+              letter-spacing: -0.109301px;
+              color: #363b40;
+              text-align: center;
+            }
+
+            svg {
+              cursor: pointer;
+
+              * {
+                fill: #cfd5da;
+              }
+            }
+          }
+
+          .ant-picker-panel {
+            border-top: none;
+            padding-top: 21px;
+
+            .ant-picker-body {
+              td.ant-picker-cell {
+                padding: 10px 0;
+
+                .ant-picker-calendar-date {
+                  color: rgba(144, 168, 190, 0.3);
+                }
+              }
+
+              th {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                text-align: center;
+                color: #55636d;
+              }
+
+              .ant-picker-calendar-date {
+                font-family: Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                text-align: center;
+                width: 25px;
+                height: 25px;
+              }
+
+              .ant-picker-cell-in-view {
+                .ant-picker-calendar-date {
+                  color: #90a8be !important;
+                }
+
+                .events {
+                  text-align: center;
+
+                  .ant-badge-status-warning {
+                    background-color: #ff5226;
+                  }
+
+                  .ant-badge-status-text {
+                    display: none;
+                  }
+                }
+              }
+
+              .ant-picker-cell-selected {
+                .ant-picker-calendar-date {
+                  .ant-picker-calendar-date-value {
+                    color: white !important;
+                    line-height: 15px !important;
+                    font-size: 13px;
+                  }
+                }
+              }
+
+              .ant-picker-cell-in-view.ant-picker-cell-today {
+                .ant-picker-cell-inner {
+                  &:before {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .month {
+      padding: 0 0px 11px 29px;
+
+      ul {
+        li {
+          color: #ee4928;
+          font-size: 17px;
+          letter-spacing: inherit;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .weekdays {
+      li {
+        color: #55636d;
+        font-size: 13px;
+        padding-bottom: 5px;
+        font-weight: 600;
+      }
+    }
+
+    .days {
+      margin: 0 0 40px 0;
+
+      li {
+        span {
+          font-family: Arial;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          color: #90a8be;
+        }
+      }
+    }
+
+    .employer-performance-right-block {
+      .pie-chart {
+        .ant-card-head {
+          padding: 0 22px 0 39px !important;
+          //border-bottom: 1px solid #dadada;
+          border-bottom: 1px solid #e3e9ef;
+        }
+
+        .ant-card-cover {
+          position: absolute;
+          top: 12px;
+          left: 18px;
+        }
+
+        .ant-card-body {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      .color-box {
+        box-shadow: 0px 2px 11px #c4d2dc;
+        border-radius: 4px;
+        min-height: 65px;
+        padding: 15px 16px;
+
+        h1.ant-typography {
+          font-size: 25px;
+        }
+
+        span.ant-typography,
+        small {
+          font-family: @poppinse;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          color: #ffffff;
+          margin-right: 2px;
+        }
+      }
+
+      .color-box-gray {
+        background-color: #fff !important;
+
+        span.ant-typography,
+        small,
+        h1.ant-typography {
+          color: rgba(54, 59, 64, 0.3);
+        }
+      }
+    }
+  }
+}
+
+/*Add new css for booking vendor dashboard at 30-07-2021*/
+
+/*Employer Ad Box Css Start*/
+body .employee-myad-box {
+  .card-header-select {
+    position: absolute;
+    right: 32px;
+    z-index: 2;
+    top: 16px;
+  }
+
+  .ant-tabs-bar {
+    margin-bottom: 0;
+  }
+
+  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector,
+  .ant-select.ant-select-single .ant-select-selector,
+  .ant-select-selector .ant-select-selection-item,
+  .ant-select-selector .ant-select-selection-search-input,
+  .ant-select-selector .ant-select-selection-item {
+    color: #5d3f96 !important;
+    padding: 0 10px 0 4px;
+  }
+
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    margin: 0;
+    margin-right: 2px;
+    padding: 18px;
+    line-height: 22px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #90a8be;
+
+    &:hover {
+      color: #5d3f96;
+    }
+  }
+
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+    color: #ee4928;
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #5d3f96;
+  }
+
+  .genral-ven-tab-myad {
+    .ant-tabs-tab-active {
+      border-bottom: 2px solid #ee4928 !important;
+    }
+  }
+
+  .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-wrap {
+    margin-bottom: 0;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .ant-table-wrapper {
+    border-top: #ebeff2 1px solid;
+    width: 100%;
+    background-color: #fff;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+
+    .ant-table table {
+      border-collapse: inherit;
+      border-spacing: 0px;
+    }
+
+    .ant-table-row {
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    th {
+      display: revert;
+      display: revert;
+      color: #55636d;
+      font-size: 12px;
+      padding: 10px 32px;
+      border-bottom: none;
+      background: #f7f8fa !important;
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+
+    td {
+      border-bottom: #f1f4f7 1px solid;
+      padding: 23px 28px 16px 32px;
+      font-size: 14px;
+      color: #90a8be;
+      font-weight: normal;
+      vertical-align: top;
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+
+      h4.ant-typography {
+        margin-bottom: 0.3em;
+
+        a {
+          color: #55636d;
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 0;
+          display: block;
+        }
+      }
+
+      .location-name {
+        color: #55636d !important;
+        font-size: 14px;
+      }
+
+      .blue-link {
+        display: inline-block;
+        font-size: 10px;
+        text-decoration: none;
+      }
+
+      &:nth-child(2) {
+        border-left: none;
+        font-weight: normal;
+        font-size: 14px;
+        color: #90a8be;
+      }
+
+      .sep {
+        width: 20px;
+        height: 8px;
+        text-align: center;
+        line-height: 8px;
+        color: #afdcf8;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        top: 1px;
+      }
+
+      .right-action {
+        width: 100%;
+
+        .ant-btn-primary {
+          &:after {
+            border-left: 4px solid transparent !important;
+            border-right: 4px solid transparent !important;
+            border-top: 4px solid #fff !important;
+            content: "";
+            right: 10px;
+            position: absolute;
+          }
+        }
+
+        .ant-btn {
+          border-color: #37d380;
+          min-width: 100px;
+          height: 25px;
+          font-family: "Poppins", sans-serif;
+          text-align: left;
+          justify-content: left !important;
+
+          &:hover,
+          &:focus {
+            background-color: #2db96f;
+            border-color: #2db96f !important;
+          }
+        }
+
+        .ant-btn-dangerous {
+          background-color: #f6675e;
+          border-color: #f6675e;
+          color: #fff;
+
+          &:hover,
+          &:focus {
+            background-color: #e35c54;
+            border-color: #e35c54 !important;
+            color: #fff;
+          }
+        }
+
+        .ant-btn-pending {
+          background-color: #ffc468;
+          border-color: #ffc468;
+
+          &:hover,
+          &:focus {
+            background-color: #e5ac54;
+            border-color: #e5ac54 !important;
+          }
+        }
+
+        .anticon-down {
+          position: relative;
+          top: 1px;
+        }
+      }
+
+      &:last-child {
+        div {
+          float: none;
+        }
+      }
+
+      .edit-delete-dot {
+        .anticon {
+          font-size: 25px;
+          font-weight: bold;
+          color: #c5c7cd;
+        }
+      }
+
+      .edit-delete-icons {
+        padding-right: 33px;
+        margin-top: 35px;
+
+        a,
+        span {
+          cursor: pointer;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 0;
+    text-align: center;
+  }
+
+  .ant-table-container table > thead > tr:first-child {
+    border-top-right-radius: 0;
+    text-align: center;
+
+    th:last-child {
+      width: auto;
+    }
+  }
+
+  .ant-table-pagination.ant-pagination {
+    margin: 21px 28px 21px 0;
+  }
+}
+
+/*Job Application Page Css Start*/
+body .employee-myad-box {
+  .job-application {
+    .application-detail {
+      padding: 41px 29px 71px 29px;
+
+      h2.ant-typography {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 34px;
+        color: #363b40;
+        margin: 0 0 5px 0;
+        padding: 0;
+      }
+
+      .location-name {
+        margin-bottom: 2px;
+      }
+
+      .location-name,
+      .days {
+        color: #55636d;
+      }
+
+      .location-name,
+      .description,
+      .days,
+      .rating-text,
+      .ant-card-actions li,
+      .status {
+        font-size: 14px;
+      }
+
+      .description,
+      .price-box,
+      .rating-text {
+        color: #90a8be;
+      }
+
+      .price-box {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 7px;
+      }
+
+      .days {
+        margin: 8px 0 1px 0;
+      }
+
+      .rating-text {
+        margin-right: 11px;
+        position: relative;
+        top: 0;
+      }
+
+      .ant-rate-star:not(:last-child) {
+        margin-right: 3px;
+      }
+
+      .anticon svg {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+      }
+
+      .status,
+      .ant-card-actions {
+        margin: 32px 0 0;
+      }
+
+      .ant-card-actions {
+        padding: 0;
+        list-style: none;
+        background: transparent;
+        border-top: 1px solid transparent;
+
+        li {
+          margin: 0;
+          border-right: 2px solid #f0f0f0;
+
+          &:last-child {
+            border-right: none;
+          }
+
+          button {
+            background-color: #fff;
+            font-size: 13px;
+            border-radius: 0;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border: #ececec 2px solid;
+            padding-left: 19px;
+            padding-right: 19px;
+            color: #90a8be;
+
+            span {
+              color: #55636d;
+            }
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &:last-child {
+              border-right: none;
+            }
+
+            &:hover,
+            &:focus {
+              background-color: transparent;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .status {
+        color: #55636d;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        label {
+          margin-right: 15px;
+          margin-bottom: 0;
+          min-height: unset;
+        }
+
+        .btn-active-inactive {
+          min-width: 100px;
+        }
+      }
+    }
+
+    .grid-block {
+      h2 {
+        color: #ee4928;
+        font-size: 18px;
+        padding-bottom: 11px;
+        padding-left: 30px;
+        font-weight: bold;
+
+        span {
+          font-weight: normal;
+          font-size: 12px !important;
+          color: #90a8be;
+        }
+      }
+
+      .card-header-select {
+        position: relative;
+        right: 32px;
+        z-index: 2;
+        top: 0;
+        float: right;
+
+        label {
+          font-size: 12px !important;
+        }
+
+        .anticon svg {
+          display: none;
+          position: relative;
+          top: 0px;
+        }
+      }
+    }
+
+    .ant-table-wrapper {
+      th {
+        display: revert;
+        color: #55636d;
+        font-size: 12px;
+        padding: 10px 23px;
+
+        &:last-child {
+          text-align: left !important;
+        }
+      }
+
+      td {
+        border-bottom: #f1f4f7 1px solid;
+        padding: 26px 20px 26px 22px;
+        font-size: 14px;
+        color: #90a8be;
+        font-weight: normal;
+        vertical-align: middle;
+
+        &:nth-child(2),
+        &:nth-child(1) {
+          font-size: 14px;
+          color: #55636d;
+        }
+
+        &:last-child {
+          font-size: 14px;
+          color: #55636d;
+          text-align: left;
+        }
+
+        .mb-35 {
+          margin-bottom: 0 !important;
+        }
+
+        .ant-btn {
+          font-family: "Poppins", sans-serif;
+
+          .anticon svg {
+            display: inline-block;
+            position: relative;
+            top: 2px;
+          }
+        }
+
+        .ant-btn-dangerous {
+          background-color: #f6675e;
+          border-color: #f6675e;
+        }
+
+        .ant-btn-dangerous {
+          background-color: #ffc468;
+          border-color: #ffc468;
+        }
+      }
+    }
+
+    .ant-table-pagination.ant-pagination {
+      margin: 16px 32px 25px 0;
+    }
+  }
+}
+
+.inspection-table {
+  .ant-table-cell {
+    display: table-cell !important;
+  }
+
+  td {
+    .right-action {
+      a {
+        color: #5d3f96;
+        text-decoration: underline;
+      }
+    }
+
+    &:last-child {
+      width: 10%;
+
+      .delete-action {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.status {
+  label {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.inspectiondetail-table {
+  .ant-table-cell {
+    display: table-cell !important;
+  }
+}
+
+.realstate-location,
+.generalvendor-location {
+  .ant-typography.location {
+    color: #55636d !important;
+    font-size: 11px !important;
+    line-height: 15px;
+    display: block;
+    font-weight: 600;
+  }
+
+  span.location-detail {
+    line-height: 15px;
+    font-weight: 500 !important;
+  }
+
+  span.location-detail,
+  div.price {
+    font-family: @poppinse;
+    font-style: normal;
+    font-size: 12px !important;
+    color: #55636d !important;
+  }
+
+  div.price {
+    font-weight: bold;
+    margin-top: 3px;
+  }
+
+  span.ant-typography {
+    font-weight: 300;
+  }
+
+  .location-sub-title {
+    color: rgba(144, 168, 190, 1) !important;
+    font-style: italic;
+    margin-top: 1px !important;
+  }
+}
+
+.dasbaord-only {
+  .ant-table-wrapper td .ant-btn.ant-btn-primary {
+    color: #37d380 !important;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent !important;
+
+    .dot-color {
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: #37d380;
+      border-radius: 50%;
+      margin-right: 5px;
+      margin-bottom: 1px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.profile-beauty-service .anticon-minus-circle.minus-iconbeauty {
+  top: unset;
+  z-index: 3;
+  right: -12px;
+  bottom: 21px;
+}
+
+/*Dashboard grid button class, Priyanka pleae check*/
+.dasbaord-only .ant-table-wrapper td {
+  .ant-btn.applicationbtn,
+  .violet-btn {
+    background-color: transparent !important;
+    color: #8e60c0 !important;
+    border-color: #8e60c0 !important;
+
+    .dot-color {
+      background-color: #8e60c0;
+    }
+  }
+
+  .pending-yellow-btn {
+    background-color: transparent !important;
+    color: #ffc468 !important;
+    border-color: #ffc468 !important;
+
+    span {
+      color: #ffc468 !important;
+    }
+
+    .dot-color {
+      background-color: #ffc468 !important;
+    }
+  }
+
+  .danger-red-btn {
+    background-color: transparent !important;
+    color: #f7685b !important;
+    border-color: #f7685b !important;
+
+    span {
+      color: #f7685b !important;
+    }
+
+    .dot-color {
+      background-color: #f7685b !important;
+    }
+  }
+}
+
+/*Dashboard grid button class, Priyanka pleae check*/
+
+.realstate-location,
+.generalvendor-location {
+  .ant-typography {
+    color: #9db2c5;
+    font-size: 10px;
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+.generalvendor-table {
+  min-width: 131px;
+  font-size: 13px;
+  color: #707683;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.dot-color {
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+
+.my-profile-box.employee-dashborad-box.dasbaord-only {
+  .profile-content-box {
+    .ant-card-body {
+      padding: 24px 20px;
+    }
+  }
+}
+
+// New CSS for the Post and Add page
+.keepbox-wrap {
+  max-width: 85%;
+  margin: 0 auto;
+
+  .cardheader-keeps {
+    label {
+      font-weight: 600;
+      font-size: 18px;
+      color: #363b40;
+    }
+
+    p {
+      color: #55636d;
+      font-size: 14px;
+    }
+
+    .ant-select-selector {
+      border: 0;
+
+      .ant-select-selection-search {
+        input {
+          font-weight: bold;
+          font-size: 15px;
+          color: #363b40;
+        }
+      }
+    }
+  }
+
+  .btmkeep-text {
+    p {
+      padding-left: 25px;
+    }
+  }
+}
+
+.box-website-site {
+  .cardheader-keeps {
+    margin-bottom: 15px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+}
+
+.box-pro-feature {
+  margin-bottom: 10px;
+}
+
+.box-shadow-common {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.pick-text-wrap {
+  color: #363b40;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.cardheader-keeps {
+  .ant-select-focused {
+    .ant-select-selector {
+      border: 0px;
+      box-shadow: none !important;
+    }
+  }
+
+  .ant-select.ant-select-single {
+    margin-top: -22px;
+  }
+}
+
+.bf-container.input-editor {
+  border: 1px solid #90a8be;
+
+  .bf-controlbar {
+    background-color: #e3e9ef;
+
+    i {
+      color: #55636d;
+    }
+  }
+}
+
+.clr-link {
+  color: #2f80ed;
+  font-size: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  * {
+    fill: #2f80ed;
+    position: relative;
+    top: 3px;
+    left: 2px;
+  }
+}
+
+.post-ad-box {
+  .price-negotiable-box {
+    padding-left: 30px;
+
+    .ant-form-item-label {
+      padding-bottom: 0;
+      margin-top: 38px;
+
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+body .ad-managment-common-block-v2 section.ant-layout .employee-dashborad-box .genral-ven-tab-myad-v2 .ant-table-wrapper .ant-table table td .ad-magment-title .thumb-block-left .sold-label { padding: 0 !important;}
+body .ad-managment-common-block-v2 section.ant-layout .employee-dashborad-box .genral-ven-tab-myad-v2 .ant-table-wrapper .ant-table table td .ad-magment-title .thumb-block-left .sold-label span {
+  padding:2px 7px;
+}
+
+
+body .right-action-dropedown .ant-dropdown-menu {
+  background: #5d3f96 !important;
+  border-radius: 10px;
+  padding: 0;
+  position: relative;
+
+  margin-top: 10px;
+}
+
+body .right-action-dropedown .ant-dropdown-menu::before {
+  border-bottom: 6px solid #5d3f96;
+}
+
+body .right-action-dropedown .ant-dropdown-menu li {
+  padding: 5px 23px 5px 10px;
+  font-family: @poppinse;
+  font-weight: normal;
+}
+
+.right-action-dropedown .ant-dropdown-menu li span.action-icon {
+  width: 37px;
+  text-align: center;
+  display: inline-block;
+}
+
+.my-profile-box.employee-dashborad-box.employee-myad-box.ads .card-container.signup-tab {
+  padding: 25px 0 !important;
+}
+
+html body .ad-managment-common-block-v2 section.ant-layout .employee-dashborad-box .genral-ven-tab-myad-v2 .ant-table-wrapper .ant-table table td .ad-magment-title .thumb-block-right-detail h4.title, 
+html body .ad-managment-common-block-v2 section.ant-layout .employee-dashborad-box .genral-ven-tab-myad-v2 .ant-table-wrapper .ant-table table td .ad-magment-title .thumb-block-right-detail .location-name { font-size: 14px !important;}
+
+body .delete-model-style1 .ant-modal-body .delete-modal-body h1 {
+  font-size: 20px;
+}

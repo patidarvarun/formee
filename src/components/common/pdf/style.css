@@ -1,0 +1,182 @@
+
+
+.textleft p {
+  margin-left: 170px !important;
+  margin-top: -23px;
+}
+.text-main {
+  text-align: left;
+  margin-left: 0px;
+}
+.textbelow p {
+  text-align: left;
+  margin-left: 20px;
+}
+.subHeading {
+  text-align: left;
+  margin-left: 20px;
+}
+.heading h5 {
+  text-align: left;
+  margin-left: 20px;
+}
+span.anticon.anticon-minus-circle svg {
+  width: 100% !important;
+  height: 84% !important;
+  margin-left: -594px !important;
+  margin-top: 9.5px !important;
+}
+
+body .payment-receipt-modal .ant-modal-content {
+  border-radius: 0;
+  
+}
+
+body .transform-component-module_wrapper__1_Fgj, body .transform-component-module_content__2jYgh {
+  width: 100%; display: inline-block;
+}
+
+.invoice-pdf  {
+  padding:46px;
+}
+.invoice-pdf .text-main {
+   border-bottom: 1px solid #C4C4C4;
+   padding-bottom: 0px;
+   margin-bottom: 26px;
+   display:inline-block;
+   width:100%;
+}
+.invoice-pdf h3 {
+   font-size: 12px;
+   font-family:"Poppins", sans-serif;
+   color: #55636D;
+   
+}
+
+.invoice-pdf h1 {
+  font-size: 28px;
+   font-family:"Poppins", sans-serif;
+   color: #55636D;
+   font-weight: 600;
+}
+.invoice-pdf .textleft .heading span {
+  width: 100%;
+  float: left;
+  line-height: 10px;
+}
+.invoice-pdf .textleft .heading span h5 {
+  width: 160px;
+  float: left;
+  font-family:"Poppins", sans-serif;
+  color: #55636D;
+  font-weight: 600;
+  font-size: 11px;
+  margin-left: 0px;
+} 
+
+.invoice-pdf .textleft .heading span h4 {
+  width: 160px;
+  float: left;
+  font-family:"Poppins", sans-serif;
+  color: #55636D;
+  font-weight: 400;
+  font-size: 11px;
+  margin-left: 0px;
+  text-align: left;
+} 
+.invoice-pdf .textleft .heading span p {
+  margin:0px !important;
+  float: left;
+  width: calc(100% - 180px);
+  text-align: left;
+  font-family:"Poppins", sans-serif;
+  color: #55636D;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+.invoice-pdf .subHeading {
+  text-align: left;
+  margin-left: 0;
+  width: 100%;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 17px;
+}
+
+.zoom-box {
+  background: #0A0A0A;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 37px;
+    line-height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align:center;
+}
+.zoom-box img {
+  flex: 1;
+}
+.netcharge {
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  background: #EE4928;
+  padding: 10px 21px;
+  border-radius: 10px;
+}
+
+.netcharge h3 { color: #fff; font-size: 13px; font-weight: 600;font-family:"Poppins", sans-serif; width: 160px; float: left; margin:2px 0 0 0  !important ;}
+.netcharge p { color: #fff; font-size: 13px; font-weight: 600;font-family:"Poppins", sans-serif;  float: left; margin:0px;
+  width: calc(100% - 180px);
+
+}
+
+
+.download::before {
+   width: 20px;
+   height: 20px;
+   background: url(save_item.png) no-repeat 0 0;
+   content: "";
+   display: inline-block; 
+   vertical-align: middle;
+   background-size: 100%;
+   margin-right: 5px;
+}
+.download {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #363B40;
+  cursor: pointer;
+}
+
+span.anticon.anticon-printer {
+  font-size: 21px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ant-modal.select-delivery-option.payment-status-model.payment-receipt-modal {
+  border-radius: 10px !important;
+  overflow: hidden;
+  
+}
+
+html body .payment-receipt-modal .ant-modal-content {
+  border-radius: 10px;
+}
+
+.ant-modal.select-delivery-option.payment-status-model.payment-receipt-modal .ant-modal-close .ant-modal-close-x {
+  display: inline-block  !important;
+  margin: 0px;
+}
+
+.ant-modal.select-delivery-option.payment-status-model.payment-receipt-modal .ant-modal-close .ant-modal-close-x svg{
+  width: 15px;
+}

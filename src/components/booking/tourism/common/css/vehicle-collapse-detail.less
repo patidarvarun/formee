@@ -1,0 +1,116 @@
+.travel-item-collapse-box {
+  border: 0;
+  margin: 15px 0 10px;
+  .ant-collapse-item {
+    box-shadow: 1px 1px 12px #90a8be54;
+    border-radius: 8px;
+    border-bottom: 0;
+
+    .ant-collapse-header {
+      font-family: Poppins;
+      font-size: 25px;
+      font-weight: 600;
+      color: #363b40;
+      background-color: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      .anticon.ant-collapse-arrow {
+        left: auto;
+        right: 33px;
+
+        svg {
+          transform: rotate(271deg);
+          color: #90a8be;
+          font-size: 20px;
+        }
+      }
+    }
+    :last-child > .ant-collapse-content {
+      border-radius: 0 0 8px 8px;
+    }
+    &.ant-collapse-item-active {
+      .ant-collapse-header {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        .anticon.ant-collapse-arrow {
+          left: auto;
+          right: 33px;
+
+          svg {
+            transform: rotate(180deg);
+            color: #90a8be;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .ant-collapse-content {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+
+      .ant-collapse-content-box {
+        padding: 0;
+        .vehicle-item-all-detail-box {
+          font-family: Poppins;
+          font-weight: 400;
+          padding: 35px 45px;
+          .vhcl-detail-header {
+            margin-bottom: 10px;
+            h3 {
+              font-size: 18px;
+              font-weight: 600;
+              span {
+                font-weight: 400;
+              }
+            }
+            .vhcl-time {
+              padding-right: 10px;
+              font-size: 18px;
+            }
+            .vhcl-stopage {
+              font-family: Arial;
+              font-size: 14px;
+              &.green {
+                color: #36b649;
+                display: none;
+              }
+              &.blue {
+                color: #109cf1;
+              }
+            }
+            .change {
+              font-family: Arial;
+              font-size: 13px;
+              font-weight: 400;
+              color: #363b40;
+              text-align: right;
+              display: block;
+              text-decoration: underline;
+            }
+          }
+        }
+        .collapse-footer {
+          background: rgba(54, 59, 64, 0.06);
+          border-radius: 0px;
+          padding-top: 13px;
+          padding-left: 40px;
+          padding-right: 40px;
+          padding-bottom: 13px;
+          display: flex;
+          align-items: center;
+          p {
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

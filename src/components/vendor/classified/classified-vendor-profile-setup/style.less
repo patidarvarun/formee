@@ -1,0 +1,1533 @@
+
+@import url(../../../../style/utils/variables.less);
+@poppinse: "Poppins", sans-serif;
+.stripe-box {
+  max-width: 410px;
+
+  &-heading {
+    font-size: 16px !important;
+    padding: 0 0 9px 0;
+    color: #55636d !important;
+  }
+
+  .DemoPickerWrapper {
+    padding: 0 12px;
+    font-family: "Source Code Pro", monospace;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    background: white;
+    margin: 24px 0 48px;
+    width: 100%;
+  }
+
+  .DemoPicker {
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: white;
+    height: 48px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    border: 0;
+    width: 100%;
+    color: #6772e5;
+    outline: none;
+    background: transparent;
+
+    -webkit-appearance: none;
+  }
+
+  .DemoWrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .Demo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40%;
+  }
+
+  label {
+    color: #90a8be;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    padding-bottom: 4px;
+  }
+
+  .buttonPayment {
+    white-space: nowrap;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    line-height: 37px;
+    padding: 0 14px;
+    min-width: 110px;
+    min-height: 37px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #fff;
+    background-color: #5d3f96;
+    border-color: #5d3f96;
+    text-decoration: none;
+    transition: all 150ms ease;
+  }
+
+  .buttonPayment:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #7550ba;
+    border-color: #7550ba;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  .ant-input-affix-wrapper {
+    box-shadow: none !important;
+    border: 1px solid #90a8be !important;
+    outline: 0;
+
+    input {
+      font-size: 16px;
+    }
+  }
+
+  .StripeElement {
+    display: block;
+    margin: 0;
+    //max-width: 500px;
+    padding: 17px 14px;
+    font-size: 1em;
+    font-family: "Source Code Pro", monospace;
+    box-shadow: none;
+    border: 1px solid #90a8be;
+    outline: 0;
+    border-radius: 4px;
+    background: white;
+  }
+
+  input::placeholder {
+    color: #aab7c4;
+  }
+
+  input:focus,
+  .StripeElement--focus {
+    box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px,
+      rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+  }
+
+  .StripeElement.IdealBankElement,
+  .StripeElement.FpxBankElement,
+  .StripeElement.PaymentRequestButton {
+    padding: 0;
+  }
+
+  .StripeElement.PaymentRequestButton {
+    height: 40px;
+  }
+
+  .cvc-input-box {
+    float: right;
+    width: 99px;
+    position: relative;
+
+    .cvc-tooltip {
+      position: absolute;
+      right: 10px;
+      top: 20px;
+    }
+  }
+
+  .ant-btn {
+    min-width: 150px !important;
+  }
+}
+
+.stripe-box {
+  padding: 30px 45px;
+}
+
+// Start: Booking Spa v2 CSS - 28-04-2021
+.my-profile-box-v2 {
+  &.emp-profile-box-v2 {
+    .ant-card-head {
+      border-bottom: 0;
+      .ant-card-head-wrapper {
+        align-items: start;
+        .ant-card-extra {
+          ul {
+            background: #ee4928 !important;
+          }
+        }
+      }
+    }
+    .profile-content-box-v1 {
+      margin: 25px 16.5rem 80px 25px !important;
+      &.classfied-user-profile {
+        > .ant-card-body {
+          padding-bottom: 20px;
+          margin-bottom: 180px;
+          position: relative;
+          .checkout-payment-block {
+            background: #fff;
+            .paypal-label {
+              font-style: normal;
+            }
+          }
+          .steps-action {
+            margin-top: 80px;
+            margin-bottom: 40px;
+            .ant-btn {
+              height: 42px;
+              width: 140px;
+            }
+          }
+          .submit-step-action {
+            &.steps-action-to-step2 {
+              padding-top: 25px;
+              padding-right: 0;
+              padding-bottom: 60px;
+              padding-left: 0;
+            }
+          }
+          .checkout-payment-block {
+            .profile-payment-setup {
+              .card-number-box {
+                .check-uncheck-box {
+                  top: 52px;
+                }
+              }
+              .name-on-card-box {
+                .check-uncheck-box {
+                  // left: 125px;
+                  top: 54px !important;
+                }
+              }
+              .expiry-date-box {
+                .check-uncheck-box {
+                  // left: 100px;
+                  top: 52px !important;
+                }
+              }
+              .cvc-input-box {
+                .check-uncheck-box {
+                  // left: 65px;
+                  top: 55px;
+                }
+              }
+              .check-uncheck-box {
+                // position: absolute;
+                // top: 50px;
+
+                .red-cross {
+                  //  display: none;
+                  width: 18px;
+                }
+              }
+              .cvc-input-box {
+                float: none;
+                width: auto;
+                .cvc-tooltip {
+                  position: absolute;
+                  right: 15px;
+                  top: 53px;
+                }
+              }
+              
+            }
+          }
+        }
+        .emp-avatar-box {
+          // margin-bottom: 62px;
+          display: flex;
+          border-top: 1px solid #dadada;
+          padding-top: 45px;
+          margin-top: 30px;
+
+          &.without-logo {
+            .ant-upload-picture-card-wrapper {
+              border: 2px solid #90a8be;
+            }
+          }
+          .ant-upload-picture-card-wrapper {
+            width: 105px;
+            height: 105px;
+            background: #ffffff;
+            box-shadow: 1px 1px 12px #90a8be54;
+            border-radius: 4px;
+            margin-right: 43px;
+            border: 2px solid transparent;
+
+            .ant-upload {
+              padding: 0;
+              border: 0;
+              border-radius: 0;
+              width: 100px;
+              height: 100px;
+              margin: 0;
+
+              .ant-avatar-circle.ant-avatar-image {
+                border-radius: 4px;
+                width: 105px !important;
+                height: 105px !important;
+              }
+            }
+          }
+          .ant-upload-text.upload-footer {
+            .btn-ant-upload-text {
+              margin-bottom: 25px;
+              h4 {
+                font-size: 17px !important;
+                font-weight: 700;
+                margin-bottom: 0;
+              }
+              .subTitle {
+                font-family: Arial;
+                font-size: 10px;
+                font-weight: 400;
+                color: #55636d;
+              }
+            }
+            .btn-action {
+              width: 98px;
+              height: 30px;
+              border-radius: 4px;
+              &.btn-replace {
+                button {
+                  background: #90a8be;
+                  border-color: #90a8be;
+                  label {
+                    color: #fff;
+                  }
+                }
+              }
+              &.btn-delete {
+                background: #ffffff;
+                border: 1px solid #c4c4c4;
+                margin-left: 12px;
+                span {
+                  color: #c4c4c4;
+                }
+              }
+            }
+          }
+        }
+      }
+      .ant-card-body {
+        padding: 10px 42px 70px 42px;
+        .body-logo-pass-header {
+          border-bottom: 1px solid #ebeff2;
+          margin-bottom: 35px;
+          .upload-profile--box-v2 {
+            padding: 36px 0 35px 0;
+            border-bottom: 0;
+            margin-bottom: 0;
+            .upload-profile-content h4 {
+              margin-bottom: -2px;
+            }
+          }
+          .change-password {
+            display: inline-block;
+            font-size: 12px;
+            padding-top: 40px;
+            padding-right: 50px;
+          }
+        }
+        .contact-hidden-label {
+          label {
+            opacity: 1;
+          }
+        }
+        .ant-form-item-has-error .ant-form-item-explain {
+          font-size: 11px;
+          text-align: right;
+          padding-top: 7px;
+          right: 0;
+        }
+      }
+    }
+  }
+  &.checkout-payment-block {
+    box-shadow: none !important;
+    .profile-content-box {
+      box-shadow: none !important;
+      margin-left: 0;
+      margin-right: 65px;
+      .ant-card-body {
+        padding: 10px 0px 24px 0px;
+        .ant-radio-group {
+          width: 100%;
+          .paypal-block {
+            border: #DDE3E8 1px solid;
+            padding: 36px 35px 36px !important;
+            border-radius: 2px;
+            width: 100%;
+            margin: 0 0 15px;
+            box-shadow: none !important;
+            &.paypal-block-inner-wrapper {
+              padding: 25px 35px 25px;
+              background: #f2f5ff;
+              border-color: #2f80ed;
+            }
+            .ant-row {
+              justify-content: space-between;
+              .ant-radio-wrapper {
+                display: flex;
+                align-items: baseline;
+              }
+              .paypal-label {
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                margin-left: 0;
+                top: 0;
+                margin-bottom: 0;
+              }
+              p.discription {
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                color: #363b40;
+                padding: 0;
+              }
+            }
+            .stripe-box {
+              max-width: 100%;
+              background: #f2f5ff;
+              padding: 50px 135px 0 0;
+              .ant-row {
+                margin-bottom: 15px !important;
+                label {
+                  font-family: Arial;
+                  font-size: 12px;
+                  font-weight: 400;
+                  color: #55636d;
+                }
+                .cart-payment-card-outline {
+                  position: absolute;
+                  top: 55px;
+                  right: 65px;
+                  margin-top: 5px;
+                }
+              }
+              .card-number-box {
+                .check-uncheck-box {
+                  left: 195px;
+                }
+              }
+              .name-on-card-box {
+                .check-uncheck-box {
+                  left: 125px;
+                  top: 62px;
+                }
+              }
+              .expiry-date-box {
+                .check-uncheck-box {
+                  left: 100px;
+                  top: 62px;
+                }
+              }
+              .cvc-input-box {
+                .check-uncheck-box {
+                  left: 65px;
+                }
+              }
+              .check-uncheck-box {
+                position: absolute;
+                top: 60px;
+
+                .red-cross {
+                  //display: none;
+                  width: 18px;
+                }
+              }
+              .cvc-input-box {
+                float: none;
+                width: auto;
+                .cvc-tooltip {
+                  position: absolute;
+                  right: 15px;
+                  top: 53px;
+                }
+              }
+            }
+            .visa-card-icon {
+              button {
+                width: auto;
+                border-color: transparent;
+                margin-top: 3px;
+                height: 30px;
+                &.btn-paypal-payment {
+                  background: #223985;
+                  span {
+                    font-family: Poppins;
+                    font-size: 10px;
+                    font-weight: 600;
+                  }
+                }
+                &.btn-paypal-verified {
+                  display: none;
+                  background: transparent;
+                  border-color: #4a90e2;
+                  color: #4a90e2;
+                  svg {
+                    vertical-align: baseline;
+                    path {
+                      fill: #4a90e2;
+                    }
+                  }
+                }
+                &.btn-gpay {
+                  border-color: #000000;
+                  background: transparent;
+                  span {
+                    color: #000000;
+                  }
+                }
+              }
+              img.g-pay {
+                width: 60px;
+                display: block;
+                margin-left: auto;
+              }
+              img.paypal-icon {
+                display: block;
+                margin-left: auto;
+              }
+            }
+            .pay-opt-remember {
+              margin: 50px 0 0px;
+              span {
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+              }
+            }
+            button {
+              line-height: normal;
+            }
+            &.payment-setup {
+              span {
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                &.ant-checkbox {
+                  margin-top: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .submit-step-action {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 40px;
+    background-color: #fff;
+    .ant-btn-default {
+      border-color: #5d3f96;
+      border-radius: 8px;
+      min-width: 140px;
+      span {
+        color: #5d3f96;
+      }
+      &.btn-blue {
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.emp-my-profile-info-box {
+    padding: 40px 165px 60px 65px;
+    .card-container.signup-tab {
+      .header {
+        padding-bottom: 30px;
+        h1 {
+          font-family: Poppins;
+          font-size: 30px;
+          font-weight: 700;
+          color: #5d3f96;
+        }
+        .text-right {
+          a {
+            font-size: 12px;
+            font-weight: 400;
+            color: #2f80ed;
+            margin-top: 15px;
+            display: inline-block;
+
+            svg {
+              path {
+                fill: #2f80ed;
+              }
+            }
+          }
+        }
+      }
+      .profile-content-box {
+        margin: 0;
+        padding: 20px 0 0 50px;
+
+        .ant-card-body {
+          padding: 0 35px 0 0;
+          .upload-profile--box {
+            border-bottom: 0;
+            margin-bottom: 0;
+            h4 {
+              font-family: Poppins;
+              font-size: 17px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+          }
+          .change-password {
+            display: inline-block;
+            font-size: 12px;
+            padding-top: 10px;
+            svg {
+              margin-right: 5px;
+              vertical-align: -2px;
+              path {
+                fill: #2f80ed;
+              }
+            }
+          }
+          .payee-profile-info {
+            border-top: 1px solid #c4c4c4;
+            padding: 50px 0;
+            font-family: Poppins;
+            .label {
+              font-size: 15px !important;
+              font-weight: 600;
+              color: @textDarkBlack;
+              
+            }
+            .label-value {
+              font-size: 14px;
+              font-weight: 400;
+              color: #55636d;
+              margin-bottom: 25px;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            form#creditCards {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              .payment-card-dtl-box {
+                border: 1px solid #dadada;
+                padding: 15px;
+                border-radius: 4px;
+
+                .profile-paypal-box {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 15px;
+                  margin-bottom: 15px;
+                  .paypal-icon {
+                    margin-left: 30px;
+                  }
+                  button.btn-paypal-verified {
+                    background: transparent;
+                    border-color: #4a90e2;
+                    color: #4a90e2;
+                    margin-left: 15px;
+                  }
+                }
+              }
+            }
+            .common-profile-info {
+              margin-bottom: 15px;
+
+              .label-value {
+                margin-top: 0;
+              }
+              .label {
+                font-size: 13px !important;
+              }
+              .info-heading {
+                display: flex;
+                justify-content: space-between;
+
+                .edit-icon {
+                  cursor: pointer;
+                }
+              }
+            }
+            .booking-profile-info {
+              border-top: 1px solid #c4c4c4;
+              padding-top: 37px;
+
+              h4 {
+                color: #192a3e !important;
+                font-weight: 700 !important;
+                font-size: 20px !important;
+              }
+
+              .breadcrumb {
+                background-color: transparent;
+                padding: 0;
+
+                span {
+                  padding-right: 10px;
+
+                  &:after {
+                    content: "";
+                    display: inline-block;
+                    background: url(../../../../assets/images/arrow-black.svg)
+                      no-repeat center 1px;
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 10px;
+                  }
+                }
+                span:last-child {
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+              .thumb-block {
+                margin-bottom: 40px;
+              }
+            }
+            .ant-divider {
+              background: #c4c4c4;
+            }
+          }
+          .payment-method-box {
+            .payment-method-header {
+              padding: 5px 0 0px;
+              h4 {
+                margin-bottom: 0;
+              }
+            }
+          }
+          .add-card-link {
+            margin-top: 25px;
+            a {
+              color: #ee4928;
+              font-family: Poppins;
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
+        }
+        &.classfied-profile-content-box {
+          margin-bottom: 40px;
+          .ant-card-body {
+            .upload-profile-content {
+              span.ant-typography {
+                color: #363b40;
+              }
+            }
+            .btn-my-package {
+              width: 140px;
+              height: 35px;
+              background-color: #8576ed;
+              display: none;
+              margin-left: auto;
+              margin-top: 32px;
+              border-color: #8576ed;
+              padding-left: 10px;
+              padding-top: 3px;
+              span {
+                font-size: 11px;
+                font-weight: 500;
+                padding-left: 5px;
+                color: #fff;
+              }
+            }
+            .payee-profile-info {
+              padding: 30px 0 0;
+              .info-heading {
+                padding: 0px 0 20px;
+
+                h4 {
+                  margin-bottom: 0;
+                  color: #192a3e !important;
+                  font-size: 20px !important;
+                  font-weight: 700 !important;
+                }
+              }
+            }
+            .emp-avatar-box {
+              margin-bottom: 62px;
+              display: flex;
+              border-top: 1px solid #dadada;
+              padding-top: 45px;
+              margin-top: 10px;
+              &.without-logo {
+                .ant-upload-picture-card-wrapper {
+                  border: 2px solid #90a8be;
+                  margin-left: 1px;
+                }
+              }
+              .ant-upload-picture-card-wrapper {
+                width: 105px;
+                height: 105px;
+                background: #ffffff;
+                box-shadow: 1px 1px 12px #90a8be54;
+                border-radius: 4px;
+                margin-right: 43px;
+                border: 2px solid transparent;
+
+                .ant-upload {
+                  padding: 0;
+                  border: 0;
+                  border-radius: 0;
+                  width: 100px;
+                  height: 100px;
+                  margin: 0;
+
+                  .ant-avatar-circle.ant-avatar-image {
+                    border-radius: 4px;
+                    width: 105px !important;
+                    height: 105px !important;
+                  }
+                }
+              }
+              .ant-upload-text.upload-footer {
+                .btn-ant-upload-text {
+                  margin-bottom: 25px;
+                  h4 {
+                    font-size: 17px !important;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                  }
+                  .subTitle {
+                    font-family: Arial;
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: #55636d;
+                  }
+                }
+                .btn-action {
+                  width: 98px;
+                  height: 30px;
+                  border-radius: 4px;
+                  &.btn-replace {
+                    button {
+                      background: #90a8be;
+                      border-color: #90a8be;
+                      label {
+                        color: #fff;
+                      }
+                    }
+                  }
+                  &.btn-delete {
+                    background: #ffffff;
+                    border: 1px solid #c4c4c4;
+                    margin-left: 12px;
+                    span {
+                      color: #c4c4c4;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Start: Retail Vendor v2 CSS - 25-05-2021
+  &.retail-vendor-profile-box-v2 {
+    .profile-content-box {
+      .upload-profile--box-v2 {
+        padding-top: 35px;
+        .changePassword {
+          display: block;
+        }
+        .btn-orange {
+          margin: 25px 47px 0 0;
+          font-size: 11px;
+          span {
+            color: #fff;
+          }
+        }
+      }
+      .basic-form-info {
+        .ant-form-item-label label {
+          color: #55636d !important;
+        }
+        .ant-form-item-has-error .ant-form-item-explain,
+        .ant-form-item-has-error .ant-form-item-split {
+          font-size: 11px;
+          text-align: right;
+          padding-top: 9px;
+        }
+      }
+    }
+  }
+}
+// End: Retail Vendor v2 CSS - 25-05-2021
+// Start: Booking Spa v2 CSS - 28-04-2021
+
+body
+  .my-profile-box
+  .upload-profile--box
+  .upload-profile-content
+  .ant-upload-select-picture
+  a {
+  text-decoration: underline;
+  color: #ee4928;
+  font-size: 14px;
+}
+
+.change-password {
+  vertical-align: middle;
+  svg {
+    margin: -3px 5px 0 0;
+  }
+}
+
+.my-profile-box-v2 {
+  .spa-contact-number {
+    border: none !important;
+  }
+}
+
+body .location-search-box .location-search-input {
+  border: none !important;
+}
+
+body
+  .my-profile-box-v2.emp-my-profile-info-box
+  .card-container.signup-tab
+  .profile-content-box
+  .ant-card-body
+  .payee-profile-info
+  .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: @textDarkBlack;
+}
+
+body
+  .my-profile-box-v2.emp-my-profile-info-box
+  .card-container.signup-tab
+  .profile-content-box
+  .ant-card-body
+  .payee-profile-info
+  .label-value {
+  font-size: 13px;
+  font-weight: 400;
+  color: #55636d;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.ant-row.ant-form-item.submitbutton {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.submit-step-action.steps-action-to-step2.submitbutton {
+  position: absolute;
+  bottom: -100px !important;
+  width: 100%;
+  left: 0;
+  background: none;
+  padding-bottom: 0 !important;
+}
+
+body
+  .ant-card.profile-content-box.profile-content-box-v1.classfied-user-profile {
+  position: static;
+}
+
+.profile-purple-user-accont-v2
+  .my-profile-box
+  .profile-content-box.profile-content-box-v1 {
+  margin-right: 10rem !important;
+}
+
+body .my-profile-box {
+  position: relative;
+}
+
+body.user_type_private .my-profile-box .profile-content-box.profile-content-box-v1 .ant-card-head .ant-card-extra ul li.form-1-visited:before {
+  background:none;
+}
+
+.payee-payment-stripe-info {
+  border-top: 1px solid #DADADA;
+  padding: 24px 0;
+  .ant-row {
+    width: 100%;
+    display: inline-block;
+
+    .save-card-head-top {
+      display: table;
+      width: 100%;
+      .save-card-head {
+        display: table-row;
+         width: 100%;
+       >div {
+        display: table-cell;
+        &.save-head-title {
+          width: 50%;
+          h3{
+            font-size: 16px;
+            color: #55636D;
+            font-weight: 600;
+          }
+        }
+
+        &.blank-2 {
+          width: 10px;
+        }
+        &.name-card-head {
+          width: 27%;
+        }
+        &.ex-date {
+          width: 15%;
+        }
+       } 
+    }
+
+    
+    }
+  }
+
+  .ant-typography.label-value.stripe-cards {
+    display: table;
+    width: 100%;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    padding: 21px;
+    margin-top: 15px;
+    .save-card {
+      display: table-row;
+      width: 100%;
+      line-height: 45px;
+
+      > div {
+        display: table-cell;
+        font-size: 15px;
+        font-weight: 400;
+        color: #363B40;
+        &.radio-checked{
+          width: 10px;
+        }
+        &.MasterCard, &.Visa {
+          width: 50%;
+          strong{
+            font-size: 18px;
+            font-weight: 600;
+            color: #363B40;
+          }
+        }
+        &.MasterCard{
+          .card-img{
+            width:39px;
+            height: 25px;
+            background: url(icon/mastercard.png) no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+        }
+        &.Visa {
+          .card-img{
+            width:39px;
+            height: 25px;
+            background: url(icon/visa.png) no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+
+            margin-left: 10px;
+          }
+        }
+
+        &.stripe-name{
+          width: 27%;
+        }
+        &.ex-date {
+          width: 15%;
+        }
+        &.bi.bi-pencil-fill {
+          text-align: center;
+          width: 15px;
+        }
+        &.bi.bi-trash {
+          text-align: center;
+          width:15px;
+        }
+      }
+
+
+    }
+  }
+}
+
+.add-another-payment  {
+  text-align: right;
+  margin-top: 10px;
+  a{
+    color: #EE4928 !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+    
+  }
+}
+
+.payee-payment-stripe-info .ant-typography.label-value.stripe-cards .save-card > div.bi.bi-pencil-fill a svg {
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 15px !important;
+}
+
+body .my-profile-box .profile-content-box .bi.bi-trash a {
+  color: #90a8be;
+}
+
+.my-profile-box .profile-content-box a {
+  color: #1890ff;
+}
+
+.card-detail .ant-card-body { padding: 0 !important;
+   table {
+    width: 100%;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    padding: 21px;
+    margin-top: 15px;
+     thead {
+        th {
+          background: none;
+          border-bottom: 1px solid #eee;
+          font-size: 14px;
+          color: #55636D;
+          font-weight: normal;
+          padding: 0px;
+          padding-bottom: 15px;
+        }
+     }
+   }
+   tr.ant-table-row-selected > td {
+     background: none;
+   }
+   tr {
+     
+     td {
+      border-bottom: none;
+      padding: 11px 0 7px;
+      font-size: 15px;
+      font-weight: 400;
+      color: #363B40;
+      }
+      td:first-child {
+        width: 10px; 
+        text-align: center;
+        min-width: auto;
+
+        + td {
+          width: 50%;
+          font-size: 15px;
+          font-weight: 400;
+          color: #363B40;
+         strong{
+          font-size: 18px;
+          font-weight: 600;
+          color: #363B40;
+         }  
+         span {
+           margin-left:5px;
+         } 
+
+          + td {
+            width: 27%;
+            + td {
+              width: 20%;
+            }  
+          }
+        }
+      }
+      td:last-child{
+        width: 68px;
+        display: flex;
+      }
+     
+   }
+}
+
+img.edit-table {
+  width: 17px;
+  margin: 0 16px 0 0px;
+  cursor: pointer;
+}
+
+section.ant-layout.card-detail {
+  margin-top: 45px;
+}
+
+.your-saved {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.add-another-payment.no-add-card {
+  text-align: left;
+  margin-bottom: 55px;
+}
+
+.add-another-payment.no-add-card h4 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.my-profile-box .profile-content-box .add-another-payment.no-add-card h4 {
+  font-size: 12px !important;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.my-profile-box-v2.emp-my-profile-info-box .card-container.signup-tab .profile-content-box.classfied-profile-content-box .ant-card-body .payee-profile-info {
+  padding: 30px 0 15px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+section.ant-layout.card-detail.background-none {
+  background: none !important;
+  margin-top: 25px;
+}
+
+body .ant-layout.ant-layout-has-sider > .ant-layout, body .ant-layout.ant-layout-has-sider > .ant-layout-content {
+  overflow: visible;
+}
+
+body .submit-step-action.steps-action-to-step2.submitbutton { position: static;}
+.employee-dashborad-box .card-container.signup-tab.addpayment {
+  padding: 25px 0rem 0 0rem;
+}
+
+body .profile-purple-main-wrap .checkout-payment-block .card-container .profile-content-box .ant-card-body {
+  padding: 0px 42px 24px 0px;
+  margin-bottom: 0 !important;
+}
+
+.backtoprofile {
+  margin-bottom: 20px;
+  color: #56646E;
+  margin-top: 15px;
+  display: inline-block;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.card-container.signup-tab.my-profile-class,
+.emp-my-profile-info-box .card-container.signup-tab {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.user_type_private .card-container.signup-tab.my-profile-user {
+   padding-top: 2px;
+   .header h1{
+     margin-bottom: 3px;
+   }
+   .upload-profile-content .ant-upload-select-picture a {
+     color: #2F80ED;
+     font-size: 14px;
+   }
+}
+
+.card-container.signup-tab.my-profile-user {
+  .ant-card-body {
+    margin-bottom: 60px !important;
+  }
+}
+
+.profile-purple-user-accont-v2 .my-profile-box .profile-content-box.profile-content-box-v1 .upload-profile--box-v2 a.upload-profile { text-decoration: underline !important;}
+body .employee-myad-box .ant-table-wrapper td:nth-child(2) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-blue {
+  border-color: #5d3f96 !important;
+}
+
+@media(min-width:1300px) and (max-width:1500px) {
+  body .employee-myad-box .ant-table-wrapper td {
+    padding: 23px 1px 16px 12px;
+  }
+
+  body .employee-dashborad-box .ant-table-wrapper td:last-child {
+    padding-top: 20px;
+    text-align: right;
+  }
+
+}
+
+.edit-expiry-month {
+  .ant-select-selector {
+    .ant-select-selection-item {
+      border-color: #90a8be !important;
+      border-radius: 4px;
+      color: #90a8be;
+      min-height: 36px;
+      width: 100%;
+      height: 55px;
+      line-height: 55px;
+      border: 1px solid;
+    }
+  }
+  .ant-select .ant-select-arrow {
+    right: 5px!important;
+    top:30px !important
+  }
+
+ 
+}
+
+
+body .profile-vendor-retail-transaction-order .edit-payment {
+  .left {
+    h2.ant-typography {
+      color: @dark-blue !important;
+      font-size: 30px;
+      font-weight: 700;
+      padding-left: 0px;
+      font-family: @poppinse;
+    }
+  }
+}
+
+body .my-profile-box .profile-content-box.edit-vbox {
+  margin-left: 0px;
+  max-width: 800px;
+  .ant-form.ant-form-horizontal {
+    .edit-payment-methods {
+      background: none;
+      box-shadow: none;
+      border-radius: 4px;
+      padding: 0px;
+      width: 100%;
+      display: inline-block;
+      .edit-box-top {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px #00000014;
+        border-radius: 4px;
+        padding: 37px 70px;
+        .ant-col.ant-col-md-24 {
+          h3 {
+            font-family: @poppinse;
+            font-size: 18px;
+            color: @dark-blue !important;
+          }
+          .subTitle {
+            width: 70%;
+            color: rgba(54, 59, 64, 0.5);
+            font-size: 14px;
+          }
+          .visa-card-icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-right: 0;
+          }
+
+          label {
+            color: @textDarkBlue !important;
+            font-size: 12px !important;
+            font-weight: 700 !important;
+          }
+          input {
+            box-shadow: none;
+            border:1px solid #90A8BE;
+            background: none !important;
+          }
+
+          .cart-payment-card-outline {
+            top: 50px;
+            right: 30px;
+          }
+          input#exp_year {
+            border:none;
+          }
+        }
+        
+      } 
+
+    }
+  }
+}
+
+.submit-step-action.steps-action-to-step2 {
+  text-align: center;
+  .ant-btn.ant-btn-default.blue-blank {
+    border-color:@dark-blue !important;
+    border-width: 1px  !important;
+    color: @dark-blue !important;;
+  }
+}
+
+body .my-profile-box.edit-payment .profile-content-box .ant-select .ant-select-arrow {
+ right:5px !important;
+}
+
+.employee-myad-box .top-head-section .ant-typography.pl-0 {
+   color: @dark-blue !important;
+   font-size: 30px;
+   padding-bottom: 0px;
+}
+
+.ant-radio-wrapper span + span {
+  padding-left: 15px;
+}
+
+.paypal-block {
+  .visa-card-icon{
+    display: none;
+  }
+  &.paypal-block-inner-wrapper{
+    .visa-card-icon{
+      display: inline-block;
+    }
+  }
+}
+
+body .ElementsApp, 
+body .ElementsApp .InputElement {
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+body .profile-purple-main-wrap .checkout-payment-block .card-container .profile-content-box .ant-card-body .ant-radio-group .profile-payment-setup .paypal-block .stripe-box .cart-payment-card-outline, .profile-purple-main-wrap .checkout-payment-block .card-container .profile-content-box .ant-card-body .ant-radio-group .profile-payment-setup .paypal-block .stripe-box .cart-payment-question-outline {
+  position: absolute;
+  top: 55% !important;
+  right: 25px;
+}
+body .delete-model-style1 {
+  width: 100% !important;
+  max-width: 410px;
+}
+
+
+body .custom-modal .ant-modal-content .ant-modal-close .ant-modal-close-x {
+  color: #55636D!important;
+  width: 70px;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+body .delete-model-style1 .ant-modal-body .delete-modal-body h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ee4928;
+  margin: 0;
+  padding: 22px0 15px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 26px;
+}
+
+.delete-model-style1 .ant-modal-body {
+  padding-bottom: 0px !important;
+}
+
+
+.delete-model-style1 .ant-modal-body .delete-modal-footer .ant-btn {
+  font-size: 12px !important;
+  font-family: @poppinse !important;
+  font-weight: 600 !important;
+}
+
+body .ant-form-vertical .ant-form-item-label  { padding-bottom: 12px;}
+
+input.ant-input.cvv {
+  height: 55px!important;
+}
+
+body .profile-vendor-retail-receiv-order.add-an-edit-another-payment-methods .ant-card.job-application.edit-payment-method-page .edit-payment-methods .card-personal-box .ant-col .ant-row.ant-form-item .check-uncheck-box, .profile-vendor-retail-transaction-order.add-an-edit-another-payment-methods .ant-card.job-application.edit-payment-method-page .edit-payment-methods .card-personal-box .ant-col .ant-row.ant-form-item .check-uncheck-box {
+  top: 50% !important;
+  
+  transform: translate(0px, -55%);
+}
+
+body .profile-vendor-retail-receiv-order.add-an-edit-another-payment-methods .ant-card.job-application.edit-payment-method-page .edit-payment-methods .card-personal-box .ant-col .ant-row.ant-form-item .check-uncheck-box, .profile-vendor-retail-transaction-order.add-an-edit-another-payment-methods .ant-card.job-application.edit-payment-method-page .edit-payment-methods .card-personal-box .ant-col .ant-row.ant-form-item .check-uncheck-box.boxname {
+  left: 140px !important;
+}
+.my-profile-box.employee-dashborad-box.employee-myad-box.add-new-cart-apyment {
+  .my-profile-box.my-profile-box-v2.my-profile-setup.checkout-payment-block {
+    background: none;;
+  }
+}
+
+.my-profile-box.employee-dashborad-box.employee-myad-box.add-new-cart-apyment .top-head-section {
+  padding: 0 0rem;
+      margin: 0 auto;
+      width: 100%;
+}
+
+.my-profile-box.my-profile-box-v2.my-profile-setup.checkout-payment-block {
+  padding:0 !important;
+  .card-container.signup-tab.addpayment {
+    padding-top: 0px;
+    .ant-card.profile-content-box {
+      border:none;
+    }
+  }
+}
+.is-hidden { display: none  !important;}
+.paypal-box-inner {
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  padding: 26px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    svg {
+      float: left;
+    }
+  }
+}
+
+body .my-profile-box.my-profile-box-v2.my-profile-setup.checkout-payment-block .card-container.signup-tab.addpayment {
+  padding: 0 10rem !important;
+}
+
+html body .profile-purple-main-wrap .checkout-payment-block .card-container .profile-content-box .ant-card-body {
+ 
+  background: #fff;
+}
+
+body .profile-purple-user-accont-v2 .my-profile-box .submit-step-action.steps-action-to-step2 {
+ 
+  background: #fff;
+}
+
+body .my-profile-box.my-profile-box-v2.my-profile-setup.checkout-payment-block .card-container.signup-tab.addpayment {
+  padding: 0 !important;
+}
+
+.my-profile-box .profile-content-box.profile-content-box-v1 .ant-card-head .ant-card-extra ul li.form-1-visited:before {
+  display:none;
+}
+
+.my-profile-box.employee-dashborad-box.employee-myad-box.add-new-cart-apyment {
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: none;
+  
+  background: #fff;
+}

@@ -1,0 +1,1371 @@
+.tourism-booking-form-box {
+
+  /* START - YOUR BOOKING RIGHT SIDEBAR CSS - 02/07/2021 */
+  .tourism-right-your-booking-box {
+    background: #ffffff;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 4px;
+    padding: 1em 1.5em;
+    margin-bottom: 35px;
+
+    h2.ant-typography {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      color: #55636d;
+    }
+
+    .ant-divider-horizontal {
+      margin: 18px 0;
+      height: 3px;
+      background-color: rgba(196, 196, 196, 0.15);
+      // border: 2px solid rgba(196, 196, 196, 0.15);
+      // border-radius: 4px;
+    }
+
+    h3.ant-typography {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      color: #363b40;
+    }
+
+    img {
+      margin-right: 0.5em;
+    }
+
+    .departure-information,
+    .returning-information,
+    .flight-information,
+    .passenger-information,
+    .payment-information {
+      display: flex;
+      justify-content: space-between;
+      font-family: Arial;
+      font-style: normal;
+      font-size: 13px;
+      margin: 1em 0;
+      color: #55636d;
+      line-height: 1.8;
+
+      p {
+        margin: 0;
+      }
+
+      .airport-information {
+        min-width: 40%;
+      }
+
+      .arrow {
+        align-self: center;
+        // min-width: 20%;
+        margin: 0 40px 0 20px;
+      }
+
+      .highlight {
+        font-weight: bold;
+      }
+
+      .img-container {
+        background: #ffffff;
+        box-shadow: 0px 0px 12px rgba(144, 168, 190, 0.33);
+        align-self: flex-start;
+      }
+
+      .flight-info {
+        min-width: 80%;
+      }
+    }
+
+    .flight-information {
+      padding: 1em;
+      background: #f6f6f6;
+
+      .img-container {
+        margin-right: 10px;
+      }
+    }
+
+    .passenger-information {
+      font-size: 14px;
+      padding-left: 1em;
+
+      .highlight {
+        margin-right: 0.5em;
+      }
+    }
+
+    .payment-information {
+      font-family: Poppins;
+      font-size: 14px;
+      margin-top: 60px;
+      padding-left: 1em;
+
+      .small-text {
+        font-size: 10px;
+      }
+    }
+
+    button.ant-btn-block {
+      background-color: #109cf1;
+      height: 42px;
+      border-radius: 4px;
+      border-color: transparent;
+      margin-bottom: 10px;
+
+      &.btn-pay {
+        background-color: #ee4928 !important;
+      }
+    }
+  }
+
+  /* END - YOUR BOOKING RIGHT SIDEBAR CSS - 02/07/2021 */
+
+  /* START - Heading and Contact Information box - 03/07/2021 */
+  .page-heading-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h2 {
+      font-family: poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      color: #363b40;
+      margin: 0;
+    }
+
+    p {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .contact-information-container {
+    background: #fff8ee;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 8px;
+
+    .contact-information-heading {
+      padding: 20px 30px;
+      border-bottom: 1px solid #FFC468;
+      ;
+
+      h2 {
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #ffc468;
+        margin: 0;
+      }
+
+      img {
+        margin-right: 0.5em;
+      }
+    }
+
+    hr {
+      border: 1px solid #ffc468;
+      margin: 0;
+    }
+
+    .contact-information-form {
+      padding: 30px;
+      font-family: Poppins;
+      font-size: 13px;
+
+      .ant-input,
+      .ant-input-number,
+      .ant-select-selector {
+        background: #ffffff;
+        border-radius: 4px;
+        height: 45px;
+        font-family: Arial;
+        font-size: 14px;
+        box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+        border: none;
+        border-radius: 0px;
+      }
+
+      .ant-input-number-input {
+        height: 45px;
+      }
+
+      .ant-select-selector {
+
+        .ant-select-selection-item,
+        .ant-select-selection-placeholder {
+          line-height: 3.2;
+        }
+      }
+
+      .label-height {
+        label {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  /* END - Heading and Contact Information box - 03/07/2021 */
+  /* START - booking-form */
+  .booking-form-box {
+    margin-top: 30px;
+
+    .ant-collapse {
+      border: 0;
+      background-color: transparent;
+
+      .ant-collapse-item {
+        box-shadow: 1px 1px 12px #90a8be54;
+        border-radius: 8px;
+        border-bottom: 0;
+        margin-bottom: 25px;
+
+        .ant-collapse-header {
+
+          padding: 15px 0 15px 30px !important;
+
+          img {
+            padding-right: 15px;
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+
+          .anticon.ant-collapse-arrow {
+            left: auto;
+            right: 33px;
+
+            svg {
+              transform: rotate(90deg);
+              color: #90a8be;
+              font-size: 20px;
+            }
+          }
+        }
+
+        :last-child>.ant-collapse-content {
+          border-radius: 0 0 8px 8px;
+        }
+
+        &.ant-collapse-item-active {
+          .ant-collapse-header {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding-bottom: 5px;
+
+            .anticon.ant-collapse-arrow {
+              left: auto;
+              right: 33px;
+
+              svg {
+                transform: rotate(270deg) !important;
+                color: #90a8be;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+
+        .ant-collapse-content {
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          border-top: 0;
+          padding: 15px ​40px;
+          background: #f6f6f6;
+
+          .ant-collapse-content-box {
+            padding: 0;
+
+            label {
+              font-family: Poppins;
+              font-size: 13px;
+              font-weight: 400;
+              color: #55636d;
+            }
+
+            .ant-input,
+            .ant-select-selector {
+              height: 45px;
+              background: #FFFFFF;
+              box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+              border-radius: 0;
+              border: none;
+            }
+
+            .ant-select-selector {
+              .ant-select-selection-item {
+                line-height: 42px;
+              }
+            }
+
+            .passenger-booking-form {
+              .ant-select-selector {
+                cursor: pointer !important;
+              }
+
+              .ant-row {
+                margin-bottom: 12px;
+
+                .ant-select-selection-search-input {
+                  height: 40px;
+                  cursor: pointer !important;
+                }
+
+
+              }
+
+              padding: 18px 30px 25px 30px;
+              background: #fff;
+
+              .date-month-year-box {
+                margin-top: 8px;
+                box-shadow: 1px 1px 12px #90a8be54;
+
+                .ant-row {
+                  margin-bottom: 0;
+
+                  .ant-select-selector {
+                    box-shadow: none;
+                  }
+
+                  .ant-input:hover {
+                    border-color: #90a8be;
+                  }
+                }
+
+                label {
+                  font-family: Poppins;
+                  font-size: 13px;
+                  font-weight: 400;
+                  color: #55636d;
+                }
+
+                .date-of-birth {
+                  &.ant-form-item-has-error {
+                    .ant-form-item-control-input {
+                      border: 1px solid #ff4d4f;
+                      border-right-color: transparent;
+                    }
+                  }
+
+                  .ant-form-item-control-input {
+                    // border: 1px solid #90a8be;
+                    border-right-color: transparent;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                  }
+
+                  .ant-select-selector {
+                    border: 0;
+                    background: url(../../../../../assets/images/icons/vertical-grey-line.svg) no-repeat;
+                    background-position: right;
+                    cursor: pointer;
+
+                    .ant-select-selection-placeholder,
+                    .ant-select-selection-item {
+                      line-height: 3.2;
+                    }
+                  }
+                }
+
+                .month-of-birth {
+                  &.ant-form-item-has-error {
+                    .ant-form-item-control-input {
+                      border: 1px solid #ff4d4f;
+                      border-left-color: transparent;
+                      border-right-color: transparent;
+                    }
+                  }
+
+                  .ant-form-item-control-input {
+                    // border-top: 1px solid #90a8be;
+                    // border-bottom: 1px solid #90a8be;
+                  }
+
+                  .ant-select-selector {
+                    border: 0;
+                    background: url(../../../../../assets/images/icons/vertical-grey-line.svg) no-repeat;
+                    background-position: right;
+
+                    .ant-select-selection-placeholder {
+                      line-height: 45px;
+                      color: #90a8be;
+                    }
+                  }
+                }
+
+                .year-of-birth {
+                  &.ant-form-item-has-error {
+                    .ant-form-item-control-input {
+                      border: 1px solid #ff4d4f;
+                      border-left-color: transparent;
+                    }
+                  }
+
+                  .ant-form-item-control-input {
+                    // border: 1px solid #90a8be;
+                    border-left-color: transparent;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+
+                    input {
+                      color: #000;
+                    }
+                  }
+
+                  .ant-picker {
+                    height: 45px;
+                    border: 0;
+
+                    input {
+                      &::placeholder {
+                        color: #90a8be;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .collapse-footer {
+              .ant-collapse {
+                width: 100%;
+                background-color: #fff;
+                // border: 1px solid transparent;
+                border-top: 1px solid #e3e9ef;
+
+                .ant-collapse-item {
+                  box-shadow: none;
+                  border-radius: 0 0 0 0;
+                  margin-bottom: 0;
+
+                  &.ant-collapse-item-active {
+                    background-color: #f6f6f6;
+                  }
+
+                  .ant-collapse-header {
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    padding-top: 25px;
+                    padding-bottom: 30px;
+                    margin-bottom: 0;
+
+                    .anticon.ant-collapse-arrow {
+                      left: 290px;
+                      right: auto;
+                      bottom: 20px;
+
+                      svg {
+                        font-size: 16px;
+                      }
+                    }
+
+                    p {
+                      font-family: Arial;
+                      font-size: 14px;
+                      font-weight: 400;
+                      color: #363b40;
+                    }
+                  }
+
+                  .ant-collapse-content {
+                    .ant-collapse-content-box {
+                      padding-top: 15px;
+                      padding-left: 40px;
+                      padding-bottom: 15px;
+                      padding-right: ​40px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn.add-passenger {
+      background-color: #ffc468;
+      border: transparent;
+      float: right;
+      margin-top: 10px;
+      margin-right: 35px;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .add-ons {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: #363b40;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .card-container {
+    &.baggage-box {
+      padding: 0 !important;
+
+      h3 {
+        padding: 30px 40px 0px;
+        margin-bottom: 0 !important;
+      }
+
+      .card-information {
+        padding: 30px 40px 40px;
+
+        .bggage-info {
+          font-family: Arial;
+          font-size: 11px;
+          font-weight: 400;
+          color: #363b40;
+          display: block;
+          padding: 10px 0 15px;
+          text-decoration: underline;
+        }
+
+        .card-information-right {
+          h4.top-col-heading {
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: 700;
+            color: #55636d;
+            margin-bottom: 10px;
+          }
+
+          label {
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: 400;
+            color: #55636d;
+
+            &.bold {
+              font-weight: 700;
+            }
+          }
+
+          p {
+            padding-bottom: 15px;
+            color: #55636d;
+          }
+
+          .d-flex {
+            margin-bottom: 15px;
+
+            .d-flex {
+              margin-left: 45px;
+              align-items: center;
+
+              .right-arrow {
+                margin: 0 15px 0;
+                width: 22px;
+              }
+            }
+          }
+        }
+      }
+
+      .item-weight-detail-box {
+        padding-top: 35px;
+        padding-bottom: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-top: 1px solid #e3e9ef;
+
+        h4.heading {
+          padding: 5px 55px 20px;
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .d-flex {
+          .item-weight-box {
+            .ant-radio-group {
+              display: flex;
+
+              .ant-radio-wrapper {
+                display: flex;
+                flex-direction: column;
+                margin-right: 0;
+                border-radius: 8px;
+                border: 1px solid #b3bcc4;
+                overflow: hidden;
+                margin: 0 10px;
+
+                span.ant-radio+* {
+                  padding: 0;
+                }
+
+                .ant-radio {
+                  order: 2;
+                  background: #eaeaea;
+                  padding: 22px 80px 22px;
+
+                  .ant-radio-inner {
+                    width: 22px;
+                    height: 22px;
+
+                    &:after {
+                      top: 5px;
+                      left: 5px;
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                }
+
+                .radio-inner-data {
+                  .weight-an-price-box {
+                    border-bottom: 1px solid #e3e9ef;
+                    padding: 15px 10px;
+
+                    h4 {
+                      font-family: Arial;
+                      font-size: 30px;
+                      font-weight: 700;
+                      color: #363b40;
+                      margin-bottom: 8px;
+                    }
+
+                    .price-doller {
+                      font-family: Poppins;
+                      font-size: 20px;
+                      font-weight: 600;
+                      color: #363b40;
+                      display: block;
+                    }
+
+                    .person {
+                      font-family: Arial;
+                      font-size: 12px;
+                      font-weight: 400;
+                      color: #363b40;
+                    }
+                  }
+
+                  .d-flex {
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin: 5px 0 5px;
+
+                    .adults {
+                      font-family: Arial;
+                      font-size: 14px;
+                      font-weight: 700;
+                      color: #363b40;
+                    }
+
+                    .counter-box {
+                      width: 100px;
+
+                      img {}
+
+                      span.counter-digit {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.travel-insurance-box {
+      h3 .imp-tag {
+        background: #ee4928;
+        border-radius: 3px;
+        display: inline-block;
+        margin-left: 16px;
+        color: #fff;
+        font-family: Arial;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        width: 100px;
+        height: 20px;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .card-information {
+        justify-content: end;
+
+        .travel-insurance-pic-box {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .card-information-right {
+          padding-left: 35px;
+          margin-right: 0;
+
+          span.buy-trip-heading {
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 700;
+            color: #f04e26;
+            margin-bottom: 15px;
+            display: block;
+          }
+
+          .d-flex {
+            .item-weight-box {
+              width: 100%;
+              margin-right: 30px;
+              width: 100%;
+
+              .ant-radio-group {
+                display: flex;
+                flex-direction: column;
+
+                .ant-radio-wrapper {
+                  display: flex;
+                  // flex-direction: column;
+                  border-radius: 8px;
+                  border: 1px solid #b3bcc4;
+                  overflow: hidden;
+                  margin: 0 0px 15px;
+
+                  span.ant-radio+* {
+                    padding: 0;
+                    width: 100%;
+                  }
+
+                  .ant-radio {
+                    order: 2;
+                    background: #eaeaea;
+                    padding: 110px 32px 0;
+                  }
+
+                  .radio-inner-data {
+                    .weight-an-price-list {
+                      border-bottom: 1px solid #e3e9ef;
+                      padding: 15px 10px 0;
+
+                      .d-flex {
+                        justify-content: space-between;
+
+                        h3 {
+                          font-family: Arial;
+                          font-size: 14px;
+                          font-weight: 700;
+                          color: #363b40;
+                          margin-bottom: 8px;
+                          margin-left: 15px;
+                        }
+
+                        .price-doller {
+                          font-family: Poppins;
+                          font-size: 20px;
+                          font-weight: 600;
+                          color: #363b40;
+                          display: block;
+                        }
+                      }
+
+                      .list {
+                        p {
+                          color: #363b40;
+                          padding-left: 35px;
+                          padding-bottom: 5px;
+                        }
+
+                        ul {
+                          li {
+                            display: flex;
+
+                            span {
+                              font-family: Arial;
+                              font-size: 12px;
+                              font-weight: 400;
+                              color: #363b40;
+                              padding-left: 5px;
+                              display: inline-block;
+                            }
+                          }
+                        }
+                      }
+                    }
+
+                    .bottom-box {
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+
+                      .d-flex {
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin: 0px 25px 0px;
+
+                        .adults {
+                          font-family: Arial;
+                          font-size: 14px;
+                          font-weight: 700;
+                          color: #363b40;
+                          min-width: 150px;
+                        }
+
+                        .counter-box {
+                          width: 100px;
+
+                          img {
+                            width: 21px;
+                          }
+
+                          span.counter-digit {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  &.bottom-radio-no-more-info {
+                    span {
+                      width: 100%;
+
+                      .weight-an-price-box {
+                        h4 {
+                          font-family: Arial;
+                          font-size: 14px;
+                          font-weight: 400;
+                          padding: 20px 23px;
+                          text-transform: inherit;
+                        }
+                      }
+                    }
+
+                    span.ant-radio {
+                      padding: 19px 32px 19px;
+                      width: 83px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.cancel-protect-box {
+      padding-bottom: 0;
+
+      .card-information {
+        .cancel-protect-body {
+          border: 1px solid #90a8be;
+          border-radius: 8px;
+          margin-bottom: 50px;
+
+          .custom-row {
+            p {
+              font-family: Arial;
+              font-size: 13px;
+              font-weight: 400;
+              color: #363b40;
+              padding: 20px 60px 35px 30px;
+            }
+
+            .cancel-charge {
+              font-family: Poppins;
+              font-size: 20px;
+              font-weight: 600;
+              color: #363b40;
+              margin-top: 20px;
+              display: block;
+            }
+          }
+
+          .ant-radio-group {
+            display: flex;
+            background: #eaeaea;
+            border-radius: 0 0 8px 8px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+
+            .ant-radio-wrapper {
+              font-family: Arial;
+              font-size: 20px;
+              font-weight: 400;
+              align-items: center;
+              display: flex;
+
+              &.deny {
+                width: 50%;
+              }
+
+              .ant-radio {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.flexible-ticket-box {
+      .inner-card {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  /* START - Seat Selection, Food Drink, FLexible Flight, Confirmation, Apply Promo Boxes  - 05/07/2021 */
+  .card-container {
+    background: #ffffff;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 8px;
+    padding: 30px 40px 40px;
+    width: 100%;
+    margin-bottom: 23px;
+
+    h3.ant-typography,
+    .ant-typography h3 {
+      font-weight: bold;
+      font-family: Poppins;
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #363b40;
+    }
+
+    .card-information {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 13px;
+      font-family: Arial;
+
+      .card-information-right {
+        padding-left: 45px;
+        margin-right: 30px;
+
+        h4.ant-typography,
+        .ant-typography h4 {
+          font-weight: bold;
+          font-size: 13px;
+          color: #55636d;
+          text-transform: uppercase;
+        }
+
+        div.ant-typography,
+        .ant-typography p {
+          color: #55636d;
+        }
+
+        button.ant-btn {
+          font-family: Poppins;
+          font-weight: bold;
+          letter-spacing: 0.01em;
+          color: #363b40;
+          background: #ffffff;
+          border: 2px solid #ffc468;
+          box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+          border-radius: 4px;
+          font-size: 13px;
+          float: right;
+          width: 166px;
+          height: 40px;
+        }
+      }
+
+      .inner-card {
+        border: 1px solid #90a8be;
+        border-radius: 8px;
+        // max-width: 600px;
+        padding: 24px 32px;
+        margin-left: 45px;
+      }
+
+      div.ant-typography,
+      .ant-typography p {
+        color: #55636d;
+      }
+
+      .selection-div {
+        display: flex;
+        justify-content: space-between;
+
+        .combobox,
+        .ant-select-selector {
+          width: 372px !important;
+          min-height: 40px !important;
+          height: 45px !important;
+          font-size: 14px !important;
+          color: #90a8be !important;
+          background: #ffffff !important;
+          // border: 1px solid #90a8be !important;
+          border-radius: 0 !important;
+          align-items: center;
+        }
+
+        .selection-div-right {
+          text-align: right;
+          color: #55636d;
+
+          span.highlight {
+            display: block;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 20px;
+            color: #363b40;
+          }
+        }
+      }
+    }
+  }
+
+  .information-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 822px;
+  }
+
+  .confirmation-box {
+    margin: 56px 0 48px;
+    justify-content: flex-start;
+    width: auto;
+
+    h4.ant-typography,
+    .ant-typography h4 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 20px;
+      color: #363b40;
+      min-width: 230px;
+    }
+
+    .ant-checkbox-inner {
+      border: 1px solid #363b40;
+      border-radius: 4px;
+    }
+
+    .ant-checkbox+span {
+      //max-width: 570px;
+      font-family: Arial;
+      font-size: 14px;
+      color: #363b40;
+      padding-right: 0;
+      line-height: 20px;
+    }
+  }
+
+  .promo-box {
+    font-family: Arial;
+    font-size: 14px;
+    color: #55636d;
+    padding: 32px 0;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    margin: 40px 0 75px;
+    width: 100%;
+    justify-content: flex-start;
+
+    p {
+      min-width: 230px;
+    }
+
+    .promo-box-right {
+      margin-right: 0px;
+      width: 100%;
+
+      .ant-input {
+        background: #ffffff;
+        box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+        // width: 480px;
+        width: ~"calc(100% - 103px)";
+        height: 45px;
+        border: none;
+        border-radius: 0;
+        font-size: 14px;
+        color: #90a8be;
+      }
+
+      .apply-btn {
+        width: 79px;
+        height: 40px;
+        font-weight: 600;
+        font-family: Poppins;
+        font-size: 13px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        background: #90a8be;
+        border: none;
+        position: relative;
+        top: -2px;
+        left: 10px;
+
+        &::after {
+          content: url("../../../../../assets/images/icons/left-arrow.svg");
+          position: absolute;
+          left: -16px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  /* END - Seat Selection, Food Drink, FLexible Flight, Confirmation, Apply Promo Boxes  - 05/07/2021 */
+  .payment-methods-box {
+    &.payment-first-box {
+
+      // .first-payment-choise > .ant-radio {
+      //   margin-left: 24px;
+      // }
+      .ant-radio-wrapper {
+        width: 100%;
+      }
+
+      .main-heading-cols {
+        margin-top: -23px;
+
+        h4 {
+          margin-top: 0;
+          // padding-left: 25px;
+        }
+      }
+    }
+
+    .main-heading-cols {
+      h4 {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        color: #363b40;
+        margin-top: 47px;
+      }
+
+      label {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        color: #55636d;
+      }
+
+      .another-payment-block {
+        background: #fff;
+        border: 1px solid #dde3e8;
+        padding: 27px 23px 20px;
+        border-radius: 3px;
+        margin-top: 5px;
+        width: 100%;
+
+        .paypal-label {
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 500;
+          color: #363b40;
+          padding-left: 8px;
+          margin-bottom: 0;
+
+          .visa-card-icon {
+            display: inline-block;
+            margin-left: 7px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .discription {
+          font-family: Arial;
+          font-size: 14px;
+          font-weight: 400;
+          color: #90a8be;
+          padding-left: 35px;
+        }
+
+        .stripe-box {
+          max-width: 100%;
+          padding: 10px 115px 0 35px;
+
+          .cart-payment-card-outline {
+            position: absolute;
+            top: 54px;
+            right: 30px;
+          }
+
+          .check-uncheck-box {
+            position: absolute;
+            top: 51px;
+            left: 200px;
+          }
+
+          .expiry-date-box,
+          .cvc-input-box {
+            .check-uncheck-box {
+              top: 53px;
+              left: auto;
+              right: 18px;
+            }
+          }
+
+          .ant-btn.text-white {
+            margin: 30px 0 25px;
+
+            span {
+              color: #ffc468;
+            }
+          }
+
+          .cvc-input-box {
+            .cvc-tooltip {
+              right: 18px;
+              top: 29px;
+            }
+          }
+        }
+      }
+    }
+
+    .card-select-box {
+      background: #ffffff;
+      border: 1px solid #dde3e8;
+      border-radius: 3px;
+      padding: 27px 23px 20px;
+      width: 100%;
+      margin-top: 13px;
+
+      label.ant-radio-wrapper {
+        display: flex;
+
+        span.ant-radio {
+          flex-basis: 5%;
+          max-width: 17px;
+          padding-top: 4px;
+          // width: 100%;
+        }
+
+        span {
+          flex-basis: 95%;
+          max-width: 95%;
+          width: 100%;
+        }
+
+        p.card-detail {
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #363b40;
+          display: inline-block;
+          padding-left: 5px;
+          padding-right: 15px;
+
+          .card-type-name {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 15px;
+          }
+        }
+
+        img.card-icon {}
+
+        .cvv-no-input-box {
+          padding-left: 5px;
+
+          .ant-row.ant-form-item {
+            margin-bottom: 15px;
+
+            label {
+              font-family: Arial;
+              font-size: 14px;
+              font-weight: 400;
+              color: #363b40;
+              padding-top: 20px;
+            }
+
+            .ant-input {
+              height: 55px;
+              width: 150px;
+              border-color: #f63730 !important;
+              border-radius: 4px;
+              background: url(../../../../../assets/images/icons/quetion-grey-circle.svg) no-repeat;
+              background-position: 90%;
+            }
+          }
+
+          .card-recom-msg {
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            color: #90a8be;
+            margin-bottom: 20px;
+            display: block;
+          }
+        }
+
+        label {
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: 400;
+          color: #363b40;
+
+          &.name {
+            padding-left: 18px;
+          }
+
+          &.date {
+            padding-left: 38px;
+          }
+        }
+      }
+    }
+  }
+
+  .paypal-block {
+    border: #dce3e9 1px solid;
+    padding: 33px 20px 25px;
+    border-radius: 3px;
+    width: 100%;
+    margin: 15px 0 15px;
+    background-color: #fff;
+
+    &.googlepay {
+      margin-bottom: 115px;
+    }
+
+    .paypal-label {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      margin-left: 0;
+      top: 0;
+      margin-bottom: 0;
+      color: #363b40;
+    }
+
+    p.discription {
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 400;
+      color: #90a8be;
+      padding: 0 0 0 25px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  /* END - booking-form */
+}

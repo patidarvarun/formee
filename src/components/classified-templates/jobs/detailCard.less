@@ -1,0 +1,276 @@
+.job-detail-card {
+	box-shadow: 0 0 7px 0 rgba(143, 167, 189, 0.2);
+    border-radius: 8px;
+    color: #55636D;
+	.ant-card-cover {
+		border-radius: 8px 8px 0 0;
+		overflow: hidden;
+		img {
+			max-height: 220px;
+			min-height: 220px;
+			object-fit: cover;
+		}
+	}
+	.ant-card-body {
+		padding: 2rem 3rem 2.5rem;
+	}
+	.price-box {
+        margin-bottom: 10px;
+		.price {
+			font-size: 18px;
+			font-weight: bold;
+			color: #90A8BE;
+		}
+    }
+    .rate-section {
+        font-size: 10px;
+        color: #90a8be;
+        padding-top: 7px;
+        .ant-rate {
+            font-size: 14px;
+            margin-left: 2px;
+            .ant-rate-star {
+                margin-right: 5px;
+            }
+        }
+    }
+	.title {
+		font-size: 30px;
+		font-weight: bold;
+		color: #363B40;
+		margin-bottom: 0;
+    }
+    .location-name{
+        padding: 3px 0;
+    }
+	.category-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: none;
+		padding: 0 0 20px 0;
+        cursor: auto;
+        max-width: 200px;
+		.category-name {
+			font-size: 14px;
+			color: #7EC5F7;
+			text-transform: capitalize;
+		}
+		.job-name {
+			font-size: 14px;
+			color: #90A8BE;
+			text-transform: capitalize;
+		}
+    }
+    .description{
+        color: #90A8BE;
+        margin-bottom: 10px;
+    }
+	.ant-card-actions {
+		margin: 0 15px;
+		background: none;
+		& > li {
+			margin: 0;
+			padding: 10px 0 9px 0;
+			&:hover {
+				* {
+					fill: #f63730;
+				}
+			}
+			.active {
+				fill: #f63730;
+				* {
+					fill: #f63730;
+				}
+			}
+		}
+	}
+	.tag-icon {
+		position: absolute;
+		top: -32px;
+		left: 16px;
+		width: 67px;
+		height: 67px;
+		border-radius: 100px;
+		background-color: #ca71b7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		* {
+			fill: #fff;
+		}
+	}
+	&.horizontal {
+		display: flex;
+		flex-direction: row;
+		min-height: 136px;
+		.ant-card-cover {
+			border-radius: 8px 0 0 8px;
+			width: 35%;
+			img {
+				height: 100%;
+				max-height: inherit;
+				object-fit: cover;
+			}
+		}
+		.ant-card-body {
+			display: flex;
+			flex-direction: column;
+		}
+		.price-box {
+			.price {
+				font-size: 25px;
+			}
+		}
+		.sub-title {
+			font-size: 14px;
+			color: #363b40;
+		}
+		.action-link {
+			margin-top: auto;
+			a {
+				color: #7ec5f7;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+    }
+    .ant-card-actions{
+        margin: 0;
+        max-width: 300px;
+        li{
+            width: 33.33%;
+        }
+    }
+}
+
+.job-detail-content {
+    color: #55636D;
+	.price-box {
+        margin-bottom: 10px;
+		.price {
+			font-size: 18px;
+			font-weight: bold;
+			color: #90A8BE;
+		}
+    }
+    .rate-section {
+        font-size: 14px;
+		color: #90a8be;
+		padding-bottom: 6px;
+        .ant-rate {
+            font-size: 18px;
+            margin-left: 10px;
+            .ant-rate-star {
+                margin-right: 5px;
+            }
+        }
+    }
+	.title {
+		font-size: 30px;
+		font-weight: bold;
+		color: #363B40;
+		margin-top: 0 !important;
+		margin-bottom: 0;
+	}
+	.company-name{
+		font-size: 18px;
+	}
+    .location-name{
+		padding: 3px 0;
+		font-size: 18px;
+    }
+	.category-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: none;
+		padding: 0 0 20px 0;
+        cursor: auto;
+        max-width: 200px;
+		.category-name {
+			font-size: 14px;
+			color: #7EC5F7;
+			text-transform: capitalize;
+		}
+		.job-name {
+			font-size: 14px;
+			color: #90A8BE;
+			text-transform: capitalize;
+		}
+    }
+    .description{
+        color: #444;
+        margin-bottom: 10px;
+    }
+	.ant-card-actions {
+		margin: 4rem 0 0 0;
+		max-width: 300px;
+		background: none;
+		& > li {
+			margin: 0;
+			padding: 10px 0 9px 0;
+			width: 33.33%;
+			&>span{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				span.ant-typography{
+					margin-left: 10px;
+					color:#90A8BE;
+				}
+			}
+			&:hover {
+				* {
+					fill: #f63730;
+				}
+			}
+			.active {
+				fill: #f63730;
+				* {
+					fill: #f63730;
+				}
+			}
+		}
+	}
+	.tag-icon {
+		position: absolute;
+		top: -32px;
+		left: 16px;
+		width: 67px;
+		height: 67px;
+		border-radius: 100px;
+		background-color: #ca71b7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		* {
+			fill: #fff;
+		}
+	}
+	.right-content{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		.action-btn{
+			padding-top: 3rem;
+		}
+	}
+	h4.ant-typography{
+		margin-bottom: 0;
+	}
+	.reviews-content {
+		.reviews-rating{
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	.address{
+		color:#90A8BE;
+		max-width: 200px;
+	}
+}

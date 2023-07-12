@@ -1,0 +1,225 @@
+.fm-flight-wrap{
+    border:2.5px solid #FFC468;
+    border-radius:9px;
+    padding:20px 20px 5px;
+    background-color: #FBFCFD;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.25);
+}
+.fm-airline-box{
+    .fm-airlogo-box{
+        img{
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            margin-right: 10px;
+        }
+    }
+    .fm-airline-status{
+        text-align: center;
+        line-height: 20px;
+        padding-top: 15px;
+        .fm-airlinetime{
+            font-size: 18px;
+            color:#363B40;
+            font-weight: bold;
+        }
+        .fm-airportname{
+            display: block;
+            color:#363B40;
+            text-transform: uppercase;
+        }
+    }
+    .fm-fare-status{
+        text-align: right;
+        .fm-fare-summary{
+            font-size: 30px;
+            color:#363B40;
+            font-weight: bold;
+            display: block;
+        }
+    }
+    .fm-airline-names{
+        color:#363B40;        
+    }
+    .fm-aeroplane-lines{
+        background-color: #90A8BE;
+        height: 1px;
+        width: 98%;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: -10px;
+        &:before{
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 30px;
+            background-color: #FFC468;
+            position: absolute;
+            top: -4px;
+            border: 2px solid #ffffff;
+            left: 46%;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            background: url(../../../assets/images/aeroplane-icon.svg) no-repeat;
+            width: 20px;
+            height: 20px;
+            right: 0px;
+            top: -7px;
+        }
+    }
+    .fm-timeduration{
+        color:#90A8BE;
+    }
+    .fm-trip-summary{
+        line-height: 14px;
+        display: inline-block;
+        color: #363B40;
+        font-size: 10px;
+        margin-bottom: 22px;
+    }
+    .fm-ailine-trip{
+        padding-right: 20px;
+        position: relative;
+        margin-top: 24px;
+    }
+    .fm-increment{
+        font-size: 12px;
+        color:#363B40;
+        font-weight: normal;
+    }
+    .fm-btn-select{
+        height: 36px;
+        background-color: #FFC468;
+        border-color:#FFC468;
+        font-size: 13px;
+        color:#363B40;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+        &:hover{
+            background-color: #ffce83;
+            border-color:#ffce83;
+        }
+    }
+    .fm-flight-details{
+        text-align: right;
+        color:#FFC468;
+        cursor: pointer;        
+        background: url(../../../assets/images/arrow_down-yellow.svg) no-repeat;
+    }
+    .fm-flight-ref{
+        margin-bottom: 18px;
+    }
+    .fm-more-details{
+        .fm-flight-collapse{
+            .fm-fstatus{
+                list-style: none;
+                padding-left: 0px;
+                li{
+                    display: inline-block;
+                    margin-right: 28px;
+                    a{
+                        font-size: 18px;
+                        color: #333333;
+                    }
+                    &.fm-selected{
+                        a{
+                            font-size: 18px;
+                            color:#FFC468;
+                            border-bottom: 2px solid #FFC468;
+                            padding-bottom: 0px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow,&.ant-collapse > .ant-collapse-item:last-child > .ant-collapse-header{
+            text-align: right;
+            right: 0;
+            font-size: 14px;
+            color:#FFC468;
+        }
+        &.ant-collapse > .ant-collapse-item.ant-collapse-item-active > .ant-collapse-header .ant-collapse-arrow svg{
+            transform: rotate(-90deg) !important;
+            -webkit-transform: rotate(-90deg) !important;
+            -moz-transform: rotate(-90deg) !important;
+        }
+        &.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg{
+            transform: rotate(90deg) !important;
+            -webkit-transform: rotate(90deg) !important;
+            -moz-transform: rotate(90deg) !important;
+        }
+        &.ant-collapse{
+            border:0;
+            background: none;
+            .ant-collapse-item{border-bottom:0px;}
+            .ant-collapse-content{
+                background: none;
+                border: none;
+                border-top: 1px solid #E3E9EF;
+            }
+            .ant-collapse-content-box{
+                padding: 16px 0;
+            }
+        }
+        
+        .fm-airline-status{
+            text-align: left;
+            padding-top:0px;
+        }
+        .fm-vertical-trip.fm-ailine-trip{
+            margin-top: 20px;
+            margin-bottom: 0;
+            height: 70%;
+        }
+        .fm-ailine-trip{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        .fm-airportname{
+            text-transform: inherit;
+        }
+        .fm-airlogo-box{
+            margin: 20px 0;
+            .fm-img-logo{
+                width: 18px;
+            }
+            .fm-moreairline-name{
+                .fm-airline-names{
+                    color:#90A8BE;
+                    display: block;
+                }
+            }
+        }
+        .fm-aeroplane-lines{
+            width: 1px;
+            height: 100%;
+            margin:0px;
+            &:before{
+                width: 5px;
+                height: 5px;
+                left: -2px;
+                border: 0px;
+                background-color: #90A8BE;
+                top: auto;
+                bottom: -10px;
+            }
+            &:after{
+                transform: rotate(90deg);
+                left: -12px;
+                top: -19px;
+            }
+        }
+        .fm-flight-outbox{
+            margin-top: 30px;
+        }
+    }
+    .fm-arrives-box{
+        background-color: #E3E9EF;
+        color:#55636D;
+        padding: 9px 15px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+}

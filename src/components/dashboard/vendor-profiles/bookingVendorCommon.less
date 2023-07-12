@@ -1,0 +1,295 @@
+// Variables
+@orange-color: #ee4928; // sea blue
+@font-size10: 10px;
+@font-size12: 12px;
+@font-size14: 14px;
+@font-size16: 16px;
+@font-size18: 18px;
+@poppinse: "Poppins", sans-serif;
+@lightgrey-color: #90a8be;
+@darkgrey-color: #363b40;
+@mediumgrey-color: #55636d;
+@fs-normal: normal;
+@fs-bold: bold;
+@fs-500: 500;
+@fs-600: 600;
+
+.beauty-booking-vendor-v2 {
+  .my-profile-box {
+    .profile-content-box {
+      margin: 38px 8rem 28px 65px;
+      border-radius: 0;
+      box-shadow: none;
+      border: none;
+
+      .header-serch-tab-block {
+        display: flex;
+        margin-bottom: 0;
+        border-bottom: 1px solid #e3e9ef;
+        padding-bottom: 11px;
+        line-height: 10px;
+        align-items: center;
+
+        .heading-text,
+        .btn-right-block,
+        .ant-btn.orange-btn {
+          display: block;
+          font-family: @poppinse;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          color: rgba(189, 189, 189, 0.6);
+          padding: 0;
+          margin: 0;
+          border: none;
+          line-height: inherit;
+          align-items: center;
+          box-shadow: none;
+          cursor: pointer;
+          background: transparent;
+        }
+
+        .heading-text,
+        .btn-right-block {
+          margin-right: 50px;
+        }
+
+        .active-tab {
+          color: #ee4928;
+          font-size: 24px;
+
+          .ant-btn.orange-btn {
+            color: #ee4928;
+            font-size: 24px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              border-bottom: 4px solid #ee4928;
+              height: 4px;
+              width: 100%;
+              top: inherit;
+              border-radius: 100px;
+              bottom: -13px;
+              display: block;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .ant-tabs-line {
+        .ant-tabs-bar {
+          .ant-tabs-nav {
+            .ant-tabs-tab {
+              margin: 0;
+              padding: 4px 24px;
+              font-family: @poppinse;
+              font-weight: @fs-bold;
+              font-size: 15px;
+              color: @darkgrey-color;
+            }
+          }
+
+          .ant-tabs-ink-bar {
+            background-color: @orange-color;
+          }
+        }
+
+        .ant-tabs-nav-scroll {
+          padding: 0px 33px;
+        }
+      }
+    }
+  }
+}
+
+/* Payment Method page */
+.payment-method-wrapper {
+  .heading-search-block {
+    h1 {
+      span {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .grid-block {
+    background: #ffffff;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 8px;
+    padding: 15px 0;
+
+    h3 {
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 8px 30px;
+      color: #55636d;
+    }
+    .grid-head {
+      width: 100%;
+      background: #f6f8fa;
+      min-height: 36px;
+
+      h3 {
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 500;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+  .grid-row {
+    width: 100%;
+    border-bottom: 1px solid #e3e9ef;
+    padding: 30px;
+
+    &:last-child {
+      border: none;
+    }
+    .btn-paypal-verified {
+      display: block;
+      background: #fff;
+      border-color: #4a90e2;
+      border-width: 1px;
+      color: #4a90e2;
+      font-size: 9px;
+      font-family: Poppins;
+      font-weight: 600;
+      min-width: 70px;
+      height: 22px;
+      padding-left: 12px;
+      line-height: 11px;
+      box-shadow: 0.643275px 0.643275px 7.7193px rgba(144, 168, 190, 0.33);
+      border-radius: 2px;
+
+      img {
+        width: 7px;
+        height: 5px;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #4a90e2 !important;
+        color: #4a90e2 !important;
+        border-width: 1px !important;
+        background: #fff !important;
+      }
+    }
+    .btn-stripe-verified {
+      border-color: #6772e5 !important;
+      color: #6772e5 !important;
+      border-width: 1px !important;
+      background: #fff !important;
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #6772e5;
+        color: #6772e5;
+      }
+    }
+  }
+}
+
+/* Payment Transactions */
+.user_type_trader,
+.user_type_events,
+.user_type_handyman,
+.user_type_wellbeing,
+.user_type_beauty,
+.user_type_fitness {
+  .vendor-transactions {
+    .top-head-section {
+      .left {
+        h2 {
+          color: #363b40 !important;
+          padding-left: 0 !important;
+        }
+      }
+    }
+    .search-block {
+      width: 69%;
+      margin-left: 0 !important;
+      margin-top: 0;
+      padding: 0 0 15px;
+
+      .ant-input-affix-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        max-height: inherit;
+        color: #90a0b7;
+        font-size: 14px;
+        padding: 4px 11px 4px 0;
+        margin-left: 0 !important;
+        position: relative;
+      }
+      .ant-input-prefix {
+        position: absolute !important;
+        left: 11px;
+        top: 14px !important;
+        margin-right: 0 !important;
+      }
+      .ant-input {
+        background: transparent;
+        border: none;
+        padding: 4px 15px 4px 30px !important;
+        width: 100%;
+        min-height: 34px !important;
+        max-width: 274px;
+        border-radius: 10px !important;
+        border: none;
+        box-shadow: none;
+        color: #000;
+        border: 1px solid transparent;
+        line-height: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &:focus {
+          border-color: rgba(144, 168, 190, 0.33) !important;
+        }
+
+        &::placeholder {
+          color: #90a0b7;
+        }
+      }
+      .ant-input-affix-wrapper:focus,
+      .ant-input-affix-wrapper-focused {
+        box-shadow: none !important;
+      }
+    }
+    .employsearch-right-pad {
+      margin-top: 0;
+    }
+    .grid-block {
+      h2 {
+        font-family: Poppins;
+        font-size: 15px !important;
+
+        span {
+          color: #334d6e !important;
+          font-size: 10px !important;
+          font-family: Poppins;
+        }
+      }
+      .card-header-select {
+        .ant-select {
+          font-family: Poppins !important;
+          .ant-select-selector {
+            .ant-select-selection-item {
+              color: #ee4928 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

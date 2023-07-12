@@ -1,0 +1,88 @@
+.restaurant-detail-card{
+    .ant-list-items{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        .ant-list-item{
+            width: ~"calc(33.33% - 30px)";
+            background: #FFFFFF;
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+            border-radius: 4px;
+            padding: 0;
+            margin: 18px 15px;
+            .ant-list-item-main{
+                display: flex;
+                flex-direction: column;
+                padding: 22px 20px 14px 20px;
+                .ant-list-item-meta{
+                    .ant-list-item-meta-content{
+                        .ant-list-item-meta-title{
+                            font-family: Poppins;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #55636D;
+                            margin-bottom: 3px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                        }
+                        .ant-list-item-meta-description{
+                            font-family: Poppins;
+                            font-weight: normal;
+                            font-size: 11px;
+                            color: #55636D;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+                .ant-list-item-action{
+                    margin-top: auto;
+                    margin-left: 0;
+                    font-family: 'Poppins';
+                    font-weight: bold;
+                    li{
+                        font-size: 14px;
+                        color: #55636D;
+                        padding: 0 10px;
+                        &:first-child{
+                            padding-left: 0;
+                        }
+                        .ant-list-item-action-split{
+                            background-color: #55636D;
+                        }
+                    }
+                }
+            }
+            .ant-list-item-extra{
+                position: relative;
+                width: 42%;
+                max-height: 189px;
+                margin: 0;
+                box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+                .product-image{
+                    height: 100%;
+                    object-fit: cover;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: #FFC468;
+                    border: none;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.imageCard {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    .imageCardContent {
+        position: absolute;
+        bottom: 20px;
+        left: 24px;
+        *{
+            fill: #000;
+            color: #000;
+        }
+    }
+    &.white{
+        .imageCardContent {
+            *{
+                fill: #FFF;
+                color: #FFF;
+            }
+        }
+    }
+}

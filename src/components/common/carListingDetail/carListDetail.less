@@ -1,0 +1,652 @@
+@import "../../../style/utils/variables.less";
+
+h2,
+.inter-text,
+.detail-block-two li,
+h4,
+.text-or {
+  color: @textDarkBlue;
+}
+
+/*Car List Detail*/
+body .car-list-detail {
+  .car-preview-pic {
+    width: 100%;
+    max-width: 285px;
+    padding-right: 15px;
+
+    img {
+      max-width: 100%;
+    }
+
+    .tag {
+      top: 5px;
+      left: -16px;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 700;
+      border: 0;
+    }
+  }
+
+  .booking-detail-card {
+    box-shadow: 0 0 7px 0 rgba(144, 168, 190, 0.8);
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px 15px 15px;
+    margin-bottom: 30px;
+
+    .title {
+      margin-top: 1px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #363B40;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 600;
+    }
+  }
+
+  .booking-car-detail {
+    .rating-view-location-box {
+      display: flex;
+
+      .rate-section {
+        padding-top: 0 !important;
+      }
+
+      .similar-sub-text {
+        padding-left: 10px;
+        padding-right: 15px;
+        color: #90A8BE;
+        font-size: 12px;
+        font-family: Arial;
+        font-weight: 400;
+        padding-top: 2px;
+
+      }
+
+      .location {
+        font-size: 12px;
+      }
+
+      .similar-sub-text {
+        color: #90A8BE !important;
+        position: relative;
+        top: 0px;
+      }
+    }
+
+    .price-box {
+      .price {
+        font-size: 24px;
+
+        .sub-text {
+          font-weight: 300 !important;
+          margin-top: -5px;
+        }
+      }
+
+    }
+
+    .ero-sub-box {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 35px;
+
+      .sp-sub-text {
+        color: #90A8BE;
+        padding-right: 15px;
+        line-height: 1;
+        margin-bottom: 0;
+      }
+
+      .europcar {
+        margin-top: 0;
+        width: 45px;
+      }
+    }
+  }
+
+  .category-name {
+    margin-top: 15px;
+    padding-top: 8px;
+    font-size: 10px;
+  }
+
+  .similar-sub-text {
+    margin-bottom: 2px;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+    color: #d8d9da !important;
+    position: relative;
+    top: -3px;
+  }
+
+  .sp-sub-text,
+  .similar-sub-text,
+  .small-sub-text {
+    color: #363B40;
+  }
+
+  .sp-sub-text,
+  .small-sub-text,
+  .more-detail,
+  .sub-text {
+    font-size: @font-10;
+  }
+
+  .car-info,
+  .location {
+    color: @textSecondaryColor;
+  }
+
+  .alert-info-text,
+  .car-info,
+  .location,
+  .cancel-text,
+  .review-text {
+    font-size: @font-14;
+  }
+
+  .location {
+    font-weight: 300 !important;
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+
+}
+
+body .location-Car-list-detail {
+  .ant-col-md-16 {
+    padding: 12px 0px 12px 0;
+    padding-right: 20px !important;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #363B40;
+    margin: 30px 0;
+
+  }
+
+  .booking-detail-card {
+    padding: 0;
+
+    .tag {
+      position: absolute;
+      top: @font-10;
+      left: 9px;
+      background: #FFC468;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 4px @font-10;
+    }
+  }
+
+  .booking-car-detail {
+    .price-box {
+      .price {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .category-box,
+  .europcar {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+/*Car Deatil Page css*/
+body .car-detail-content {
+  .booking-detail-card {
+    background-color: #fff;
+    padding: 25px 20px 30px;
+  }
+
+  .car-detail-left {
+    h2 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+
+      margin-bottom: 0;
+    }
+
+    .small-sub-text {
+      margin-bottom: 0;
+    }
+  }
+
+  .more-detail,
+  .detail-block-two ul li,
+  .gray-box-detail,
+  .gray-box-detail h3 {
+    color: @textSecondaryColor;
+    cursor: pointer;
+    margin-top: @font-14;
+  }
+
+  .more-detail,
+  .detail-block-two ul li,
+  .gray-box-detail,
+  .gray-box-detail h3 {
+    color: @textSecondaryColor;
+    font-size: @font-14;
+  }
+
+  .inter-text,
+  .detail-block-two li {
+    font-size: @font-14;
+    cursor: none;
+  }
+
+  .alert-info-text {
+    line-height: 16px;
+    text-align: right;
+    color: #EE4928;
+    margin-top: 7px;
+    font-weight: 300;
+  }
+
+  .cancel-text {
+    color: #5D3F96;
+  }
+
+  .review-text {
+    color: #FFC468;
+    text-decoration: underline;
+  }
+
+  .detail-block-two {
+    padding: 23px 0 11px 0;
+    border-bottom: #BBC9D6 1px solid;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        width: 48%;
+        margin-bottom: @font-10;
+
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: @font-10;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .detail-block-three {
+    margin-top: 21px;
+
+    .sub-text {
+      padding: 12px 0;
+      margin-bottom: 0;
+    }
+
+    .gray-box-detail {
+      margin-top: 0;
+      background: rgba(216, 216, 216, 0.25);
+      mix-blend-mode: normal;
+      padding: 20px 15px @font-10 15px;
+      margin-bottom: 25px;
+
+      h3 {
+        margin: 0 0 5px 0;
+        padding: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding-left: 18px;
+          display: inline-block;
+          width: 50%;
+          position: relative;
+          background: url(.././../../assets/images/check-icon.png) no-repeat 0px 8px;
+          background-size: @font-10 8px;
+          vertical-align: middle;
+          vertical-align: text-top;
+        }
+      }
+
+      h3 {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .pick-drop-content-block {
+    font-size: @font-14;
+    color: @textDarkBlue;
+
+    .heading-block {
+      h3 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #FFFFFF;
+        height: 35px;
+        line-height: 35px;
+        padding: 0px;
+        margin-bottom: 0;
+        background-color: @textSecondaryColor;
+      }
+
+      .heading {
+        padding-left: 15px;
+      }
+    }
+
+    hr {
+      border: #B9C9D6 1px solid;
+    }
+
+    .content-block,
+    .content-block-two {
+      padding: 23px 25px 0px;
+
+      h4 {
+        font-size: @font-14;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .content-block-two {
+      padding-top: 5px;
+
+      .pickup-instruc {
+        margin: 17px 0;
+        line-height: 16px;
+
+        h4 {
+          margin-bottom: 5px;
+        }
+      }
+
+      .ant-col-12 {
+        padding-right: 30px;
+      }
+    }
+
+  }
+
+  .payable-summary {
+    font-size: @font-14;
+    background: #FBFCFD;
+    border: 2.5px solid #FFC468;
+    box-sizing: border-box;
+    border-radius: 8.33px;
+    color: @textDarkBlue;
+
+    .price-block-left-detail {
+      p {
+        margin-bottom: 5px;
+      }
+
+      .total {
+        color: #363B40;
+      }
+
+      table {
+        tr {
+          td {
+            &:first-child {
+              width: 300px;
+            }
+
+            &:last-child {
+              padding-left: 40px;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+
+    .price-block-left-detail {
+      text-align: right;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .red {
+      color: #F63730
+    }
+
+    .payable-detail {
+      h3 {
+        font-size: 25px;
+      }
+
+      span {
+        font-size: @font-14;
+        font-weight: lighter;
+      }
+
+      td {
+        vertical-align: middle;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .sep {
+      background-color: #E3E9EF;
+      height: 1px;
+      margin: 15px 0 25px 0;
+
+    }
+
+    .ant-btn {
+      background-color: #FFC468;
+      color: #363B40;
+      text-transform: uppercase;
+      min-height: 45px;
+      min-width: 107px !important;
+      margin-left: 25px;
+      border-color: #FFC468;
+
+      span {
+        font-weight: 600 !important;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+/*Car Reserve Modal*/
+.car-reserve-modal {
+  .ant-modal-body {
+    padding-top: 0px;
+  }
+
+  .car-pick-drop-block {
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    .ant-col-md-4 {
+      padding-right: 20px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 3px;
+    }
+
+    .small-sub-text {
+      color: @textSecondaryColor
+    }
+
+    .pick-drop-text-detail {
+      span {
+        color: @textSecondaryColor;
+        display: block;
+      }
+
+      .pick {
+        font-size: @font-10;
+        color: @textDarkBlue;
+      }
+    }
+  }
+
+  .fm-step-one label,
+  .fm-step-one .fm-apply-label {
+    font-size: @font-14;
+    color: @textDarkBlue;
+    margin-right: 50px;
+    margin-bottom: 0;
+    margin-top: 3px;
+    min-width: 150px !important;
+    width: auto;
+  }
+
+  .fm-step-one .fm-apply-label {
+    label {
+      margin-right: 18px !important;
+    }
+  }
+
+  .ant-form-item-label>label {
+    align-items: flex-end !important;
+  }
+
+  .fm-step-two {
+    margin-top: 25px;
+
+    .fm-input-heading {
+      margin: 18px 0 9px !important;
+    }
+
+    .sub-text {
+      color: @textDarkBlue;
+      font-size: @font-10  !important;
+
+      p {
+        margin-bottom: 2px;
+      }
+
+    }
+  }
+
+  .table-data {
+    width: 100%;
+    margin-top: 20px;
+
+    tr {
+      background-color: #fff;
+
+      td {
+        color: @textDarkBlue;
+        padding: 20px;
+        vertical-align: middle;
+        border-bottom: #E4E9EF 1px solid;
+
+        h4 {
+          font-size: @font-14  !important;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+
+        p {
+          color: @textSecondaryColor;
+          font-size: @font-10  !important;
+          margin-bottom: 0;
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+
+        .ant-btn-default {
+          color: #363b40;
+          background-color: #fff;
+          border: 2px solid #ffc368;
+
+          min-width: 90px;
+          min-height: 42px;
+        }
+
+        ul {
+          margin: 10px 0 0 0;
+          padding: 0;
+
+          li {
+            margin-left: 15px;
+          }
+        }
+
+      }
+
+    }
+
+    .sep-block {
+      background-color: #F7F8FA;
+
+      td {
+        height: 12px;
+        border-bottom: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.price-box .price {
+  font-size: 24px;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+}
+
+html .tourism-car-detail-box .location-information-container .location-title {
+  background: #C4C4C4;
+}

@@ -1,0 +1,353 @@
+@import "../../../style/utils/variables.less";
+.profile-purple-main-wrap {
+  .checkout-payment-block {
+    .card-container {
+      display: flex;
+      margin: 0 auto;
+      padding: 25px 0rem 0 0px;
+
+      .steps-content {
+        margin-top: 16px;
+        min-height: 400px;
+        width: 100%;
+      }
+
+      h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        color: #5d3f96;
+        font-family: @poppinse;
+        margin-bottom: 0px;
+      }
+
+      h5{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        color: #5d3f96;
+        font-family: @poppinse;
+
+      }
+
+      .return-shopping {
+        color: #788995;
+        font-size: 14px;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 15px;
+        
+        span {
+          margin-right: 10px;
+        }
+      }
+
+      .profile-content-box {
+        margin: 0;
+        border-radius: 0px;
+        box-shadow: none;
+        border: none;
+        border-top: 1px solid #DADADA;
+        padding-top: 40px;
+
+        .ant-card-head {
+          padding: 5px 33px;
+
+          .ant-card-head-title {
+            color: #5d3f96;
+            padding: 8px 0;
+          }
+        }
+        .your-saved {
+          font-family: @poppinse;
+          font-family: 18px;
+          color: @textPrimaryColor !important;
+          font-weight: 700;
+          margin-bottom: 25px;
+        }
+
+        .ant-card-body {
+          padding: 0px 0px 24px 0px !important;
+
+          .ant-radio-group {
+            width: 100%;
+
+            .profile-payment-setup {
+              .paypal-block {
+                border: 1px solid #dadada;
+                border-radius: 3px;
+                padding: 30px 20px 25px;
+                width: 100%;
+                margin: 0;
+                position: relative;
+                margin-bottom: 30px;
+
+                .discription {
+                  color: #363b40;
+                  font-size: 14px;
+                  padding: 3px 0 0 0px;
+                }
+
+                .visa-card-icon {
+                  position: absolute;
+                  right: 15px;
+                  top: 15px;
+                }
+
+                .stripe-box {
+                  padding: 28px 0 0px 24px;
+                  width: 80%;
+                  max-width: 80%;
+
+                  .stripeElement {
+                    display: block;
+                    margin: 0;
+                    padding: 17px 14px;
+                    font-size: 1em;
+                    font-family: "Source Code Pro", monospace;
+                    box-shadow: none;
+                    border: 1px solid #90a8be;
+                    outline: 0;
+                    border-radius: 4px;
+                    background: white;
+                  }
+
+                  .cvc-input-box {
+                    float: left;
+                    width: 100%;
+                    position: relative;
+                  }
+
+                  label {
+                    color: #55636c;
+                    font-weight: 300;
+                    letter-spacing: 0.025em;
+                    padding-bottom: 4px;
+                    font-size: 12px;
+                  }
+
+                  .cart-payment-card-outline,
+                  .cart-payment-question-outline {
+                    position: absolute;
+                    top: 53%;
+                    right: 25px;
+                  }
+
+                  .cart-payment-question-outline {
+                    right: 15px;
+                  }
+
+                  .purpel-medium-btn {
+                    background: #5d3f96;
+                    border-color: #5d3f96;
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.131774);
+                    border-radius: 4px;
+                    line-height: inherit;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    width: auto;
+
+                    &:hover,
+                    &:focus {
+                      background: #523784;
+                      border-color: #523784;
+                    }
+                  }
+                }
+              }
+
+              .paypal-block.creditcard {
+                .ant-radio-wrapper {
+                  .ant-radio {
+                    vertical-align: top;
+                    top:6px;
+                    
+                  }
+                  span {
+                    display: inline-block;
+                    label.paypal-label {
+                      font-style: normal;
+                      font-size: 18px;
+                      font-family: @poppinse;
+                      font-weight: 500;
+                      color: @textPrimaryColor;
+                      span {
+                        margin-left: 4px;
+                        img {
+                          margin-right: 5px;
+                        }
+                      }
+                      p{
+                        font-size: 14px;
+                        color: #90A8BE;
+                        margin-top: 0px;
+                        margin-bottom: 11px;
+                        font-weight: 400;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .paypal-block-inner-wrapper {
+                border: 1px solid #2f80ed;
+                margin-bottom: 30px !important;
+              }
+
+              .googlepay {
+                button {
+                  margin-top: 0;
+                  margin-left: 10px !important;
+                }
+              }
+            }
+          }
+
+          .ant-table-thead > tr > th {
+            background: none;
+            color: @textDarkBlue;
+          }
+        }
+      }
+
+      .delete-icon {
+        display: inline-block;
+        padding-left: 10px;
+        cursor: pointer;
+        color: #a7acb1;
+
+        &:hover {
+          color: #f15050;
+        }
+      }
+
+      .ant-form-item-explain {
+        // color: aliceblue !important
+        background: rgba(255, 255, 255, 0.5) !important;
+        padding-left: 4px !important;
+      }
+
+      .form-item-split {
+        color: #ff4d4f;
+      }
+    }
+
+    .error {
+      color: #ff4d4f;
+      font-size: 12px;
+    }
+  }
+}
+
+.payment-receipt-modal .ant-modal-content {
+  padding: 0;
+}
+
+.my-profile-box.my-profile-setup.checkout-payment-block {
+  padding: 0 10rem;
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+
+  .ant-table-wrapper.payment-table {
+    width: 100%;
+    border: 1px solid #DDE3E8;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 0px 21px 20px;
+  }
+
+  .ant-table-tbody > tr > td {
+    border:none;
+    padding-bottom: 8px;
+    border-bottom: none;
+    padding: 11px 0 7px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #363B40;
+    background: none !important;
+    vertical-align: top;
+
+    &:first-child{
+      width: 10px;
+      text-align: center;
+      min-width: auto;
+    }
+
+    &:first-child + td{
+      font-size: 15px;
+      font-weight: 400;
+      color: #363B40;
+      width: 60%;
+      strong{
+        font-size: 18px;
+        font-weight: 600;
+        color: #363B40;
+        
+      }
+    }
+
+    
+  }
+
+  .ant-table-thead > tr > th{
+    padding-left: 0;
+      &:first-child + th +th {
+        width: 25%;
+      }
+  }
+}
+
+.entercvv {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 238px;
+  input {
+    width: 149px;
+    height: 55px;
+    border:1px solid #F63730;
+    border-radius: 4px;
+    margin-left: 18px;
+    padding-left: 10px;;
+
+  }
+  svg {
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transform: translate(0, -50%);
+  }
+}
+
+p.recommended {
+  font-size: 14px;
+  color: #90A8BE;
+  margin-top: 7px;
+  margin-bottom: 11px;
+}
+
+.my-profile-box .profile-content-box .another-payment {
+  margin-top:25px;
+  h4 {
+    font-family: @poppinse;
+    font-size: 18px !important;
+    color: @textPrimaryColor !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+
+button.ant-btn.button_center.ant-btn.btn-blue.ml-20.ant-btn-default.ant-btn-submit {
+  margin: 0 auto !important;
+  display: block;
+}
+
+.check-uncheck-box {
+  position: absolute;
+  top: 50%;
+  right: 70px;
+}

@@ -1,0 +1,3276 @@
+@import "../../../style/utils/variables.less";
+@decline:#EE4928;
+@accept:#2ED47A;
+@orange-btn:#EE4928;
+@grey-btn:#C4C4C4;
+@dark-blue:#5D3F96;
+@poppinse: "Poppins", sans-serif;
+@pending :#EE9400;
+@yellow-text:#FFC468;
+@textPrimaryColor: #363B40;
+@textSecondaryColor: #90a8be;
+@textDarkBlue: #55636D;
+@textDarkBlack:#363B40;
+@Formee_Dark_Grey: #363B40;
+@decline:#EE4928;
+@accept:#2ED47A;
+@orange-btn:#EE4928;
+@grey-btn:#C4C4C4;
+@dark-blue:#5D3F96;
+@poppinse: "Poppins", sans-serif;
+@pending :#EE9400;
+@yellow-text:#FFC468;
+
+html body .tabs-button {
+  display: flex;
+  padding: 0 0px;
+  height: auto;
+  align-items: flex-end;
+  border-bottom: 1px solid #E3E9EF;
+
+
+  button {
+    height: auto;
+    border-radius: 0; 
+    margin-right: 50px;
+    border-bottom: none;
+    color: #BDBDBD !important;
+    background: none !important;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border: none !important;
+    box-shadow: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 12px;
+    
+
+  }
+  button.bashboard-btn.active{
+     font-size: 24px;
+     color: #5D3F96 !important;
+     position: relative;
+    
+     :after {
+          width: 100%;
+          height: 4px;
+          border-radius: 20px;
+          background: #5D3F96;
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+
+    }
+     
+  }
+
+  button.retail-btn.active{
+    font-size: 24px;
+    color: #CA71B7 !important;
+    position: relative;
+    :after {
+      width: 100%;
+      height: 4px;
+      border-radius: 20px;
+      background: #CA71B7;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+    }
+  }
+
+  button.classifield-btn.active{
+    font-size: 24px;
+    color: #7ec5f7 !important;
+    position: relative;
+    :after {
+      width: 100%;
+      height: 4px;
+      border-radius: 20px;
+      background: #7ec5f7;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+    }
+  }
+  button.booking-btn.active{
+    font-size: 24px;
+    color: #fcc468 !important;
+    position: relative;
+    :after {
+      width: 100%;
+      height: 4px;
+      border-radius: 20px;
+      background: #fcc468;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+    }
+  }
+  .dashboard-btn {
+    background-color: #8ea8bd;
+    border-color: #8ea8bd;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #71899d;
+      border-color: #71899d;
+    }
+  }
+
+
+
+  .retail-btn {
+    background-color: #CB71B7;
+    border-color: #CB71B7;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #b15e9f;
+      border-color: #b15e9f;
+    }
+  }
+
+
+  .classifield-btn {
+    background-color: #82c3f3;
+    border-color: #82c3f3;
+    color: #fff;
+  }
+
+  .booking-btn {
+    background-color: #fac569;
+    border-color: #fac569;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #f5c064;
+      border-color: #f5c064;
+      color: #fff;
+    }
+  }
+
+  .food-scanner {
+    background-color: #99cc35;
+    border-color: #99cc35;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #86b529;
+      border-color: #86b529;
+      color: #fff;
+    }
+  }
+
+  .user-retail {
+
+    .btn-outline {
+      background-color: transparent !important;
+      color: #37d380 !important;
+    }
+  }
+
+}
+
+.pink-text {
+  color: pink
+}
+
+.userdetail-itemtable {
+  span.ant-avatar-image {
+    border-radius: 0;
+    height: 72px;
+    width: 70px;
+  }
+}
+
+.btn-outline {
+  background-color: transparent !important;
+  color: #37d380 !important;
+  height: 25px;
+
+  .color-dots {
+    width: 8px;
+    height: 8px;
+    display: block;
+    background: #37D380;
+    border-radius: 50%;
+    margin-right: 6px
+  }
+}
+
+.card-profile-detail {
+  .ant-card-body {
+    padding: 15px;
+
+    .product-name {
+      border-right: 1px solid #ccc;
+      padding: 15px
+    }
+
+    h4.lightblue-text {
+      color: #94adc2;
+      margin: 0;
+    }
+
+    .edit-view {
+      width: 100%;
+      text-align: right;
+
+      .card-attached {
+        background: #fcede8;
+        border: none;
+        color: #f06249;
+        border-radius: 0;
+        font-weight: 600;
+        margin-left: 12px
+      }
+    }
+  }
+
+  .purple-button {
+    background-color: #cb71b7;
+    color: #fff;
+    border-color: #cb71b7;
+    min-width: 111px;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 27px;
+    line-height: 17px;
+  }
+
+}
+
+.qty-hrs {
+  padding: 12px;
+  color: #90A8BE;
+  font-size: 14px;
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+
+.shopping-img {
+  position: absolute;
+  top: -20px;
+  left: -18px;
+}
+
+.darkpink {
+  background-color: #FF3366 !important;
+  color: #fff !important;
+  border-color: #FF3366 !important;
+  min-width: 111px;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  height: 27px;
+  line-height: 17px;
+}
+
+.orange-text {
+  color: #FFC468
+}
+
+.blue-text {
+  color: #7EC5F7
+}
+
+.lightblue-text {
+  color: #90A8BE
+}
+
+.green-text {
+  color: #99cc35
+}
+
+.pink-strip {
+  background-color: #cb71b7;
+  padding: 12px 15px;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+
+  .ant-typography {
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+    text-decoration: underline;
+  }
+}
+
+.retail-carddetail {
+  .ant-avatar {
+    width: 139px;
+    height: 88px;
+    border-radius: 0;
+    margin-right: 10px;
+  }
+
+  td .ant-typography {
+    font-size: 14px !important;
+  }
+
+  span.ant-typography.fs-10 {
+    font-size: 10px !important;
+  }
+
+  .taxes-info {
+    display: block;
+    line-height: 13px;
+  }
+
+  .outline-btn-rounded {
+    color: #cb71b7 !important;
+    border-radius: 50px !important;
+    border-color: #cb71b7 !important;
+    min-width: 78px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+    margin-top: 20px !important;
+    background-color: transparent !important;
+  }
+
+  tr {
+    th {
+      &:last-child {
+        text-align: right !important;
+      }
+    }
+  }
+}
+
+.retail-cart {
+  .fs-18 {
+    color: #55636D;
+    font-size: 18px;
+  }
+
+  .price {
+    b {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.checkout-box {
+  color: #90A0B7;
+
+  .checkou-btn {
+    border-color: #ee4929;
+    color: #fff;
+    background: #ee4929;
+    width: 123px;
+  }
+}
+
+.save-later-link {
+  display: block;
+  margin-top: 19px;
+}
+
+.purple-heading {
+  color: #5d3f95 !important;
+}
+
+.profile-purple-main-wrap {
+  .restaurant-cart-detail {
+    .top-head-section{
+      .tabs-button{
+        .retail-btn{
+          background-color: #E3E9EF;
+          border-color: #E3E9EF;
+          color: #90A8BE;
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          min-width: 171px;
+          min-height: 48px;
+          &:hover{
+            background-color: #CB71B7;
+            border-color: #CB71B7;
+            color: #FFF;
+          }
+        }
+      }
+    }
+    .profile-content-box {
+      .ant-card {
+        border-radius: 0;
+      }
+      .add-content-box{
+        background: #FFFFFF;
+        box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+        border-radius: 4px;
+        &-top{
+          display: flex;
+          align-items: flex-end;
+          padding: 26px 32px 21px 23px;
+          .product-detail-left{
+            flex: 1;
+            display: flex;
+            .content{
+              padding-left: 20px;
+              h4.title{
+                font-size: 16px !important;
+                color: #363B40 !important;
+                margin: 0;
+              }
+              .address{
+                span.ant-typography{
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #55636D;
+                }
+              }
+            }
+          }
+          .product-detail-right{
+            .blue-link{
+              display: inline-block;
+              margin-bottom: 5px;
+              font-size: 12px;
+              color: #109CF1;
+              text-decoration: none;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        &-bottom{
+          padding: 22px 32px 26px 23px;
+          text-align: center;
+          button.add-cart-item-btn{
+            min-width: 115px;
+            min-height: 40px;
+            background: #F0F0F0;
+            border-color: #F0F0F0;
+            box-shadow: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: normal;
+            color: #55636D;
+            &:hover{
+              background-color: #ee4929;
+              border-color: #ee4929;
+              color: #FFF;
+            }
+          }
+        }
+      }
+
+      .block-heading {
+        padding: 15px 25px;
+        border-bottom: #EBEFF2 1px solid;
+
+        h2 {
+          font-weight: bold;
+          font-size: 18px;
+          color: #5D3F96;
+          margin: 0;
+          padding: 0;
+        }
+
+        a {
+          font-size: 12px;
+          color: #5D3F96;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .ant-table-wrapper {
+        border-top: none;
+        border: none;
+
+        .ant-table {
+          table {
+            border-radius: 0;
+
+            th {
+              display: revert;
+              color: #55636D;
+              font-size: 12px;
+              padding: 4px 34px;
+              border-bottom: none;
+              background: #F7F8FA !important;
+              text-align: left;
+
+              &:last-child {
+                text-align: right;
+              }
+            }
+
+            td {
+              text-align: left;
+
+              &:last-child {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+
+      .restaurant-cart-table{
+        padding: 0;
+        .ant-table{
+          .ant-table-container{
+            table{
+              thead{
+                tr{
+                  th{
+                    border-top: 1px solid #DBE0E6;
+                    border-bottom: 1px solid #DBE0E6;
+                    background-color: transparent !important;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #90A8BE;
+                    padding: 8px 31px 7px 23px;
+                    &:first-child{
+                      font-weight: 600;
+                      font-size: 18px;
+                      color: #363B40;
+                    }
+                  }
+                }
+              }
+              tbody{
+                tr{
+                  td{
+                    border-bottom: 1px solid #DBE0E6;
+                    padding: 28px 31px 20px 23px;
+                    .restaurant-cart-table-item{
+                      display: flex;
+                      .ant-avatar-square{
+                        border-radius: 8.33px;
+                      }
+                      .content{
+                        flex: 1;
+                        padding-left: 29px;
+                        h4.ant-typography{
+                          font-size: 16px !important;
+                          margin-bottom: 6px;
+                        }
+                        .qty-box{
+                          width: 73px;
+                          height: 23px;
+                          background: #F0F0F0;
+                          border-radius: 1px;
+                          display: flex;
+                          font-size: 14px;
+                          color:#55636D;
+                          padding: 0 0 0 10px;
+                          margin-bottom: 8px;
+                          .ant-input-number{
+                            width: auto;
+                            flex: 1;
+                            background: transparent;
+                            border: none;
+                            .ant-input-number-handler-wrap{
+                              background: transparent;
+                              border: none;
+                            }
+                            .ant-input-number-input-wrap{
+                              .ant-input-number-input{
+                                height: auto;
+                              }
+                            }
+                          }
+                        }
+                        .remove-link{
+                          font-weight: 500;
+                          font-size: 12px;
+                          color: #90A8BE;
+                          &:hover{
+                            color: #ee4929;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .bdr-right {
+        border-right: #E4E9EF 1px solid;
+      }
+      .checkout-box {
+        font-size: 14px;
+        line-height: 25px;
+        color: #55636D !important;
+        padding: 18px 26px 22px 22px !important;
+        .ant-typography {
+          color: #55636D;
+        }
+        h2 {
+          font-size: 33px !important;
+          line-height: 49px;
+          font-weight: 600;
+          margin-bottom: 12px !important;
+          color: #55636D !important;
+        }
+        .ant-divider-horizontal {
+          margin: 12px 0;
+        }
+        .total-big-font {
+          font-size: 16px;
+          font-weight: bold;
+          color: #55636D !important;
+          font-family: 'Poppins';
+        }
+        .fs-10 {
+          font-size: 10px !important;
+          line-height: 15px;
+        }
+        .your-order-item{
+          margin: 0;
+          padding: 0;
+          li{
+            margin: 0;
+            padding: 13px 0 10px 0;
+            display: flex;
+            border-bottom: 2px solid rgba(196, 196, 196, 0.15);
+            &:first-child{
+              border-top: 2px solid rgba(196, 196, 196, 0.15);
+            }
+            .qty-box{
+              font-size: 14px;
+              color:#55636D;
+              margin-right: 15px;
+              .ant-input-number{
+                width: 50px;
+                // flex: 1;
+                background: transparent;
+                border: none;
+                .ant-input-number-handler-wrap{
+                  background: transparent;
+                  border: none;
+                }
+                .ant-input-number-input-wrap{
+                  .ant-input-number-input{
+                    height: auto;
+                    padding: 0 3px;
+                  }
+                }
+              }
+            }
+            .title{
+              font-family: Poppins;
+              margin-right: 15px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              color: #55636D;
+            }
+            .price{
+              margin-left: auto;
+              color: #55636D;
+            }
+          }
+        }
+        .your-order-address{
+          padding: 23px 0 0 0;
+          line-height: 20px;
+          &>.ant-row{
+            margin-bottom: 17px;
+          }
+          .edit-address{
+            width: 21px;
+            height: 21px;
+            border: 0.84px solid #55636D;
+            box-sizing: border-box;
+            border-radius: 5.04px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        textarea.ant-input{
+          border: 1px solid #C4C4C4 !important;
+          box-sizing: border-box;
+          border-radius: 5px;
+          box-shadow: none;
+          height: 96px;
+          margin-top: 5px;
+        }
+      }
+      .checkout-box-action{
+        padding: 22px 26px 36px 22px;
+        border-top: 1px solid rgba(85, 99, 109, 0.1);
+        .checkou-btn {
+          color: #fff;
+          background: #109CF1;
+          border: 2px solid #109CF1;
+          box-sizing: border-box;
+          box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+          border-radius: 4px;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+          min-width: 160px;
+          height: 42px;
+          margin: 0 auto;
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+/*START: Address Modal*/
+body .address-modal{
+  max-width: 605px;
+  .ant-modal-body{
+    padding: 27px 76px 30px 76px;
+    h4.ant-typography{
+      font-family: Poppins;
+      color: #363B40;
+    }
+    .select-address-box{
+      border: 1px solid #C4C4C4;
+      box-sizing: border-box;
+      border-radius: 5px;
+      font-family: Poppins;
+      color: #363B40;
+      padding: 11px 9px 21px 18px;
+      margin-bottom: 26px;
+      .ant-radio-wrapper{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 28px;
+        color: #363B40;
+        padding-top: 11px;
+        padding-bottom: 7px;
+        display: flex;
+        align-items: center;
+        .ant-radio{
+          .ant-radio-inner{
+            width: 18px;
+            height: 18px;
+            background-color: transparent;
+            border-color: #9C9C9C;
+            border-style: solid;
+            border-width: 2px;
+          }
+          &.ant-radio-checked{
+            .ant-radio-inner{
+              background-color: transparent;
+              border-color: #FFC468;
+              &:after{
+                background-color: #FFC468;
+              }
+            }
+          }
+        }
+      }
+      div.ant-typography{
+        margin: 0;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #363B40;
+      }
+    }
+    .ant-card{
+      border: none;
+      background: transparent;
+      .ant-card-body{
+        padding: 0;
+        .ant-form-vertical{
+          .ant-form-item-label{
+            padding-bottom: 0;
+          }
+          &>.ant-row{
+            padding-bottom: 17px;
+            &:nth-last-child(2){
+              padding-bottom: 4px;
+            }
+            &:last-child{
+              padding-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    .steps-action{
+      text-align: center;
+      margin-top: 26px;
+      .btn-blue{
+        background: #FFC468;
+        border: 2px solid #FFC468;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+        border-radius: 4px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 0.01em;
+        min-width: 160px;
+        min-height: 40px;
+      }
+    }
+  }
+}
+
+.card-container.signup-tab {
+  padding: 25px 10rem 0 5rem;
+}
+
+body .employee-dashborad-box .employsearch-block {
+  box-shadow: none;
+}
+
+body .top-head-section .right {
+  margin-bottom: 7px;
+  min-height: auto;
+}
+
+body .employee-dashborad-box .profile-content-box {
+  margin: 0px 0% 28px 0px;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.profile-content-box .ant-col.ant-col-xs-24.ant-col-md-16.ant-col-lg-16.ant-col-xl-14 {
+  max-width: 66%;
+  flex: 0 0 70%;
+}
+/*END: Address Modal*/
+
+.card-container.signup-tab.mybooking {
+  padding:25px 10rem 0 5rem !important;
+}
+
+.booking-box .custom-select-list {
+   margin-left: 0px;
+   max-width: 100%;
+   flex: 0 0 100%;
+}
+
+.profile-purple-main-wrap .booking-box .custom-select-list .purpel-selct-list {
+   background: #FFFFFF;
+   border: 1px solid @textSecondaryColor;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+body .profile-purple-main-wrap .booking-box .purpel-selct-list .ant-select-selection-item {
+  color: @textDarkBlack !important;
+  font-family: @poppinse;
+  font-size: 15px;
+  font-weight: 500;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+
+// booking
+
+.employsearch-right-pad {
+   margin-top: 12px;
+  .search-block {
+    .ant-input-affix-wrapper {
+      background: none;
+      border:none;
+      input {
+        background: none;
+        vertical-align: middle;
+        padding: 0;
+        display: inline-block;
+        min-height: auto;
+      }
+    }
+  }
+}
+
+span.anticon.anticon-search.site-form-item-icon.booking-icon {
+  color:@textSecondaryColor;
+}
+
+.booking-box  .card-container.signup-tab {
+  padding: 0px 11.5% 0 0rem;
+  .profile-content-box {
+    margin-right: 0;
+  }
+}
+
+.ant-row.tab-full {
+  .ant-tabs-nav-scroll {
+           padding: 0 !important;
+  }
+}
+
+.ant-tabs.ant-tabs-top.tab-box.ant-tabs-line .ant-tabs-nav-container .ant-tabs-nav-wrap .ant-tabs-nav.ant-tabs-nav-animated .ant-tabs-tab {
+  padding: 10px 24px!important;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: @poppinse;
+  margin-right: 0 !important;
+
+  &.ant-tabs-tab-active {
+    border-width: 3px;
+  
+  }
+}
+
+body .my-profile-box .profile-content-box .tab-box .ant-tabs-bar {
+   margin-bottom: 20px;
+}
+
+.card-header-select {
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6A707E;
+  }
+  .ant-select-selection-item {
+    font-size: 14px;
+    font-weight: 400;
+    color: @dark-blue !important;
+  }
+}
+
+html body .profile-purple-main-wrap .tab-full .card-header-select .ant-select-selector .ant-select-selection-item {
+  font-size: 14px !important;
+    font-weight: 400;
+    color: @dark-blue !important;
+}
+
+html body .profile-purple-main-wrap .tab-full .card-header-select  .ant-select-arrow {
+  border:none !important;
+  right: -10px !important;
+}
+
+.event-booking-profile-wrap .pf-vend-restau-myodr .profile-content-shadow-box .tab-box.ant-tabs-line .ant-tabs-tabpane,
+.event-booking-profile-wrap .pf-vend-spa-booking .profile-content-shadow-box .tab-box.ant-tabs-line .ant-tabs-tabpane {
+  padding: 0px 24px 25px 24px;
+}
+
+.my-new-order-block {
+  background: #FFFFFF;
+  border: 1px solid rgba(101, 72, 156, 0.25) !important;
+  border-radius: 8px !important;
+}
+
+.event-booking-profile-wrap .pf-vend-restau-myodr .profile-content-shadow-box .my-new-order-block.booking-box-content,
+.event-booking-profile-wrap .pf-vend-spa-booking .profile-content-shadow-box .my-new-order-block.booking-box-content,
+.my-new-order-block.booking-box-content
+ {
+  padding: 0px !important;
+  .booking-left {
+    padding: 15px 30px;
+    background: rgba(196, 196, 196, 0.04);
+    border-right: 1px solid #D8D8D8;
+    .odr-no {
+      h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 11px !important;
+        font-weight: 600;
+        color: #323C47 !important;
+        padding-right: 10px;
+        margin-right: 10px;
+
+        
+      }
+      h4::after {
+        top: 2px;
+        content: "";
+        background-color: #323c47 !important;
+        height: 10px !important;
+        right: 0;
+        position: absolute;
+        width: 2px;
+      }
+      .pickup {
+        font-family: "Poppins", sans-serif;
+        font-size: 11px !important;
+        font-weight: 600;
+        color: #EE9400 !important;
+        padding-right: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.my-new-order-block .fm-eventb-date span, .my-new-order-block .fm-eventb-content {
+  display: block;
+  color: #4C5862  !important;
+  font-size: 10px !important;
+}
+body .event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .fm-eventb-date h3,
+body .event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .fm-eventb-desc h3,
+.my-new-order-block .fm-eventb-desc h3,
+.my-new-order-block .fm-eventb-date h3 {
+  color: @dark-blue !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  padding: 2px 0 8px  !important; 
+}
+
+.profile-pic.booking-profile { background:#EE9400 ;}
+.booking-pro {
+  .profile-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px !important;
+    font-weight: 600;
+    color: #707683;
+    line-height: 13px;
+  }
+}
+
+.edit-delete-dot svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px !important;
+}
+
+.ant-col.booking-request.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-8.ant-col-xl-16 > .fm-eventb-desc {
+  padding-left: 25px;
+  border-left: 1px solid #E3E9EF;
+}
+.event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .fm-desc-wrap:after { display: none;}
+.booking-pro .profile-head {
+  display: flex; align-items: center;
+}
+
+.booking-pro {
+  > .profile-name  {
+    > span {
+      color: @textSecondaryColor;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0px  5px  0 0;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.booking-right-section {
+  padding: 15px 30px;
+  .self-flex-end {
+    float: right;
+    width: auto;
+    flex: auto;
+    max-width: none;
+  }
+}
+
+span.fm-eventb-month.date-time-new {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: @textPrimaryColor;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.bokng-hsty-hour-price .price  {
+  font-size: 20px !important;
+  font-family: @poppinse;
+  color: #363B40;
+  font-weight: 700;
+  margin-bottom: 0px!important;
+}
+.event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .booking-right-section button {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+span.anticon.anticon-minus-circle{
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  width: 18px;
+  height: 18px;
+  svg {
+    width:100%;
+    height: 100%;
+    margin-left: 0 !important;
+  }
+}
+.my-new-order-block.booking-box-content {
+  position: relative;
+}
+
+button.ant-btn.pending-btn.ant-btn-default span:before {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: @pending;
+  content: "";
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+button.ant-btn.success-btn.ant-btn-default span:before {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: @accept;
+    content: "";
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+button.ant-btn.cancel-btn.ant-btn-default span:before {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: @decline;
+  content: "";
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+button.ant-btn.quote-btn.ant-btn-default {
+  margin-top:18px !important;
+  background:@accept;
+  color: #fff;
+  height: 26px;
+  line-height: 26px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: @poppinse;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.send-quote-popup .ant-modal-body .order-profile { align-items: center;
+   .profile-name {
+     line-height: 17px;
+   }
+}
+
+button.ant-btn.blue-btn.ant-btn-default span:before {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #109cf1;
+  content: "";
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.send-quote-popup .ant-modal-body .fm-apply-input .ant-input-wrapper .ant-input { background: none !important;}
+
+.respond-to-quote.send-quote-popup .ant-modal-body .fm-apply-input .ant-input-wrapper .ant-input {
+  background: none !important;
+  color: #000 !important;
+  margin-left: 4px;
+  margin-top: -1px;
+}
+
+.respond-to-quote.send-quote-popup .ant-modal-body .fm-apply-input .ant-input-wrapper  .ant-input-group-addon {
+  color:#000 ;
+  font-size: 30px;margin-right: 5px !important;
+}
+
+.spa-booking-history-detail {
+  .card-container.signup-tab {
+    .top-head-section {
+      .left {
+        h2 {
+          padding-left: 0;
+          color:@yellow-text;
+          padding-bottom: 0px;
+        }
+      }
+    }
+    .sub-head-section {
+      padding-left: 0px;
+      padding-top: 0px;
+      box-shadow: none;
+
+      .anticon svg {
+        margin-right: 0px;
+      }
+    }
+    .profile-content-box {
+      .left-parent-detail-block {
+        padding: 15px 24px;
+        .your-booking {
+          font-family: @poppinse;
+          font-size: 33px;
+          font-weight: 600;
+          color: @textDarkBlue;
+          padding-bottom: 15px;
+          border-bottom: 2px solid rgba(196, 196, 196, 0.15);
+          margin-bottom: 15px;
+
+        }
+        .booking-id {
+          font-family: @poppinse;
+          font-size: 14px;
+          color: @textDarkBlue;
+          strong {
+            font-weight: 600;
+          }
+        }
+
+        .booking-user-detail-box {
+           padding-top: 15px;
+           padding-bottom: 0;
+           border: none;
+           margin-bottom: 15px;
+           .thumb-title-block {
+              h4 {
+                font-family: @poppinse;
+                font-size: 14px;
+                font-weight: 600;
+                color: @textDarkBlue;
+              }
+
+              .service_type {
+                font-size: 10px;
+                font-weight: 400;
+                color: @yellow-text;
+                ul {
+                  padding: 0px;
+                  margin:0px;
+                  li {
+                    list-style: none;
+                    display: inline-block;
+                    border-right: 2px solid @yellow-text;
+                    margin-left: 0;
+                    padding-right: 5px;
+                    line-height: 8px;
+                    padding-left: 6px;
+                    
+                    &:last-child {
+                      border:none;
+                    }
+                    &:first-child {
+                      padding-left: 0 !important;
+                    }
+                  }
+                }
+              }
+
+              span.ant-typography.fm-location {
+                margin-top: 17px;
+                font-size: 14px;
+              }
+
+           }
+           
+        }
+      }
+      .body-detail {
+        border-bottom: none !important;
+    
+      }
+    }
+  }
+  .right-parent-block-detail.payment-block-detail {
+     padding: 0 22px;
+    .header-detail {
+      padding-bottom: 22px;
+      border-bottom: 2px solid rgba(196, 196, 196, 0.15);
+      padding-left: 0px;
+      padding-right: 0px;;
+      h2{
+        font-size: 28px !important;
+        font-family: @poppinse;
+        font-weight: 600 !important;
+        color: @textDarkBlue;
+      }
+
+    }
+    .price-total-list {
+      padding:15px 0;
+     
+      .ant-row.price-total-box {
+        font-size: 14px;
+        margin: 0px 0 25px  !important;
+        padding-bottom: 20px;
+        padding-top: 2px;
+        border-bottom: 2px solid rgba(196, 196, 196, 0.15);
+        .ant-col{
+          padding: 0px !important;
+
+          &.price-text{
+            text-align: right;
+          }
+        }
+      }
+      
+     
+    }
+  }
+ 
+}
+.ant-row.button-b button {
+  width: 100%;
+  margin-top: 35px;
+  height: 44px;
+  background: #109CF1;
+  border:none;
+  font-family: @poppinse;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.spa-booking-history-detail .left-parent-detail-block .body-detail .thumb-title-block .slide-content, .spa-booking-history-detail .left-parent-detail-block .special-note-detail .thumb-title-block .slide-content {
+  overflow: hidden;
+}
+body .card-header-select {
+  top:9px
+}
+body .cancellation-reason-modal.decline {
+  max-width: 555px;
+  .ant-modal-close { display: none;}
+  .content-block {
+    padding-top: 0px;
+    padding-left: 69px;
+    padding-right: 69px;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    h2 {
+      font-family: @poppinse;
+      font-size: 30px;
+      font-weight: 700;
+      color: @textPrimaryColor;
+      margin-bottom: 36px;
+    }
+    h4 {
+      font-family: @poppinse;
+      font-size: 18px;
+      font-weight: 600;
+      color: @textPrimaryColor;
+      margin-bottom: 30px;
+    }
+
+    .ant-radio-wrapper {
+      span {
+        font-family: @poppinse;
+        font-size: 14px;
+        color: @textPrimaryColor;
+      }
+    }
+    textarea {
+      box-shadow: none;
+      border: 1px  solid #979797 !important;
+      border-radius: 3px!important;
+    }
+  }
+
+  .ant-row.ant-form-item.text-center.button-box {
+    border-color:#E3E9EF;
+    position: relative;
+    margin-bottom: 0;
+    
+  }
+
+  .ant-row.ant-form-item.text-center.button-box::after {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background:#E3E9EF;
+    content: "";
+    position: absolute;
+    top: -1px;
+    right:100%;
+  }
+  .ant-row.ant-form-item.text-center.button-box::before {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background:#E3E9EF;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 100%;;
+  }
+}
+
+.cancellation-reason-modal.edit-booking {
+   width: 100%;
+   max-width: 511px;
+   margin: 0 auto;
+  .ant-modal-content {
+    padding-bottom: 33px;
+  } 
+  .ant-modal-header {
+      .ant-modal-title {
+        text-align: center !important;
+        font-weight: 700;
+        font-size: 20px;
+        color: #55636D;
+        padding: 22px 0 0 !important;
+      }
+  }
+  .content-block {
+    padding-top:0px;
+    > div {
+      width: 161px;
+      height: 158px;
+      background: #FFFFFF;
+      border-radius: 4px;
+      box-shadow:1px 1px 20px 0 rgba(52, 43, 68, 0.20);
+      margin: 0 12px;
+      align-items: center;
+      justify-content: center;
+      .anticon {
+        svg {
+          font-size: 26px;
+        }
+      }
+      button {
+        border:none;
+        background: none;
+        width: 70%;
+        font-size: 14px;
+        font-weight: 700;
+        color: @textSecondaryColor;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+button.ant-modal-close svg {
+  color:@textPrimaryColor;
+}
+
+
+.ant-modal.custom-modal.style1.cancellation-reason-modal.change-date {
+   .ant-modal-content {
+     padding: 40px 65px 0;
+     .ant-modal-header {
+       padding: 0px;
+       
+     }
+     .ant-modal-body {
+       .content-block {
+         padding: 0px;
+         margin-left: 0px;
+         margin-right: 0;
+         max-width: 100%;
+         .fm-input-heading {
+           color: @textSecondaryColor;
+           font-size: 14px;
+           font-weight: 600;
+           margin-top: 0px;
+           margin-bottom: 20px;
+         }
+         label {
+           font-size: 14px;
+           color: @textPrimaryColor;
+           margin-right: 10px;
+           width: 70px;
+         }
+         .time-date-pick {
+           display: flex;
+           margin-top:4px;
+           label{
+             color: @textSecondaryColor;
+           }
+          
+         }
+         .steps-action {
+          justify-content: space-around;
+          padding-bottom: 0;
+         }
+        .steps-action {
+          button {
+            background: #FFC468;
+            border-color:#FFC468 !important;
+          }
+        } 
+       }
+     }
+   }
+   .ant-modal-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: @textPrimaryColor;
+    padding: 22px 0 0 !important;
+   }
+}
+
+.ant-modal.custom-modal.style1.cancellation-reason-modal.update-last {
+  width: 100%;
+  max-width: 410px;
+  .ant-modal-body {
+    text-align: center;
+    svg {
+      font-size: 30px;
+      color: @textSecondaryColor;
+    }
+    h3 {
+      font-family: @poppinse;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      color: @textPrimaryColor;
+      margin:15px 0 0;
+    }
+    .content-block {
+      margin-left: 0px;
+      max-width: none;
+      min-width: auto;
+      border-top: 1px solid #E3E9EF;
+      padding-top: 25px;
+      margin-top: 35px;
+      .ant-btn-default.grey-without-border {
+        border:2px solid;
+        box-shadow: none;
+        margin-right: 12px;
+      }
+      button.btn-orange-fill.ant-btn-default {
+        border:none;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.ant-modal.custom-modal.style1.cancellation-reason-modal.canel-booking-first {
+  max-width: 410px;
+  .cancel-top-section {
+    text-align: center;
+    span {
+      width: 100%;
+      display: inline-block;
+      padding:  0 54px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: @poppinse;
+      color:@textPrimaryColor; 
+      svg{
+        font-size: 30px;
+        color: @textSecondaryColor;margin-bottom: 30px;
+      }
+    }
+  }
+  .content-block {
+    margin-left: 0px;
+    max-width: none;
+    min-width: auto;
+    border-top: 1px solid #E3E9EF;
+    padding-top: 25px;
+    margin-top: 35px;
+    button.btn-orange-fill.ant-btn-default {
+      border:none;
+      margin-left: 12px;
+    }
+    .ant-btn-default.grey-without-border {
+      border:2px solid;
+      box-shadow: none;
+      margin-right: 12px;
+    }
+  }
+}
+
+.ant-modal.custom-modal.style1.cancellation-reason-modal.please-choose-box {
+  .ant-modal-close {
+    display: none;
+  }
+  max-width: 609px;
+  .content-block {
+    max-width: 100%;
+    min-width: auto;
+    margin: 0;
+    padding: 30px 77px 0;
+    overflow: hidden;
+
+    .button-box {
+      border-top: 1px solid #E3E9EF;
+      padding-top: 25px;
+      margin-top: 35px;
+      margin-bottom: 0px;
+      position:relative;
+      &::before{
+        width: 100%;
+        display: inline-block;
+        height: 1px;
+        background:#E3E9EF;
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 100%;;
+      }
+      &::after{
+        width: 100%;
+        display: inline-block;
+        height: 1px;
+        background:#E3E9EF;
+        content: "";
+        position: absolute;
+        top: -1px;
+        right:100%;
+      }
+      button {
+        margin:0 12px;
+      }
+    }
+  }
+}
+.my-new-order-block.booking-box-content:hover {
+  box-shadow: 1px 1px 25px  rgba(144, 168, 190, 33%) !important;
+} 
+
+span.ant-select-item-option-state {
+  display: none !important;
+}
+.category-name {
+  color: @yellow-text;
+}
+
+.edit-delete-dot:hover {
+  background: rgba(197, 199, 205,0.2);
+}
+
+.category-name{
+  margin-right: 15px;
+}
+
+.booking-request > .fm-eventb-desc > span.fm-eventb-content {
+  font-size: 12px !important;
+}
+
+.event-booking-profile-wrap .pf-vend-restau-myodr .profile-content-shadow-box h3.total-activity {
+  font-family: @poppinse;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 15px;
+  color: #334D6E;
+  &.date-today {
+    font-weight: 600;
+  }
+}
+.leave-review-style1 {
+  button.ant-btn.ant-btn-default {
+    border:2px solid #90A8BE;
+  }
+}
+.category-name.fs-12.mr-0 {
+  margin-right: 0px;
+}
+
+body .pf-vend-restau-myodr .profile-content-shadow-box h3, 
+body .pf-vend-spa-booking .profile-content-shadow-box h3, 
+body .pf-vend-fitness-booking .profile-content-shadow-box h3 {
+   padding:6px 0 26px;
+   font-size: 16px;
+}
+
+.pf-rating .ant-typography {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html body .cancellation-reason-modal .content-block h2,
+.custom-modal .ant-modal-content .ant-form-item-label > label {
+  font-family: @poppinse;
+}
+
+html body .cancellation-reason-modal.please-choose-box .content-block h2 {
+  font-size: 20px;
+}
+
+body .pf-vend-spa-booking .pf-rating .ant-rate { font-size: 20px;}
+
+.ant-modal.custom-modal.style1.cancellation-reason-modal.change-date-handi {
+  max-width: 820px;
+  .ant-modal-header{
+    padding: 45px 55px 0;
+    .ant-modal-title {
+      font-size: 30px;
+      font-family: @poppinse;
+      font-weight: 700;
+      color: @textPrimaryColor;
+      padding: 0px;
+    }
+  }
+
+  .shadow-input { background: #fff;}
+
+  .ant-typography {
+    display:none;
+  }
+  .bdr-left > .ant-typography {
+    display: inline-block;
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    padding: 0 21px;
+    background: #e3e9ef;
+    font-size: 14px;
+    color: @textPrimaryColor;
+  }
+
+  .bdr-left {
+   > .ant-row {
+     padding: 21px 0 21px 21px;
+     border-left: 1px solid #D8DEE4;
+     .calendar-right-content {
+       .ant-typography {
+         display: block;
+         &.pm-am-text {
+           font-weight: 700;
+           color: #55636D;
+           font-size: 14px;
+           margin-top: 8px;
+           margin-bottom: 6px;
+         }
+       }
+      > button {
+         width: 78px;
+         height: 30px;
+         background: none;
+         border:1px solid #E3E9EF;
+         border-radius: 0;
+         margin: 5px 5px 0 0;
+      }
+     }
+   } 
+  }
+   
+  .ant-modal-body { 
+    padding: 15px 0 30px 0px;
+    .content-block{
+      width: 100%;
+      padding: 0 55px;
+      margin: 0;
+      max-width: 100%;
+    }
+    .react-calendar {
+      border:none;
+      .react-calendar__navigation {
+        background:#E3E9EF;
+        height: 41px;
+        line-height: 41px;
+        button[disabled] {
+          background: none;
+          &:hover {
+            background: none !important;
+            border:none  !important;
+          }
+        }
+        button {
+          font-size: 14px;
+          font-weight: 700;
+          color: @textPrimaryColor;
+        }
+        button:enabled:hover {
+          background: none;
+        }
+      }
+    }
+
+    .ant-col-8 {
+      max-width:40%;
+    }
+    .ant-col-16 {
+      max-width:60%;
+    }
+  .react-calendar__month-view  {
+    abbr[title] {
+      text-decoration: none;
+      text-transform: none;
+      font-size: 14px;
+      font-weight: normal;
+      color: @textPrimaryColor;
+    }
+  } 
+  .react-calendar__month-view  {
+    padding: 0 13px;
+  } 
+  .react-calendar__month-view__weekdays__weekday {
+   
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+   }
+
+   .react-calendar__tile--active, .react-calendar__tile--now {
+    background: #FFC468;
+    color: white;
+    border-radius: 100%;
+  }
+
+   .react-calendar__tile:disabled {
+     background: none;     
+     padding: 0;
+     height: 36px;
+     opacity: 0.40;
+   }
+   .react-calendar__month-view__days__day--weekend {
+     color: @textPrimaryColor;
+   }
+   .fm-step-form .steps-action {
+    justify-content: center;
+    button.ant-btn.btn-blue.fm-btn.ant-btn-primary {
+      background: #FFC468;
+      border-color:#FFC468 !important;
+    }
+   }
+ } 
+}
+
+.ant-row.ant-form-item.cancel-reason > div {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.ant-row.ant-form-item.other-reason-message > div {
+  width: 100%;
+  display: inline-block;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+.ant-row.ant-form-item.other-reason-message {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-row.ant-form-item.text-center.button-box {
+   .ant-col.ant-col-13  {
+    width: 100%;
+    max-width: 100%;
+   }
+}
+
+body .spa-booking-history-detail .right-parent-block-detail .price-summary-list {
+  padding: 32px 0px 36px;
+}
+.ant-modal.custom-modal.style1.bookinghandyman-maintemplate-requestbooking.change-date-handi.boking-wellbeing-spa-modal.customer-update-booking-date.customer-update-booking-modal {
+  max-width: 820px;
+  .ant-modal-title {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: @poppinse;
+    color: @textPrimaryColor;
+  }
+
+  .ant-col-8 {
+    width: 40%;
+    max-width: 40%;
+  }
+  .ant-col-16 {
+    width: 60%;
+    max-width: 60%;
+  }
+  .ant-modal-body {
+    .wbn-step-one {
+      > h1{
+         display: none;
+      }
+    }
+  }
+
+  .react-calendar__month-view  {
+    .react-calendar__month-view__weekdays {
+      > div {
+        height: 30px;
+        line-height: 30px;
+        padding: 0;
+        & abbr[title] {
+        text-decoration: none;
+        text-transform: none;
+        font-size: 14px;
+        font-weight: normal;
+        color: #363B40;
+      }
+    }
+    }
+  }
+
+   .caterers-event {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 43px !important;
+    box-sizing: border-box;
+}
+}
+
+body .bookinghandyman-maintemplate-requestbooking .react-calendar .react-calendar__viewContainer {
+  padding: 0 15px 25px;
+}
+
+body .bookinghandyman-maintemplate-requestbooking .react-calendar .react-calendar__tile {
+  max-width: 100%;
+  text-align: center;
+  padding: 0.55em 0.5em;
+ 
+  border: none !important;
+  height: 34px;
+  :hover {
+    border:none
+  }
+}
+
+body .bookinghandyman-maintemplate-requestbooking .react-calendar .react-calendar__tile--active {
+  background: #f1b85e;
+ 
+}
+
+body .boking-wellbeing-spa-modal .steps-action {
+  text-align: center;
+  justify-content: center;
+}
+
+body .bookinghandyman-maintemplate-requestbooking .calendar-right-content .slot-btn {
+  margin-right: 6px;
+}
+
+.ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content { margin: 0 !important; display: inline-block;}
+
+.pf-vend-spa-booking .my-new-order-block .bokng-time-date.spa-date {
+  font-family: @poppinse;
+}
+
+.ant-pagination-prev, .ant-pagination-next {
+   display: none;
+}
+
+.orange-small .edit-delete-dot {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 4px;
+  margin-left: 9px !important;
+  svg {
+    margin-top: 4px;
+  }
+}
+.sub-head-section.block-display {
+  display: block;
+}
+.title-respone {
+  font-family: @poppinse;
+  font-size: 33px;
+  font-weight: 700;
+  color: @textDarkBlue;
+}
+
+.booking-id {
+  font-family: @poppinse;
+  font-size: 14px;
+  font-weight: 400;
+  color:@textDarkBlue;
+  text-align: right;
+}
+
+.spa-booking-history-detail .card-container.signup-tab .profile-content-box .body-detail {
+  padding: 0 0 30px 0;
+}
+body .spa-booking-history-detail .left-parent-detail-block .special-note-detail { padding: 0px;}
+html body .spa-booking-history-detail .right-parent-block-detail .price-summary-list {
+  padding: 16px 0px 16px;
+  margin-bottom: 25px;
+  
+}
+
+.spa-booking-history-detail .right-parent-block-detail.payment-block-detail .price-total-list {
+  font-family: @poppinse
+}
+
+body .pf-vend-spa-booking .pf-rating { margin-left:0px}
+
+body .cancellation-reason-modal.delete-popupbox {
+    max-width:511px ;
+
+    .ant-modal-body {
+        .content-block {
+          padding: 0px;
+          margin: 0;
+          width: 100%;
+          max-width: 100%;
+           span.anticon.anticon-delete {
+             color: #E3E9EF;
+             font-size: 31px;
+             margin: 25px 0 25px;
+           }
+           h3{
+             font-size: 20px;
+             font-family: @poppinse;
+             font-weight: 700;
+           }
+           p{
+             font-size: 12px;
+             color: #979797;
+           }
+          > div:last-child{
+              width: 100%;
+              display: inline-block;
+              border-top:1px solid #E3E9EF;
+              text-align: center;
+              padding-top: 20px;
+              margin-top: 23px;   
+             .ant-btn-default {
+                border:1px solid;
+              }
+
+           }
+         }
+    }
+}
+
+body .my-profile-box .profile-content-box h4 { font-family: @poppinse; font-size: 17px  !important; font-weight: 600 !important;}
+.my-new-order-block .fm-eventb-content.fs-13{ font-size: 13px  !important;}
+body .customer-update-booking-modal .caterers-event {
+  max-width: 96%;
+  width: 100%;
+}
+.ant-row.wellbilling-fitness .ant-col.booking-request.ant-col-xs-24.ant-col-sm-24.ant-col-md-24.ant-col-lg-8.ant-col-xl-16 {
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+.spa-booking-history-detail .special-notes .body-detail {
+  padding: 0 25px 30px !important;
+}
+
+@media(min-width:1300px) and (max-width:1400px) {
+  body .pf-vend-spa-booking .pf-rating .ant-rate, .profile-name .ant-rate {
+    font-size: 13px;
+  }
+
+  .my-profile-box .profile-content-box {
+    margin: 28px 0 28px 0px !important;}
+}
+
+
+.card-container.signup-tab.resturant-vendor-box {
+  padding: 0 0;
+  .top-head-section {
+    .left{
+      min-width: 200px;
+      height: 65px;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+      margin-right: 10px;
+      display: inline-block;
+      h2{
+        font-size: 24px;
+        font-weight: 700;
+        padding: 0 0 0 20px;
+        line-height: 63px;
+        &:after{
+          width: 13px;
+          height: 65px;
+          content: "";
+          display: inline-block;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          right: 0;
+          box-shadow: inset 7px 0 10px 0px rgba(0, 0, 0, 6%);
+          border-radius: 0 0 0 11px;
+        }
+      }
+    }
+    .right{
+      display: inline-block;
+      text-align: center;
+      border: none;
+      margin-bottom: 0;
+      .tabs-button {
+        border: none;
+        button {
+          border:none;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          height: 51px;
+          width: 171px;
+          background: #E3E9EF !important;
+          border-radius: 8px 8px 0px 0px;
+          font-size: 18px;
+          font-weight: 600;
+          position: relative;
+          top: 4px;
+        }
+      }
+      
+    }
+  }
+
+  .ant-tabs-nav-container {
+    border:none;
+  }
+  .ant-tabs-nav-scroll {
+    padding: 0 !important;
+  }
+  .profile-content-shadow-box {
+    background: none;
+    box-shadow: none;
+  }
+  .ant-tabs-nav-scroll {
+    .ant-tabs-tab {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      font-family: "Poppins", sans-serif;
+      color: #E3E9EF !important;
+      margin-right: 20px;
+      &.ant-tabs-tab-active {
+        color:@dark-blue !important;
+        border-bottom: 4px solid @dark-blue !important;
+      }
+    }
+  }
+  .ant-tabs-tabpane.ant-tabs-tabpane-active {
+    padding: 20px 0 !important;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 10%);
+    .my-new-order-block {
+      border:none !important;
+      border-bottom:1px solid #E5E5E5 !important;
+      box-shadow: none !important; 
+      padding: 0 20px;
+      border-radius: 0 !important;
+
+    }
+  }
+  .odr-no {
+    .delivery {
+      font-size: 17px;
+      font-weight: 600;
+      font-family: @poppinse;
+      color: @accept;
+    }
+    .take_away {
+      font-size: 17px;
+      font-weight: 600;
+      font-family: @poppinse;
+      color: #109CF1;
+    }
+  }
+}
+.fm-btndeleteicon button.ant-btn.pending-btn.ant-btn-default {
+  padding:0px;
+}
+button.ant-btn.gray-btn.quote-btn.ant-btn-default {
+  margin-top: 0 !important;
+}
+
+.pf-vend-restau-myodr.profile-content-box.shadow-none.pf-vend-spa-booking.user-restaurents-order-block {
+  margin:0px;
+  padding: 33px 130px 23px 20px;
+  background: #fff;
+  box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 10%) !important;
+  border-radius: 0 !important;
+}
+
+.event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .booking-right-section button.quote-btn{
+  background: @accept !important;
+  border-color: @accept !important;
+  color: #fff !important;
+  margin-top: 10px !important;
+
+}
+
+body .fm-restaurant-vendor-wrap .user-restaurents-order-block.profile-content-box .profile-content-shadow-box .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab  {
+  margin-right: 55px  !important;
+}
+
+.fm-eventb-desc.mt-20.rejected-block, .client-accepted-quote.job-completed {
+  box-shadow: 1px 1px 12px rgba(144, 168, 190, 33%);
+  padding: 20px 16px;
+  .rj-head {
+    span{
+        font-family: @poppinse;
+        font-size: 11px;
+        font-weight: 700;
+        color: #F63730 !important;
+        text-transform: uppercase;
+    }
+    h4{
+      color: #4C5862 !important;
+      font-weight: 700;
+      font-size: 10px !important;
+      margin-top: 10px;
+    }
+  }
+  h5 {
+    color: #4C5862 !important;
+    font-weight: 600;
+    font-size: 10px !important;
+    margin-bottom: 25px;
+    margin-top: 5px;font-family: @poppinse;
+  }
+
+  span{
+    font-family: arial;
+    font-size: 10px;
+    font-weight: 400;
+  }
+}
+.client-accepted-quote.job-completed {
+  margin-top: 15px;
+  i {
+    display:inline-block;
+
+  }
+  h3{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+
+span.fm-btndeleteicon button {
+  width: 122px;
+}
+
+.event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .fm-eventb-desc span .anticon-close-circle {
+  width:auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  svg {
+    font-size: 16px;
+  }
+}
+.rating-box > span {
+  font-weight: normal;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+span.fm-eventb-content.grey-color {
+  color: #c4c4c4 !important;
+}
+
+.book-now-popup button.ant-btn.text-white.btn-orange.mt-15 {
+  width: 100%;
+}
+
+
+.spa-booking-history-detail .right-parent-block-detail .price-total-list .ant-col {
+  margin-top: 5px;
+  font-family: arial;
+}
+
+body .event-booking-profile-wrap  .my-new-order-block .fm-eventb-desc .rj-text h3 {
+  font-size: 10px !important;
+  font-weight: 700;
+  color: #4C5862 !important;
+  margin-bottom: 0px;
+}
+
+body .event-booking-profile-wrap  .my-new-order-block .fm-eventb-desc .rj-text {
+  margin-top: 15px;
+}
+
+body .event-booking-profile-wrap  .my-new-order-block .fm-eventb-desc .rj-text h5 {
+  font-size: 10px !important;
+  font-weight: 700;
+  color: #4C5862 !important;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .event-booking-profile-wrap .my-new-order-block .fm-eventb-desc .rj-text h4 {
+  font-family: @poppinse;
+  font-size: 10px  !important;
+  color: #4C5862 !important;
+}
+
+body .event-booking-profile-wrap .my-new-order-block .fm-eventb-desc .rj-text p {
+  font-size: 10px ;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.Accepted-paid {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: #2ed47a;
+  border-color: #2ed47a;
+  border:1px solid;
+  height: 33px;
+  padding: 0 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  &::before{
+    width: 10px;
+    height: 10px;
+    background: #2ed47a;
+    display: inline-block;content: "";
+    border-radius: 100%;
+    position: relative;
+    left: -3px;
+  }
+}
+
+body .ant-dropdown {
+  z-index: 0;
+}
+
+
+.trackorder-page {
+  .pf-vend-restau-myodr.box-shdw-none.profile-content-box.shadow-none.pf-vend-spa-booking.user-restaurents-order-block {
+     padding-right: 20px;
+     box-shadow: none !important;
+     background: none;
+    .profile-content-shadow-box {
+     
+    }
+    
+  }
+}
+
+.Active {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: #2ed47a !important;
+  border-color: #2ed47a !important;
+  border:1px solid !important; 
+  height: 25px;
+  padding: 0 15px;
+  margin-top:5px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  &::before{
+    width: 8px;
+    height: 8px;
+    background: #2ed47a;
+    display: inline-block;content: "";
+    border-radius: 100%;
+    position: relative;
+    left: -6px;
+  }
+
+  &:hover {
+    background: #fff; 
+  }
+}
+
+.Ending {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: #EE9400 !important;
+  border-color: #EE9400 !important;
+  border:1px solid !important; 
+  height: 25px;
+  padding: 0 15px;
+  margin-top:5px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  &::before{
+    width: 8px;
+    height: 8px;
+    background: #EE9400;
+    display: inline-block;content: "";
+    border-radius: 100%;
+    position: relative;
+    left: -6px;
+  }
+  &:hover {
+    background: #fff; 
+  }
+}
+
+.Expired {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: #EE4928 !important;
+  border-color: #EE4928 !important;
+  border:1px solid !important; 
+  height: 25px;
+  padding: 0 15px;
+  margin-top:5px;
+  border-radius: 4px;
+  &::before{
+    width: 8px;
+    height: 8px;
+    background: #EE4928;
+    display: inline-block;content: "";
+    border-radius: 100%;
+    position: relative;
+    left: -6px;
+    margin-bottom: 0px;
+  }
+  &:hover {
+    background: #fff; 
+  }
+}
+
+body .fr-tbl-fit-wrap .fr-fitness-tbl th, body .fr-tbl-fit-wrap .fr-fitness-tbl td { border:none;}
+
+// reatil section
+
+.ant-tabs.ant-tabs-top.reatil-tab.ant-tabs-line .ant-tabs-content.ant-tabs-content-animated.ant-tabs-top-content .ant-tabs-tabpane {
+  box-shadow: none !important;
+  border-top: 1px solid #eee;
+}
+
+.card-container.signup-tab.resturant-vendor-box .my-profile-box.view-class-tab.retail-order-top {
+  background: #fff;
+  .pf-vend-restau-myodr.profile-content-box.shadow-none.pf-vend-spa-booking.user-restaurents-order-block {
+    box-shadow: 5px -3px 5px 0 rgba(0, 0, 0, 5%) !important;
+  }
+
+  .retail-main {
+    box-shadow: 1px 1px 12px 0px rgba(144, 168, 190, 0.33) !important;
+
+  }
+}
+
+.card-container.signup-tab.resturant-vendor-box .ant-tabs-tabpane.ant-tabs-tabpane-active .my-new-order-block.retail-main {
+  box-shadow: 1px 1px 12px 0px rgba(144, 168, 190, 0.33) !important;
+  padding: 0px !important;
+
+  .ant-row.retail-top-inner {
+    padding: 25px;
+    .order-no {
+      font-family: @poppinse;
+      font-size: 16px !important;
+      color: @textPrimaryColor !important;
+      font-weight: 700 !important;
+    }
+    span {
+      font-size: 10px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      color: @textSecondaryColor;
+    }
+    p{
+      font-size: 14px;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
+      color: @textPrimaryColor;
+    }
+    .button-section.text-right {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      > div{
+        width: 136px;
+        margin-right: 35px;
+      }
+      button.ant-btn-default.grey-bg-button {
+        width: 136px !important;
+        height: 25px;
+        margin-top: 10px;
+      }
+      button.ant-btn-default.grey-wbg-button {
+        width: 136px !important;
+        height: 25px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .retail-bottom-inner {
+    border-top:1px solid #DADADA;
+    padding: 25px;
+
+    .avtarimage {
+      width: 71px;
+      height: 71px;
+      display: inline-block;
+      background: #eee;
+    }
+    .order-product-name {
+      width: 74%;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 15px;
+
+      h3 {
+        margin:0px;
+        padding: 0px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: @textPrimaryColor;
+        margin-bottom: 5px;
+      }
+
+      .price{
+        font-family: @poppinse;
+        font-weight: 700;
+        font-size: 14px;
+        columns: @textPrimaryColor;
+        
+
+      }
+
+      .small-dec {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: @textPrimaryColor;
+        margin-top: 5px;
+        span {
+          > span{
+            color: @textSecondaryColor;;
+          }
+          &.small-dec-b {
+            font-size: 12px;
+            color: @textSecondaryColor;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+
+    .retail-qty {
+      font-size: 14px;
+      color: @textPrimaryColor;
+    }
+
+    h5 {
+      color: @textPrimaryColor;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+    .text-right span {
+      font-size: 11px;
+      color: @textPrimaryColor;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.qty-res {
+  ul {
+    li {
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #4C5862;
+        margin-bottom: 5px;
+        &.Qtyres {
+          margin-right: 50px;
+          width: 20px;
+         
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+table.fr-fitness-tbl.fitness-table tr {
+  border:none !important
+}
+table.fr-fitness-tbl.fitness-table tr td {
+  border-bottom: 1px solid #eee !important;
+  vertical-align: top;
+  font-size: 12px;
+  
+  button.arrow {
+    background: url(../../../assets/images/table-arrow.png)no-repeat 0 0;
+    width:12px;
+    height: 6px;
+    display: inline-block;
+    font-size: 0px;
+    box-shadow: none;
+    float: right;
+    position: relative;
+    top: 8px;
+    transform: rotate(0deg);
+    padding: 0;
+    margin-top: 0 !important;
+    min-height: 6px;
+    &.show-button{
+      transform: rotate(180deg);
+      top: 7px;
+    }
+  } 
+}
+
+td.subscription-type {
+  text-align: left !important;
+  padding-left: 55px!important;
+  width: 230px;
+
+  div {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: @textSecondaryColor;
+  }
+}
+
+.sub-button-ac {
+  button {
+    margin-bottom: 3px !important;
+  }
+}
+
+.ant-dropdown.show-phone-number.retail-dashboard.ant-dropdown-placement-bottomRight {
+  z-index: 0 !important;
+}
+
+.Cancelled {
+  background-color: transparent !important;
+  color: #f7685b !important;
+  border: #f7685b 1px solid !important;
+  border-radius: 4px;
+  span:before {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #EE4928;
+    content: "";
+    border-radius: 100%;
+    margin-right: 5px;
+  }
+}
+
+
+/* orderdetail */
+
+.my-new-order-block.orderdetail{
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: none;
+  background: #fff;
+  border:none !important;
+  .top-head-section {
+    width: 75%;
+
+    h4 {
+      font-family: @poppinse;
+      font-size: 16px;
+      font-weight: 700;
+      color: @textPrimaryColor;
+      margin-top:25px;
+    }
+
+    div{
+      ul {
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        li {
+          display: inline-block;
+          font-family: @poppinse;
+          font-size: 12px;
+          color: @textPrimaryColor;
+          &:first-child{
+            border-right: 1px solid @textPrimaryColor;
+            padding-right: 10px;
+            margin-right: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+      button {
+        float: right;
+        margin-top: -25px;
+      }
+    }
+    
+  }
+  
+}
+
+.order-data{
+  margin-top: 20px;
+  .order-data-left-top {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+    border-radius: 4px;
+    overflow: hidden;
+    &.left-bottom {
+      padding: 36px 56px;  
+    }
+    .order-data-grey-box {
+      background: #F7F7F7;
+      text-align: center;
+      padding: 10px 0;
+      span {
+        font-family: @poppinse;
+        font-size: 9px;
+        font-weight: 500;
+        color: @textPrimaryColor;
+        &.op0{
+          opacity: 0.2;
+        }
+      }
+    }
+    .order-data-white-box {
+      padding: 35px 26px;
+     
+      .order-data-img {
+        width: 71px;
+        height: 71px;
+        display: inline-block;
+        background: #eee;
+      }
+
+      .content-detail {
+        width: 74%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 15px;
+  
+        h3 {
+          margin:0px;
+          padding: 0px;
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          color: @textPrimaryColor;
+          margin-bottom: 5px;
+        }
+  
+        .price{
+          font-family: @poppinse;
+          font-weight: 700;
+          font-size: 14px;
+          columns: @textPrimaryColor;
+          
+  
+        }
+  
+        .small-dec {
+          font-size: 14px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          color: @textPrimaryColor;
+          margin-top: 5px;
+          span {
+            > span{
+              color: @textSecondaryColor;
+              margin-right: 10px;
+            }
+            &.small-dec-b {
+              font-size: 12px;
+              color: @textSecondaryColor;
+              margin-left: 15px;
+            }
+          }
+        }
+
+      }
+      .retail-qty {
+        font-size: 14px;
+        color: @textPrimaryColor;
+      }
+  
+      h4 {
+        color: @textPrimaryColor;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 17px;
+      }
+      .text-right span {
+        font-size: 11px;
+        color: @textPrimaryColor;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.order-data-left-top.left-bottom {
+  margin-bottom: 55px;
+  > div{
+    width:50%;
+    float: left;
+    h3 {
+      font-size: 14px;
+      font-family: @poppinse;
+      color: @textPrimaryColor;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 14px;
+      font-family: @poppinse;
+      color: #55636D;
+    }
+  }
+}
+
+.ordersumm {
+  box-shadow: 1px 1px 12px rgba(144, 168, 190, 0.33);
+  border-radius: 4px;
+}
+
+.ordersumm-top {
+    padding: 25px 25px 13px;
+    border-bottom: 2px solid #C4C4C4;
+    margin-bottom: 25px;
+  h4{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: @poppinse;
+    color: #55636D;
+  }
+  span {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    color: @textSecondaryColor;
+  }
+}
+
+
+
+.ordersumm-bottom {
+    padding: 0 25px 25px;
+    div {
+      margin-bottom: 10px;
+    }
+    span {
+      font-size: 14px;
+      font-family: @poppinse;
+      color: #55636D;
+      &:last-child{
+        float: right;
+      }
+
+
+    }
+    .ordertotal {
+      border-top: 2px solid #C4C4C4;
+      margin-top:10px;
+      padding-top: 15px;
+      display: inline-block;
+      width: 100%;
+      span {
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+}
+
+.paymentcomplete{
+  max-width: 1700px;
+  margin: 70px auto;
+  width: 100%;
+  box-shadow: none;
+  background: #fff;
+  border:none !important;
+  h1{
+    font-family: @poppinse;
+    font-size: 30px;
+    font-weight: 700;
+    color: @dark-blue;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 28px;
+    margin-bottom: 45px;
+  }
+  .paymentsumm {
+    width: 50%;
+    float: left;
+    h4{
+      font-family: @poppinse;
+      font-size: 20px;
+      color: @textDarkBlue;
+      font-weight: 400;
+      line-height: 31px;
+    }
+  }
+}
+
+.order-item-box {
+  display: flex;
+  padding: 0 25px 25px;
+  margin-top: 30px;
+  border-bottom: 1px solid #DDE3E8;
+
+  span:last-child{
+    justify-self: end;
+
+    h3 {
+      font-family: @poppinse;
+      font-size: 18px;
+      font-weight: 700;
+      color: @textPrimaryColor;
+      margin-bottom: 12px;
+    }
+    p{
+      font-family: @poppinse;
+      font-size: 10px;
+      font-weight: 400;
+      color: @textDarkBlack;
+      margin-bottom: 3px;
+    }
+  }
+
+  .item-order-img{
+     > div{
+      width: 74%;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 15px;
+      h2{
+        font-family: @poppinse;
+        font-size: 14px;
+        font-weight: 700;
+        color: @textPrimaryColor;
+        margin-bottom: 3px;
+      }
+      p{
+        font-family: @poppinse;
+        font-size: 14px;
+        font-weight: 400;
+        color: @textDarkBlue;
+        margin-bottom: 15px;
+      }
+      button {
+        width: 71px;
+        height: 23px;
+        border: 1px solid #CA71B7;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background: #fff;
+        font-size: 12px;
+        padding: 0px;
+        line-height: 20px;
+        color: #CA71B7;
+        font-family: @poppinse;
+      }
+     }
+  }
+  .qty {
+    font-family: @poppinse;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @textPrimaryColor;
+  }
+  
+}
+
+.avtar {
+  width: 71px;
+  height: 71px;
+  display: inline-block;
+  background: #eee;
+}
+
+.past-retail {
+  .button-section.text-right > div {
+    width: auto !important;
+    a{
+      font-size: 14px;
+      color: #109CF1;
+      margin: 0 15px;
+    }
+  }
+
+  .retail-bottom-inner {
+    button {
+      
+    }
+  }
+}
+
+.event-booking-profile-wrap .pf-vend-spa-booking .my-new-order-block .past-order-button button {
+  width: 137px !important;
+  height: 25px;
+  margin-top: 10px;
+}
+
+span.fm-btndeleteicon {
+  // width: 48%;
+  display: inline-block;
+}
+
+.invoice-back {
+  width: 100%;
+  background: #F1F1F1;
+  display: inline-block;
+  .back-center{
+    max-width: 1700px;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    a{
+      margin: 5px 0;
+    }
+  }
+}
+
+.my-new-order-block.retail-main.past-retail {
+  .retail-top-inner div.button-section.text-right{
+      margin-top:25px;
+  }
+  .ant-btn-default {
+    width: 60%  !important;
+  }
+  button {
+    margin-top:10px  !important;
+  }
+}
+
+.invoice-box {
+  background: #E5E5E5;
+  .my-new-order-block.orderdetail {
+    background: none;
+    .top-head-section {
+      width: 100%;
+      h2{
+        font-size: 25px;
+        font-family: @poppinse;
+        color: @textPrimaryColor;
+        font-weight: 600;
+        display: inline-block;
+      }
+      .print-share {
+        width: auto;
+        float: right;
+        margin-top: 25px;
+
+        button {
+          float: left;
+          border:none;
+          background: none;
+          margin-top: 0px;
+          margin-left:20px;
+        }
+      }
+    }
+
+    .ant-row.order-data {
+      width:100%;
+      background: #f9f9f9;
+      padding: 51px 41px;
+      .invoice-order-detail {
+        width: 100%;
+        display: inline-block;
+        ul {
+          padding: 0px;
+          display: inline-block;
+          li {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: @textPrimaryColor;
+          }
+        }
+        div{
+          float: right;
+          text-align: right;
+          h2{
+            font-family: @poppinse;
+            font-size: 30px;
+            font-weight: 600;
+            color: @textPrimaryColor;
+          }
+          h3{
+            font-size: 20px;
+            font-weight: 400;
+            font-family: @poppinse;
+            color: @textPrimaryColor;
+          }
+        }
+      }
+
+      .delivery-date {
+        background: #f1f1f1;
+        padding: 10px 19px;
+        margin-bottom: 15px;margin-top:21px;
+        h3{
+          margin-bottom: 0px;
+          font-size: 20px;
+          font-family: @poppinse;
+          color: @textPrimaryColor;
+          font-weight: 600;
+        }
+      }
+    }
+    table.delivered-table {
+      width: 100%;
+      thead {
+        border-bottom: 2px solid @textPrimaryColor;
+        td{
+          padding: 5px 0;
+          &:last-child {
+            text-align: right;
+            width: 15%;
+          }
+          &.qty-c {
+            text-align: center;
+            width: 15%;
+          }
+          &:first-child{
+            width:58%;
+          }
+        }
+      }
+      tbody {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        td {
+          padding: 16px 0;
+          font-size: 13px;
+          color: #000;
+          .content-detail {
+            h3{
+              font-size: 13px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: 400;
+              color: #000000;
+              
+            }
+            .small-dec {
+              font-size: 13px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: 400;
+              color: @textPrimaryColor;
+
+            }
+          }
+          &:last-child{
+            text-align: right;
+          }
+          &.qty-c {
+            text-align: center;
+            
+          }
+        }
+      }
+    }
+
+    .ordersumm {
+      float: right;
+      background: none;
+      box-shadow: none;
+      width: 40%;
+      .ordersumm-bottom {
+        padding-right: 0px;
+        margin-top: 16px;
+        > div {
+           
+           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+           padding: 5px 0 3px 0;
+           span {
+            font-size: 13px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+          
+           &.ordertotal {
+             border-top:none;
+             border-bottom: 2px solid #000;
+             margin-top: 0px;
+           }
+        }
+      }
+    }
+
+    .order-data-left-top.left-bottom {
+      width:100%;
+      background: none;
+      box-shadow: none;
+      margin-bottom: 0px;
+      > div{
+        width:40%;
+        h3{
+          font-size: 13px;
+          font-weight: 700;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000;
+          margin-bottom: 5px;
+        }
+        span {
+          font-size: 13px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000;
+          margin-bottom: 5px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+button.ant-btn.in-kitchen-btn.ant-btn-default {
+  border:1px solid #109CF1;
+  color: #109CF1;
+  span:before{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #109CF1;
+    content: "";
+    border-radius: 100%;
+    margin-right: 5px;
+  }
+}
+
+.pf-vend-restau-myodr {
+  .my-new-order-block {
+     .fm-btndeleteicon{
+       width:122px;
+       button {
+         width:100% !important;
+       }
+     }
+  }
+}
+
+.fm-eventb-desc.mt-20.rejected-block .rj-head span.anticon.anticon-close-circle {
+  margin-right: 5px;
+}
+.client-accepted-quote.job-completed {
+  
+  text-align: center;
+}
+
+
+@media(min-width:1280px) and (max-width:1700px) {
+  .my-new-order-block.orderdetail {
+    max-width: 1140px;
+  } 
+  .invoice-back .back-center{
+    max-width: 1140px;
+    
+  } 
+}
